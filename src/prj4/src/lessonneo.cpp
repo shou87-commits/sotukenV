@@ -495,7 +495,7 @@ void SetNextMotion() // 各動作の次の動作の初期設定をする
     
     next_a[ACT_TURNP1] = ACT_NECKFRONT; // 時計回り
     next_a[ACT_TURNP2] = ACT_NECKFRONT; // 半時計回り
-    next_a[ACT_WALKP1] = ACT_NECKFRONT; // 少し歩く
+    next_a[ACT_WALKP1] = ACT_TURNP1; // 通常歩行の後、時計回りに旋回
     next_a[ACT_WALKP2] = ACT_NECKFRONT; // 結構歩く
 
 // 左カメラで赤いハリネズミを見つけてGRABRELEASEで左側の足で掴む
