@@ -531,6 +531,9 @@ void SetNextMotion() // 各動作の次の動作の初期設定をする
 	next_a[ACT_GRABUF] = ACT_WALKTF;
 	next_a[ACT_WALKTF] = ACT_STAY;
 */
+
+	next_a[ACT_INITPOSE] = ACT_WALKP1;
+	next_a[ACT_WALKP1] = ACT_WALKP1;
 }
 
 int CallInitialPose(C1 m[], int next) // 初期姿勢、立ち上がる
