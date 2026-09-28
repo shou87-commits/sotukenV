@@ -1,0 +1,17 @@
+<launch>
+<!-- comment -->
+<!-- 
+    <include file="$(find prj4)/launch/empty_sky.launch">
+    <include file="$(find prj4)/launch/empty_world.launch">
+    <include file="$(find prj4)/launch/myworld_full.launch">
+-->
+    <include file="$(find prj4)/launch/myworld_simple.launch">
+        <arg name="paused" value="true"/>
+    </include>
+
+    <arg name="Rpole60" default="$(find prj4)/urdf/Rpole60.urdf"/>
+    <param name="Rpole60_description" textfile="$(arg Rpole60)"/>
+    <node name="Rpole60_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param Rpole60_description -urdf -x 1.0 -y 0.0 -z 0.1 -model Rpole60" />
+
+</launch>

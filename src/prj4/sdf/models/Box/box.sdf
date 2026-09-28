@@ -1,0 +1,42 @@
+﻿<?xml version='1.0'?>
+  <sdf version='1.4'>
+    <model name="box">
+      <pose>0 0 0.225 0 0 0</pose>
+      <link name='chassis'>
+         <inertial>
+          <mass>0.501</mass>
+           <inertia>
+              <ixx>0.00765</ixx>
+              <ixy>0.0</ixy>
+              <ixz>0.0</ixz>
+              <iyy>0.05625</iyy>
+              <iyz>0.0</iyz>
+              <izz>0.05265</izz>
+           </inertia>
+         </inertial>
+
+         <collision name='collision'>
+           <geometry>
+             <box>
+               <size>0.075 0.225 0.045</size>
+             </box>
+           </geometry>
+         </collision>
+
+         <visual name='visual'>
+           <geometry>
+             <box>
+               <size>0.075 0.225 0.045</size>
+             </box>
+           </geometry>
+           <material>
+             <ambient>0.1 0.1 0.1 1</ambient>
+             <diffuse>0.1 0.1 0.2 1</diffuse>
+             <specular>0 0 0 0</specular>
+             <emissive>1 0 0 1</emissive>
+           </material>
+         </visual>
+      </link>
+
+  </model>
+</sdf>

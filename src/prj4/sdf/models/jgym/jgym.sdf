@@ -1,0 +1,1177 @@
+<collision name="jgymXY0collision">
+<pose>0.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY0visual">
+<pose>0.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY1collision">
+<pose>0.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY1visual">
+<pose>0.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY2collision">
+<pose>0.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY2visual">
+<pose>0.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY3collision">
+<pose>0.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY3visual">
+<pose>0.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY4collision">
+<pose>0.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY4visual">
+<pose>0.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY10collision">
+<pose>1.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY10visual">
+<pose>1.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY11collision">
+<pose>1.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY11visual">
+<pose>1.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY12collision">
+<pose>1.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY12visual">
+<pose>1.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY13collision">
+<pose>1.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY13visual">
+<pose>1.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY14collision">
+<pose>1.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY14visual">
+<pose>1.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY20collision">
+<pose>2.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY20visual">
+<pose>2.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY21collision">
+<pose>2.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY21visual">
+<pose>2.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY22collision">
+<pose>2.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY22visual">
+<pose>2.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY23collision">
+<pose>2.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY23visual">
+<pose>2.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY24collision">
+<pose>2.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY24visual">
+<pose>2.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY30collision">
+<pose>3.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY30visual">
+<pose>3.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY31collision">
+<pose>3.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY31visual">
+<pose>3.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY32collision">
+<pose>3.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY32visual">
+<pose>3.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY33collision">
+<pose>3.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY33visual">
+<pose>3.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY34collision">
+<pose>3.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY34visual">
+<pose>3.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY40collision">
+<pose>4.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY40visual">
+<pose>4.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY41collision">
+<pose>4.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY41visual">
+<pose>4.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY42collision">
+<pose>4.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY42visual">
+<pose>4.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY43collision">
+<pose>4.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY43visual">
+<pose>4.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY44collision">
+<pose>4.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY44visual">
+<pose>4.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY50collision">
+<pose>5.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY50visual">
+<pose>5.000000 0.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY51collision">
+<pose>5.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY51visual">
+<pose>5.000000 1.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY52collision">
+<pose>5.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY52visual">
+<pose>5.000000 2.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY53collision">
+<pose>5.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY53visual">
+<pose>5.000000 3.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXY54collision">
+<pose>5.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+</collision>
+<visual name="jgymXY54visual">
+<pose>5.000000 4.000000 1.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 3.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ10collision">
+<pose>2.500000 0.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ10visual">
+<pose>2.500000 0.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ11collision">
+<pose>2.500000 1.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ11visual">
+<pose>2.500000 1.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ12collision">
+<pose>2.500000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ12visual">
+<pose>2.500000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ13collision">
+<pose>2.500000 3.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ13visual">
+<pose>2.500000 3.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ14collision">
+<pose>2.500000 4.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ14visual">
+<pose>2.500000 4.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ10collision">
+<pose>0.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ10visual">
+<pose>0.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ11collision">
+<pose>1.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ11visual">
+<pose>1.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ12collision">
+<pose>2.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ12visual">
+<pose>2.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ13collision">
+<pose>3.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ13visual">
+<pose>3.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ14collision">
+<pose>4.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ14visual">
+<pose>4.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ15collision">
+<pose>5.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ15visual">
+<pose>5.000000 2.000000 0.390964 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ20collision">
+<pose>2.500000 0.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ20visual">
+<pose>2.500000 0.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ21collision">
+<pose>2.500000 1.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ21visual">
+<pose>2.500000 1.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ22collision">
+<pose>2.500000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ22visual">
+<pose>2.500000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ23collision">
+<pose>2.500000 3.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ23visual">
+<pose>2.500000 3.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ24collision">
+<pose>2.500000 4.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ24visual">
+<pose>2.500000 4.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ20collision">
+<pose>0.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ20visual">
+<pose>0.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ21collision">
+<pose>1.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ21visual">
+<pose>1.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ22collision">
+<pose>2.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ22visual">
+<pose>2.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ23collision">
+<pose>3.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ23visual">
+<pose>3.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ24collision">
+<pose>4.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ24visual">
+<pose>4.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ25collision">
+<pose>5.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ25visual">
+<pose>5.000000 2.000000 0.981214 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ30collision">
+<pose>2.500000 0.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ30visual">
+<pose>2.500000 0.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ31collision">
+<pose>2.500000 1.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ31visual">
+<pose>2.500000 1.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ32collision">
+<pose>2.500000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ32visual">
+<pose>2.500000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ33collision">
+<pose>2.500000 3.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ33visual">
+<pose>2.500000 3.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ34collision">
+<pose>2.500000 4.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ34visual">
+<pose>2.500000 4.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ30collision">
+<pose>0.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ30visual">
+<pose>0.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ31collision">
+<pose>1.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ31visual">
+<pose>1.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ32collision">
+<pose>2.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ32visual">
+<pose>2.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ33collision">
+<pose>3.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ33visual">
+<pose>3.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ34collision">
+<pose>4.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ34visual">
+<pose>4.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ35collision">
+<pose>5.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ35visual">
+<pose>5.000000 2.000000 1.374750 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ40collision">
+<pose>2.500000 0.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ40visual">
+<pose>2.500000 0.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ41collision">
+<pose>2.500000 1.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ41visual">
+<pose>2.500000 1.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ42collision">
+<pose>2.500000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ42visual">
+<pose>2.500000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ43collision">
+<pose>2.500000 3.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ43visual">
+<pose>2.500000 3.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ44collision">
+<pose>2.500000 4.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ44visual">
+<pose>2.500000 4.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ40collision">
+<pose>0.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ40visual">
+<pose>0.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ41collision">
+<pose>1.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ41visual">
+<pose>1.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ42collision">
+<pose>2.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ42visual">
+<pose>2.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ43collision">
+<pose>3.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ43visual">
+<pose>3.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ44collision">
+<pose>4.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ44visual">
+<pose>4.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ45collision">
+<pose>5.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ45visual">
+<pose>5.000000 2.000000 1.847679 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ50collision">
+<pose>2.500000 0.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ50visual">
+<pose>2.500000 0.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ51collision">
+<pose>2.500000 1.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ51visual">
+<pose>2.500000 1.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ52collision">
+<pose>2.500000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ52visual">
+<pose>2.500000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ53collision">
+<pose>2.500000 3.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ53visual">
+<pose>2.500000 3.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ54collision">
+<pose>2.500000 4.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ54visual">
+<pose>2.500000 4.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ50collision">
+<pose>0.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ50visual">
+<pose>0.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ51collision">
+<pose>1.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ51visual">
+<pose>1.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ52collision">
+<pose>2.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ52visual">
+<pose>2.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ53collision">
+<pose>3.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ53visual">
+<pose>3.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ54collision">
+<pose>4.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ54visual">
+<pose>4.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ55collision">
+<pose>5.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ55visual">
+<pose>5.000000 2.000000 2.237036 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ60collision">
+<pose>2.500000 0.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ60visual">
+<pose>2.500000 0.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ61collision">
+<pose>2.500000 1.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ61visual">
+<pose>2.500000 1.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ62collision">
+<pose>2.500000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ62visual">
+<pose>2.500000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ63collision">
+<pose>2.500000 3.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ63visual">
+<pose>2.500000 3.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ64collision">
+<pose>2.500000 4.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ64visual">
+<pose>2.500000 4.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ60collision">
+<pose>0.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ60visual">
+<pose>0.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ61collision">
+<pose>1.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ61visual">
+<pose>1.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ62collision">
+<pose>2.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ62visual">
+<pose>2.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ63collision">
+<pose>3.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ63visual">
+<pose>3.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ64collision">
+<pose>4.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ64visual">
+<pose>4.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ65collision">
+<pose>5.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ65visual">
+<pose>5.000000 2.000000 2.518393 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ90collision">
+<pose>2.500000 0.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ90visual">
+<pose>2.500000 0.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ91collision">
+<pose>2.500000 1.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ91visual">
+<pose>2.500000 1.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ92collision">
+<pose>2.500000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ92visual">
+<pose>2.500000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ93collision">
+<pose>2.500000 3.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ93visual">
+<pose>2.500000 3.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymYZ94collision">
+<pose>2.500000 4.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymYZ94visual">
+<pose>2.500000 4.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ90collision">
+<pose>0.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ90visual">
+<pose>0.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ91collision">
+<pose>1.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ91visual">
+<pose>1.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ92collision">
+<pose>2.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ92visual">
+<pose>2.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ93collision">
+<pose>3.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ93visual">
+<pose>3.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ94collision">
+<pose>4.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ94visual">
+<pose>4.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="jgymXZ95collision">
+<pose>5.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="jgymXZ95visual">
+<pose>5.000000 2.000000 3.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 4.000000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+

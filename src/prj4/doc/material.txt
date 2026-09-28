@@ -1,0 +1,108 @@
+material Gazebo/Grey
+material Gazebo/Gray : Gazebo/Grey
+material Gazebo/DarkGrey
+material Gazebo/DarkGray : Gazebo/DarkGrey
+material Gazebo/White
+material Gazebo/FlatBlack
+material Gazebo/Black
+material Gazebo/Red
+material Gazebo/RedBright
+material Gazebo/Green
+material Gazebo/Blue
+material Gazebo/SkyBlue
+material Gazebo/Yellow
+material Gazebo/ZincYellow
+material Gazebo/DarkYellow
+material Gazebo/Purple
+material Gazebo/Turquoise
+material Gazebo/Orange
+material Gazebo/Indigo
+material Gazebo/WhiteGlow : Gazebo/White
+material Gazebo/RedGlow
+material Gazebo/GreenGlow : Gazebo/Green
+material Gazebo/BlueGlow : Gazebo/Blue
+material Gazebo/YellowGlow : Gazebo/Yellow
+material Gazebo/PurpleGlow : Gazebo/Purple
+material Gazebo/TurquoiseGlow : Gazebo/Turquoise
+material Gazebo/TurquoiseGlowOutline
+material Gazebo/RedTransparentOverlay
+material Gazebo/BlueTransparentOverlay
+material Gazebo/GreenTransparentOverlay
+material Gazebo/OrangeTransparentOverlay
+material Gazebo/DarkOrangeTransparentOverlay
+material Gazebo/RedTransparent
+material Gazebo/GreenTransparent
+material Gazebo/BlueTransparent
+material Gazebo/DarkMagentaTransparent
+material Gazebo/GreyTransparent
+material Gazebo/BlackTransparent
+material Gazebo/YellowTransparent
+material Gazebo/OrangeTransparent
+material Gazebo/JointAnchor
+material Gazebo/CoM
+material Gazebo/WoodFloor
+material Gazebo/CeilingTiled
+material Gazebo/PaintedWall
+material Gazebo/PioneerBody
+material Gazebo/Pioneer2Body
+material Gazebo/Gold
+material Gazebo/GreyGradientSky
+material Gazebo/CloudySky
+material Gazebo/WoodPallet
+material Gazebo/Wood
+material Gazebo/Bricks
+material Gazebo/Road
+material Gazebo/Residential
+material Gazebo/Tertiary
+material Gazebo/Pedestrian
+material Gazebo/Footway
+material Gazebo/Motorway
+material Gazebo/Lanes_6
+material Gazebo/Trunk
+material Gazebo/Lanes_4
+material Gazebo/Primary
+material Gazebo/Lanes_2
+material Gazebo/Secondary
+material Gazebo/Lane_1
+material Gazebo/Steps
+material Gazebo/Tree
+material Gazebo/Tree1
+material Gazebo/Tree2
+material Gazebo/Tree3
+material Gazebo/Tree4
+material Gazebo/Tree5
+material Gazebo/Tree6
+material Gazebo/Tree7
+material Gazebo/Soil1
+material Gazebo/Soil2
+material Gazebo/Soil3
+material Gazebo/Soil4
+material Gazebo/Grass2
+material Gazebo/Granite
+material Gazebo/Cat
+material Gazebo/Dog
+material Gazebo/Tiger
+material Gazebo/Grey17 : Gazebo/DarkGrey
+material Gazebo/Gray17 : Gazebo/DarkGrey
+material Gazebo/Grey30 : Gazebo/Grey
+material Gazebo/Gray30 : Gazebo/Grey
+material Gazebo/DarkGrey2
+material Gazebo/DarkGray2 : Gazebo/DarkGrey2
+material Gazebo/Grey25 : Gazebo/DarkGrey2
+material Gazebo/Gray25 : Gazebo/DarkGrey2
+material Gazebo/DimGrey
+material Gazebo/DimGray : Gazebo/DimGrey
+material Gazebo/Grey41 : Gazebo/DimGrey
+material Gazebo/Gray41 : Gazebo/DimGrey
+material Gazebo/LightGrey
+material Gazebo/LightGray : Gazebo/LightGrey
+material Gazebo/Grey66 : Gazebo/LightGrey
+material Gazebo/Gray66 : Gazebo/LightGrey
+material Gazebo/Silver
+material Gazebo/Grey75 : Gazebo/Silver
+material Gazebo/Gray75 : Gazebo/Silver
+material Gazebo/mirucha
+material Gazebo/kourainando
+material Gazebo/benifujiiro
+material Gazebo/jinzamomi
+material Gazebo/kouzome

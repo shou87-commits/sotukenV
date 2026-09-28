@@ -1,0 +1,334 @@
+prj4:
+# Publish all joint states -----------------------------------
+  j_state_con:
+    type: joint_state_controller/JointStateController
+    publish_rate: 100
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a1j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+#   pid: {p: 300.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a1j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN12
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a1j3_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN13
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a1j4_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN14
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a1j5_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN15
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a1j6_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN16
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a1j7_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN17
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a1j8_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN18
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a2j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a2j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN22
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a2j3_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN23
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a2j4_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN24
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a2j5_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN25
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a2j6_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN26
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a2j7_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN27
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a2j8_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN28
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a3j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a3j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN32
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a3j3_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN33
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a3j4_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN34
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a3j5_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN35
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a3j6_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN36
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a3j7_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN37
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a3j8_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN38
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a4j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a4j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN42
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a4j3_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN43
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a4j4_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN44
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a4j5_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN45
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a4j6_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN46
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a4j7_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN47
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a4j8_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN48
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a5j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a5j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN52
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a5j3_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN53
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a5j4_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN54
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a5j5_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN55
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a5j6_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN56
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a5j7_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN57
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a5j8_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN58
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a6j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a6j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN62
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a6j3_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN63
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a6j4_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN64
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a6j5_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN65
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a6j6_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN66
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a6j7_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN67
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a6j8_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN68
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a7j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN71
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a7j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN72
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+##############################################################
+
+# Position Controllers ---------------------------------------
+  a8j1_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN81
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+# Position Controllers ---------------------------------------
+  a8j2_pos_con:
+    type: effort_controllers/JointPositionController
+    joint: jointNN82
+    pid: {p: 100.0, i: 0.01, d: 10.0}

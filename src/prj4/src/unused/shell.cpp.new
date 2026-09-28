@@ -1,0 +1,439 @@
+// shell.cpp
+
+#include <iostream>
+#include <vector>
+#include "ros/ros.h"
+#include "std_msgs/Float64.h"
+#include "sensor_msgs/JointState.h"
+#include <sensor_msgs/image_encodings.h>
+#include <sensor_msgs/LaserScan.h>
+
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+// belows are for kbhit()
+// #include <stdio.h>
+#include <termios.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+#include "const.h"
+#include "motorclass.h"
+#include "imageclass.h"
+#include "depthclass.h"
+// #include "lidarclass.h" // ここでは LIDAR を使ってないので
+
+#include "user.h"
+
+const int  SHELLCONTINUE = 0;
+const int  SHELLBREAK    = 0;
+
+const char TAB = 0x09;
+const char RET = 0x0a;
+const char SPC = 0x20;
+const char CMT = 0x23;
+
+// マルチスレッドを使うため
+#include <pthread.h>
+pthread_t gTID;
+int gShellOpen = NO; // マルチスレッドでシェルを開いているか判定するフラグ
+
+// 次のポインタは、いくつかのデータを、オブジェクト外の AI の関数 
+// intelligence() やシェルの関数からまとめてアクセスできるようにするため
+extern C1 *gMotor;
+extern RGBCam *gDepthRGB;
+extern DepthCam *gDepthD;
+
+// これらの変数は shell() から様々な指示をするために必要
+// 変数の実体は user.cpp にある                                                                      
+extern int act_num;       // 次の行動を決める値、重要
+extern int act_last;      // 直前の行動を覚えておく
+extern int state;         // 動作の状態を表す、「開始、継続中、終了」
+extern float act_param[]; // パラメータの受け渡し用配列      
+
+void   openshell(const ros::TimerEvent&);
+void*  shell(void* pParam);
+int    dispatch(char token[][STRBUF], int &lastact);
+int    kbhit(void);
+int    TokenStr(char str[], char str2[][STRBUF]);
+int    Name2Num(char name[]);
+void   readDyna(char fname[]);
+
+float  R2D(float rad);
+float  D2R(float deg);
+
+int    UserShell(char token[][STRBUF]);
+void   UserShellHelp(void);
+
+void openshell(const ros::TimerEvent&) // シェルの開始、1/100 秒毎にキー入力をチェック
+{
+    if (NO == gShellOpen && YES == kbhit()) { // 現在シェルを起動していなくて、キー入力があれば
+	if ('$' == getchar()) { // '$' がシェルを起動する文字
+	    gShellOpen = YES;
+	    pthread_create(&gTID, NULL, shell, NULL); // マルチスレッドで shell 起動
+	}
+    }
+}
+
+void* shell(void* pParam) // シェルの実体
+{
+    char cmd[256], token[16][STRBUF];
+    int lastact = 0, tokens;
+
+// ここからの３行でシェルを開いた時点で現在の動作を中断して動きを止める
+// シェルを開いた時点で動き続けて構わなければこの３行は実行しなくてよい
+// 中断している動作の再開はシェルのコマンド resume を実行する
+    state = ACT_END; // グローバル、実体は別ファイル
+    lastact = act_num; // ローカル変数、shell() からの復帰のために記憶しておく
+    act_num = ACT_SHELLSLEEP; // グローバル、実体は別ファイル
+
+    printf("\nshell opened\n");
+    while (TRUE) {
+	printf("prg4$ "); // プロンプトの表示
+	fgets(cmd, 256, stdin);
+        tokens = TokenStr(cmd, token); // 文字列をスペース区切りの単語に分解
+
+	if (SHELLBREAK == dispatch(token, lastact)) { // 入力されたコマンドに対応する動作を実行する
+	    break;
+	}
+    }
+    gShellOpen = NO;
+    printf("\nshell closed\n");
+    pthread_join(gTID, NULL);
+    return (void*)NULL;
+}
+
+int dispatch(char token[][STRBUF], int &lastact)
+{
+	if (0 == strcmp("sleep", token[0]) || 'S' == token[0][0]) { // 現在の動作を中断して動きを止める
+	    state = ACT_END;
+	    lastact = act_num; // 実体は shell() にある 
+	    act_num = ACT_SHELLSLEEP;
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("resume", token[0]) || 'R' == token[0][0]) { // 中断した動作を再開する
+	    printf("Resume last action, wait a moment\n");
+            state = ACT_MOVING;
+            act_num = lastact; // 再開する関数の timer は中断前の値が関数内に残っているので問題ない
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("quit", token[0]) || 'q' == token[0][0] ||
+		 'Q' == token[0][0]) {
+	    return SHELLBREAK;
+	}
+	else if (0 == strcmp("help", token[0]) || 'H' == token[0][0] ||
+		 'h' == token[0][0] || '?' == token[0][0]) {
+	    printf("$              : open shell\n");
+	    printf("quit (q, Q)    : close shell\n");
+	    printf("(EnterKey)     : repeat last command\n");
+	    printf("sleep (S)      : suspend current motion\n");
+	    printf("resume (R)     : resume last motion\n");
+	    printf("help (H, h, ?) : print help messages\n");
+	    printf("init (I)       : init pose\n");
+	    printf("ik nl x y z    : move leg by inverse kinematics\n");
+	    printf("jump           : jump\n");
+	    printf("mjda nj deg    : move joint degree absolute\n");
+	    printf("mjra nj rad    : move joint radian absolute\n");
+	    printf("mjdi nj deg    : move joint degree increment\n");
+	    printf("mjri nj rad    : move joint radian increment\n");
+	    printf("pjd nj         : print joint degree\n");
+	    printf("pjr nj         : print joint radian\n");
+	    printf("rdyna filename : read dynamixel data\n");
+	    printf("relax          : relax\n");
+	    printf("stand          : stand up\n");
+	    printf("stand2         : stand up another version\n");
+	    printf("turn (T) l/r iter : turn\n");
+	    printf("walk (W) f/b iter : walk\n");
+	    printf("angles (A)     : print angles of all leg joints\n");
+	    printf("dance (D) sec  : dance\n");
+	    UserShellHelp();
+	    return SHELLCONTINUE;
+	}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+	else if (0 == strcmp("dance", token[0]) || 'D' == token[0][0]) { // dance
+	    for (int i = 0; i < atoi(token[1]) * 100; i++) {
+		Dance(gMotor);
+                usleep(10*1000); // sleep 10 msec, emulates 100hz of intelligence()
+	    }
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("ik", token[0])) { // move leg by inverse kinematics
+	    float ikparam[IKNUMPARAM];
+	    ikparam[0] = 1.0;
+	    ikparam[1] = IKHAND;
+	    ikparam[2] = IKELBOWUP;
+	    ikparam[3] = (float)MODENONE;
+	    float target[XYZ] = {0};
+	    target[0] = atof(token[2]);
+	    target[1] = atof(token[3]);
+	    target[2] = atof(token[4]);
+	    IKMotions(gMotor, Name2Num(token[1]), target, ikparam); 
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("init", token[0]) || 'I' == token[0][0]) { // init
+	    float act_param[AP_PARAMS] = {0.0};
+	    act_param[AP_STATE] = ACT_START;
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    for (int i = 0; i < act_param[AP_TIMETOTAL] * 100; i++) { 
+		int state = ActInitialPose(gMotor, act_param);
+		usleep(10*1000); // sleep 10 msec, emulates 100hz of intelligence()
+	    }
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("stand", token[0]) ) { // stand up
+	    char n2[] = "n2";
+	    gMotor[Name2Num(n2)].targetangle.data = 0.0; // 首をまっすぐに 
+	    float act_param[AP_PARAMS] = {0.0};
+	    act_param[AP_STATE] = ACT_START;
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    for (int i = 0; i < act_param[AP_TIMETOTAL] * 100; i++) { 
+		int state = ActStandup(gMotor, act_param);
+		usleep(10*1000); // sleep 10 msec, emulates 100hz of intelligence()
+	    }
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("stand2", token[0]) ) { // stand up another version
+//	    gMotor[Name2Num("n2")].targetangle.data = 0.0; // 首をまっすぐに 
+	    float act_param[AP_PARAMS] = {0.0};
+	    act_param[AP_STATE] = ACT_START;
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    for (int i = 0; i < act_param[AP_TIMETOTAL] * 100; i++) { 
+		int state = ActStandup2(gMotor, act_param);
+		usleep(10*1000); // sleep 10 msec, emulates 100hz of intelligence()
+	    }
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("jump", token[0]) || 'J' == token[0][0]) { // jump
+	    float act_param[AP_PARAMS] = {0.0};
+	    act_param[AP_STATE] = ACT_START;
+	    act_param[AP_TIMETOTAL] = 10.0; // 動作時間 (sec)
+	    for (int i = 0; i < act_param[AP_TIMETOTAL] * 100; i++) { 
+		int state = ActJump(gMotor, act_param);
+		usleep(10*1000); // sleep 10 msec, emulates 100hz of intelligence()
+	    }
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("mjda", token[0])) { // move joint degree absolute
+	    gMotor[Name2Num(token[1])].ctrlmode = MODENONE;
+	    gMotor[Name2Num(token[1])].duration = 1.0;
+	    gMotor[Name2Num(token[1])].targetangle.data = D2R(atof(token[2]));
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("mjra", token[0])) { // move joint radian absolute
+	    gMotor[Name2Num(token[1])].ctrlmode = MODENONE;
+	    gMotor[Name2Num(token[1])].duration = 1.0;
+	    gMotor[Name2Num(token[1])].targetangle.data = atof(token[2]);
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("mjdi", token[0])) { // move joint degree increment
+	    gMotor[Name2Num(token[1])].ctrlmode = MODENONE;
+	    gMotor[Name2Num(token[1])].duration = 1.0;
+	    gMotor[Name2Num(token[1])].targetangle.data += D2R(atof(token[2]));
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("mjri", token[0])) { // move joint radian increment
+	    gMotor[Name2Num(token[1])].ctrlmode = MODENONE;
+	    gMotor[Name2Num(token[1])].duration = 1.0;
+	    gMotor[Name2Num(token[1])].targetangle.data += atof(token[2]);
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("pjd", token[0])) { // print joint degree
+	    printf("%f\n", R2D(gMotor[Name2Num(token[1])].anglenow.data));
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("pjr", token[0])) { // print joint radian
+	    printf("%f\n", gMotor[Name2Num(token[1])].anglenow.data);
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("turn", token[0]) || 'T' == token[0][0]) { // turn
+	    float act_param[AP_PARAMS] = {0.0};
+	    act_param[AP_STATE] = ACT_START;
+	    act_param[AP_TIME1] = 0.5;         // 動き１の動作時間 (sec)
+	    act_param[AP_TIME2] = 0.5;         // 最後の着地の動作時間 (sec)
+            act_param[AP_PHASE] = 4;           // １組の行動に含まれる動きの種類
+	    act_param[AP_ITER] = atoi(token[2]);
+            act_param[AP_CTRL]  = MODEPROFILE; // 制御のアルゴリズム
+	    if ('l' == token[1][0]) act_param[AP_TURN_DIR] = TURNCCW;
+	    else                    act_param[AP_TURN_DIR] = TURNCW;
+            act_param[AP_TIMETOTAL] = act_param[AP_TIME1] * act_param[AP_PHASE] *
+		                      act_param[AP_ITER] + act_param[AP_TIME2]; // 合計動作時間 (sec)
+	    for (int i = 0; i < act_param[AP_TIMETOTAL] * 100; i++) { 
+		int state = ActTurn(gMotor, act_param);
+		usleep(10*1000); // sleep 10 msec, emulates 100hz of intelligence()
+	    }
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("walk", token[0]) || 'W' == token[0][0]) { // walk
+	    float act_param[AP_PARAMS] = {0.0};
+	    act_param[AP_STATE] = ACT_START;
+	    act_param[AP_TIME1] = 0.5;         // 動き１の動作時間 (sec)
+	    act_param[AP_TIME2] = 0.5;         // 最後の着地の動作時間 (sec)
+            act_param[AP_PHASE] = 4;           // １組の行動に含まれる動きの種類
+	    act_param[AP_ITER] = atoi(token[2]);
+            act_param[AP_CTRL]  = MODEPROFILE; // 制御のアルゴリズム
+	    if ('f' == token[1][0]) act_param[AP_WALK_DIR] = FORWARD;
+	    else                    act_param[AP_WALK_DIR] = BACKWARD;
+            act_param[AP_TIMETOTAL] = act_param[AP_TIME1] * act_param[AP_PHASE] *
+                                      act_param[AP_ITER] + act_param[AP_TIME2]; // 合計動作時間 (sec)
+	    for (int i = 0; i < act_param[AP_TIMETOTAL] * 100; i++) { 
+		int state = ActWalk(gMotor, act_param);
+		usleep(10*1000); // sleep 10 msec, emulates 100hz of intelligence()
+            }
+	    return SHELLCONTINUE;
+	}
+	else if (0 == strcmp("rdyna", token[0])) { // read dynamixel data
+	    readDyna(token[1]);
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("relax", token[0])) { // relax
+	    for (int i = 0; i < NUMALLJOINTS; i++) {
+		gMotor[i].ctrlmode = MODEPROFILE;
+		gMotor[i].duration = 3.0;
+		gMotor[i].targetangle.data = 0.0;
+	    }
+	    usleep(3*1000*1000); // wait specified sec
+	    return SHELLCONTINUE;
+        }
+	else if (0 == strcmp("angles", token[0]) || 'A' == token[0][0]) { // print angles of joints
+	    printf("1.0 %.3f %.3f %.3f %.3f %.3f %.3f ",
+	      gMotor[A4J1].anglenow.data, gMotor[A4J2].anglenow.data, gMotor[A4J3].anglenow.data * -1, 
+	      gMotor[A1J1].anglenow.data, gMotor[A1J2].anglenow.data, gMotor[A1J3].anglenow.data * -1
+	      );
+	    printf("%.3f %.3f %.3f %.3f %.3f %.3f ",
+	      gMotor[A5J1].anglenow.data, gMotor[A5J2].anglenow.data, gMotor[A5J3].anglenow.data * -1, 
+	      gMotor[A2J1].anglenow.data, gMotor[A2J2].anglenow.data, gMotor[A2J3].anglenow.data * -1
+	      );
+	    printf("%.3f %.3f %.3f %.3f %.3f %.3f\n",
+	      gMotor[A6J1].anglenow.data, gMotor[A6J2].anglenow.data, gMotor[A6J3].anglenow.data * -1, 
+	      gMotor[A3J1].anglenow.data, gMotor[A3J2].anglenow.data, gMotor[A3J3].anglenow.data * -1
+	      );
+	    return SHELLCONTINUE;
+	}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+	else if (YES == UserShell(token)) { // 自分のシェルで独自のコマンドを追加可能
+	    NOTHING; // UserShell() を実行した後はここでは何もすることはない
+	    return SHELLCONTINUE;
+        }
+	else {
+	    printf("invalid command\n");
+	    return SHELLCONTINUE;
+	}
+}
+
+int kbhit(void) // リアルタイムキー入力
+{
+    struct termios oldt, newt;
+    int ch;
+    int oldf;
+
+    tcgetattr(STDIN_FILENO, &oldt);
+    newt = oldt;
+    newt.c_lflag &= ~(ICANON | ECHO);
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+    oldf = fcntl(STDIN_FILENO, F_GETFL, 0);
+    fcntl(STDIN_FILENO, F_SETFL, oldf | O_NONBLOCK);
+
+    ch = getchar();
+
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+    fcntl(STDIN_FILENO, F_SETFL, oldf);
+
+    if (ch != EOF) {
+        ungetc(ch, stdin);
+        return YES;
+    }
+    return NO;
+}
+
+int TokenStr(char str[], char str2[][STRBUF])
+{
+    char        *ptr, *ptr2;
+    int         j, n;
+
+    n = 0;
+    ptr = str;
+
+    while (TRUE) {
+        while ((SPC == *ptr) || (TAB == *ptr)) ptr++;
+        if (((char)0 == *ptr) || (RET == *ptr) || (CMT == *ptr)) 
+            return(n);
+        ptr2 = ptr;
+        j = 0;
+        while ((SPC != *ptr) && (TAB != *ptr) && (CMT != *ptr) &&
+               ((char)0 != *ptr) && (RET != *ptr)) {
+            ptr++;
+            j++;
+        }
+        strncpy(str2[n], ptr2, j);
+        str2[n][j] = (char)0;
+        n++;
+    }
+}
+
+int Name2Num(char name[])
+{
+    if ('0' <=  name[0] && name[0] <= '9') return atoi(name);
+    
+    if (2 == strlen(name)) {
+	if ('a' == name[0] && '0' <=  name[1] && name[1] <= '9') {
+	    if ('1' == name[1]) return 1;
+	    if ('2' == name[1]) return 2;
+	    if ('3' == name[1]) return 3;
+	    if ('4' == name[1]) return 4;
+	    if ('5' == name[1]) return 5;
+	    if ('6' == name[1]) return 6;
+	}
+	else if ('n' == name[0]) {
+	    if ('1' == name[1]) return 48;
+	    if ('2' == name[1]) return 49;
+	}
+    }
+    if (4 == strlen(name) && 'a' == name[0] && 'j' == name[2]) {
+	if ('0' <=  name[1] && name[1] <= '9' &&
+	    '0' <=  name[3] && name[3] <= '9') {
+	    return (name[1] - '1') * 8 + (name[3] - '1');
+	}
+    }
+
+    fprintf(stderr, "invalid arm/joint name\n");
+    return 0;
+}
+
+void readDyna(char fname[])
+{
+    int tokens = 0;
+    int id[18] = {A4J1, A4J2, A4J3, A1J1, A1J2, A1J3, 
+		  A5J1, A5J2, A5J3, A2J1, A2J2, A2J3, 
+		  A6J1, A6J2, A6J3, A3J1, A3J2, A3J3};
+    const int BUF = 256;
+    char str[BUF], str2[64][STRBUF];
+    FILE *fp1;
+
+    if ((FILE *)NULL == (fp1 = fopen(fname, "r"))) {
+        fprintf(stderr, "Error: [%s] can not open\n", fname);
+	return;
+    }
+    while (NULL != fgets(str, BUF, fp1)) {
+	tokens = TokenStr(str, str2);
+	for (int i = 1; i < 19; i++) {
+	    gMotor[id[i-1]].ctrlmode = MODENONE;
+	    gMotor[id[i-1]].duration = atof(str2[0]);
+	    gMotor[id[i-1]].targetangle.data = atof(str2[i]);
+	}
+	gMotor[id[2]].targetangle.data *= -1; // 各脚の j3 は Gazebo と Dynamixel で回転方向が逆
+	gMotor[id[5]].targetangle.data *= -1;
+	gMotor[id[8]].targetangle.data *= -1;
+	gMotor[id[11]].targetangle.data *= -1;
+	gMotor[id[14]].targetangle.data *= -1;
+	gMotor[id[17]].targetangle.data *= -1;
+	usleep(atof(str2[0])*1000*1000); // wait specified sec
+    }
+    fclose(fp1);
+}
+

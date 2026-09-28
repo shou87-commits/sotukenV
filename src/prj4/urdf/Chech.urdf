@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+
+<robot name="chech">
+
+    <link name="base_link"></link>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_link"/>                                                                      
+        <child link="platex"/>
+        <origin xyz= "0 0 0" rpy="0 0 0" />
+    </joint>
+      
+    <link name="platex">
+        <visual>
+  	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="1.8 0.14 0.02"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="1.8 0.14 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="30" />
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	</inertial>
+    </link>
+    <gazebo reference="platex"> <material>Gazebo/Red</material> </gazebo>
+
+    <joint name="joint0" type="fixed">
+        <parent link="platex"/>
+	<child  link="platex2"/>
+	<origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="platex2">
+        <visual>
+  	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="1.8 0.02 0.14"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="1.8 0.02 0.14"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="30" />
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	</inertial>
+    </link>
+    <gazebo reference="platex2"> <material>Gazebo/Red</material> </gazebo>
+
+    <joint name="joint1" type="fixed">
+        <parent link="platex"/>
+	<child  link="platey"/>
+	<origin xyz="0 0.14 0.14" rpy="0 0 0"/>
+    </joint>
+
+    <link name="platey">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.02 1.8 0.14"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.02 1.8 0.14"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="30" />
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	</inertial>
+    </link>
+    <gazebo reference="platey"> <material>Gazebo/Green</material> </gazebo>
+
+    <joint name="joint12" type="fixed">
+        <parent link="platey"/>
+	<child  link="platey2"/>
+	<origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="platey2">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.14 1.8 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.14 1.8 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="30" />
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	</inertial>
+    </link>
+    <gazebo reference="platey2"> <material>Gazebo/Green</material> </gazebo>
+
+    <joint name="joint2" type="fixed">
+        <parent link="platex"/>
+	<child  link="platez"/>
+	<origin xyz="0.14 0.14 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="platez">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.14 1.8"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.14 1.8"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="30" />
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	</inertial>
+    </link>
+    <gazebo reference="platez"> <material>Gazebo/Blue</material> </gazebo>
+
+    <joint name="joint22" type="fixed">
+        <parent link="platez"/>
+	<child  link="platez2"/>
+	<origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="platez2">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.14 0.02 1.8"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.14 0.02 1.8"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="60" />
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	</inertial>
+    </link>
+    <gazebo reference="platez2"> <material>Gazebo/Blue</material> </gazebo>
+
+</robot>

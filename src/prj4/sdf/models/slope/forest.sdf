@@ -1,0 +1,176 @@
+<collision name="wood00collision">
+<pose>-5.914750 -3.074500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.187500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood00visual">
+<pose>-5.914750 -3.074500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.187500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree3</name> </script> </material>
+</visual>
+
+<collision name="wood01collision">
+<pose>-2.697250 -4.038750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.380000</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood01visual">
+<pose>-2.697250 -4.038750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.380000</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree4</name> </script> </material>
+</visual>
+
+<collision name="wood02collision">
+<pose>-0.449250 -3.888250 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.217500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood02visual">
+<pose>-0.449250 -3.888250 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.217500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree3</name> </script> </material>
+</visual>
+
+<collision name="wood03collision">
+<pose>2.122500 -4.521750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.215000</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood03visual">
+<pose>2.122500 -4.521750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.215000</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree7</name> </script> </material>
+</visual>
+
+<collision name="wood10collision">
+<pose>-5.640000 -1.379500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.240000</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood10visual">
+<pose>-5.640000 -1.379500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.240000</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree3</name> </script> </material>
+</visual>
+
+<collision name="wood11collision">
+<pose>-3.715750 -1.481000 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.222500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood11visual">
+<pose>-3.715750 -1.481000 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.222500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree6</name> </script> </material>
+</visual>
+
+<collision name="wood12collision">
+<pose>-0.216500 -1.197500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.207500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood12visual">
+<pose>-0.216500 -1.197500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.207500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree6</name> </script> </material>
+</visual>
+
+<collision name="wood13collision">
+<pose>1.032250 -1.888750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.155000</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood13visual">
+<pose>1.032250 -1.888750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.155000</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree6</name> </script> </material>
+</visual>
+
+<collision name="wood20collision">
+<pose>-6.546500 0.476500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.317500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood20visual">
+<pose>-6.546500 0.476500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.317500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree4</name> </script> </material>
+</visual>
+
+<collision name="wood21collision">
+<pose>-3.397250 1.173000 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.255000</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood21visual">
+<pose>-3.397250 1.173000 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.255000</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree3</name> </script> </material>
+</visual>
+
+<collision name="wood22collision">
+<pose>-1.184250 1.027750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.197500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood22visual">
+<pose>-1.184250 1.027750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.197500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree6</name> </script> </material>
+</visual>
+
+<collision name="wood23collision">
+<pose>2.287000 1.314750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.210000</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood23visual">
+<pose>2.287000 1.314750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.210000</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree7</name> </script> </material>
+</visual>
+
+<collision name="wood30collision">
+<pose>-6.033750 3.522500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.215000</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood30visual">
+<pose>-6.033750 3.522500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.215000</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree4</name> </script> </material>
+</visual>
+
+<collision name="wood31collision">
+<pose>-3.925750 4.590000 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.332500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood31visual">
+<pose>-3.925750 4.590000 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.332500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree2</name> </script> </material>
+</visual>
+
+<collision name="wood32collision">
+<pose>-0.076500 3.172500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.352500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood32visual">
+<pose>-0.076500 3.172500 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.352500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree2</name> </script> </material>
+</visual>
+
+<collision name="wood33collision">
+<pose>1.448750 4.493750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.217500</radius> <length>5.000000</length> </cylinder> </geometry>
+</collision>
+<visual name="wood33visual">
+<pose>1.448750 4.493750 11.56 0 -0.7845 0</pose>
+<geometry> <cylinder> <radius>0.217500</radius> <length>5.000000</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree5</name> </script> </material>
+</visual>
+

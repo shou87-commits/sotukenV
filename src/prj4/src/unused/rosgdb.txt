@@ -1,0 +1,41 @@
+■■■ROSのC++のソースコードをgdbでデバッグする方法
+
+
+ROSを使ってC++のコードを書いた時にgdbでデバッグするときに，rosrunや
+roslaunchを使った方法を日本語で簡単に解説しているサイトがあまりないの
+で書き留めます．
+
+1. 準備
+
+gdbを使用するためには，デバッグ情報を付与する必要があります．
+catkin_make，もしくはcatkin toolsでは以下のようにしてデバッグ情報付き
+でビルドをすることができます．
+
+# catkin_makeの場合
+catkin_make -DCMAKE_BUILD_TYPE=Debug 
+
+# catkin_toolsの場合
+catkin build -DCMAKE_BUILD_TYPE=Debug 
+
+2. rosrunでgdbを利用する
+
+rosrunではindigo以降，--prefixオプションを利用することでgdbなどを利用
+できるようになりました．以下のように使用します．
+
+# 同じターミナル内で実行する場合
+rosrun --prefix 'gdb --args' pkg_name node_name
+# 別のウィンドウにターミナルを開いて実行する場合
+rosrun --prefix 'gnome-terminal -x gdb --args' package_name node_name
+
+3. roslaunchでgdbを利用する
+
+roslaunchでは<node>タグにlaunch-prefix属性を用いることでgdbなどを利用
+することができます．以下のようなlaunchファイルを作成して使用します．
+
+<launch>
+  <node pkg="pkg_name" type="node_name" name="name" launch-prefix="gdb --args"/>
+</launch>
+
+launch-prefixの値を変更することで，rosrunで実行する場合と同様に，別の
+ウィンドウにターミナルを開いて，デバッグしたいノード以外の挙動を見なが
+らデバッグすることも可能です．

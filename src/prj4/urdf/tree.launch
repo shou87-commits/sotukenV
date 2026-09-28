@@ -1,0 +1,100 @@
+    <arg name="tree000" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc000" textfile="$(arg tree000)"/>
+    <node name="tree_spawner000" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc000 -urdf -x 14.5 -y -14.8 -z 21.8 -R 0.0 -P 1.6 -Y 0.0 -model tree000"/>
+
+    <arg name="tree001" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc001" textfile="$(arg tree001)"/>
+    <node name="tree_spawner001" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc001 -urdf -x 17.0 -y -14.8 -z 27.0 -R 0.0 -P 1.6 -Y 0.0 -model tree001"/>
+
+    <arg name="tree002" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc002" textfile="$(arg tree002)"/>
+    <node name="tree_spawner002" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc002 -urdf -x 22.8 -y -18.2 -z 21.1 -R 0.0 -P 1.6 -Y 0.0 -model tree002"/>
+
+    <arg name="tree003" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc003" textfile="$(arg tree003)"/>
+    <node name="tree_spawner003" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc003 -urdf -x 21.3 -y -15.2 -z 21.4 -R 0.0 -P 1.6 -Y 0.0 -model tree003"/>
+
+    <arg name="tree004" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc004" textfile="$(arg tree004)"/>
+    <node name="tree_spawner004" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc004 -urdf -x 15.7 -y -15.2 -z 25.2 -R 0.0 -P 1.6 -Y 0.0 -model tree004"/>
+
+    <arg name="tree005" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc005" textfile="$(arg tree005)"/>
+    <node name="tree_spawner005" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc005 -urdf -x 17.2 -y -17.6 -z 22.5 -R 0.0 -P 1.6 -Y 0.0 -model tree005"/>
+
+    <arg name="tree006" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc006" textfile="$(arg tree006)"/>
+    <node name="tree_spawner006" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc006 -urdf -x 10.0 -y -15.4 -z 24.5 -R 0.0 -P 1.6 -Y 0.0 -model tree006"/>
+
+    <arg name="tree007" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc007" textfile="$(arg tree007)"/>
+    <node name="tree_spawner007" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc007 -urdf -x 13.8 -y -13.8 -z 26.8 -R 0.0 -P 1.6 -Y 0.0 -model tree007"/>
+
+    <arg name="tree008" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc008" textfile="$(arg tree008)"/>
+    <node name="tree_spawner008" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc008 -urdf -x 15.7 -y -18.8 -z 25.5 -R 0.0 -P 1.6 -Y 0.0 -model tree008"/>
+
+    <arg name="tree009" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc009" textfile="$(arg tree009)"/>
+    <node name="tree_spawner009" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc009 -urdf -x 20.1 -y -14.5 -z 28.8 -R 0.0 -P 1.6 -Y 0.0 -model tree009"/>
+
+    <arg name="tree010" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc010" textfile="$(arg tree010)"/>
+    <node name="tree_spawner010" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc010 -urdf -x 12.3 -y -18.3 -z 22.6 -R 0.0 -P 1.6 -Y 0.0 -model tree010"/>
+
+    <arg name="tree011" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc011" textfile="$(arg tree011)"/>
+    <node name="tree_spawner011" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc011 -urdf -x 19.5 -y -18.9 -z 21.1 -R 0.0 -P 1.6 -Y 0.0 -model tree011"/>
+
+    <arg name="tree012" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc012" textfile="$(arg tree012)"/>
+    <node name="tree_spawner012" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc012 -urdf -x 16.1 -y -13.8 -z 26.0 -R 0.0 -P 1.6 -Y 0.0 -model tree012"/>
+
+    <arg name="tree013" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc013" textfile="$(arg tree013)"/>
+    <node name="tree_spawner013" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc013 -urdf -x 22.0 -y -18.3 -z 23.8 -R 0.0 -P 1.6 -Y 0.0 -model tree013"/>
+
+    <arg name="tree014" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc014" textfile="$(arg tree014)"/>
+    <node name="tree_spawner014" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc014 -urdf -x 22.8 -y -16.0 -z 21.8 -R 0.0 -P 1.6 -Y 0.0 -model tree014"/>
+
+    <arg name="tree015" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc015" textfile="$(arg tree015)"/>
+    <node name="tree_spawner015" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc015 -urdf -x 21.9 -y -16.4 -z 24.2 -R 0.0 -P 1.6 -Y 0.0 -model tree015"/>
+
+    <arg name="tree016" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc016" textfile="$(arg tree016)"/>
+    <node name="tree_spawner016" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc016 -urdf -x 10.2 -y -16.4 -z 24.9 -R 0.0 -P 1.6 -Y 0.0 -model tree016"/>
+
+    <arg name="tree017" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc017" textfile="$(arg tree017)"/>
+    <node name="tree_spawner017" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc017 -urdf -x 22.2 -y -14.8 -z 24.7 -R 0.0 -P 1.6 -Y 0.0 -model tree017"/>
+
+    <arg name="tree018" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc018" textfile="$(arg tree018)"/>
+    <node name="tree_spawner018" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc018 -urdf -x 18.4 -y -18.1 -z 28.6 -R 0.0 -P 1.6 -Y 0.0 -model tree018"/>
+
+    <arg name="tree019" default="$(find prj4)/urdf/tree.urdf"/>
+    <param name="tree_desc019" textfile="$(arg tree019)"/>
+    <node name="tree_spawner019" pkg="gazebo_ros" type="spawn_model"
+          args="-param tree_desc019 -urdf -x 17.9 -y -17.5 -z 27.4 -R 0.0 -P 1.6 -Y 0.0 -model tree019"/>
+

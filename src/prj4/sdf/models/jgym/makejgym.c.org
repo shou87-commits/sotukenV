@@ -1,0 +1,153 @@
+// $ gcc -o makejgym makejgym.c
+// $ ./makejgym > jgym.sdf
+// $ cat sdfhead.sdf jgym.sdf sdftail.sdf > model.sdf
+// ~/.gazebo/models/jgym/ に model.sdf を置く、またはリンクを張る
+// abc.world 内から jgym を読み込むように登録する
+// $ gazebo abc.world
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define WIDTH	5.0	// ジャングルジムの幅 [m]
+#define DEPTH 	4.0	// ジャングルジムの奥行き [m]
+#define HEIGHT 	3.0	// ジャングルジムの高さ [m]
+#define NUM 	7	// 上で指定した高さの範囲に何段置くか、個数
+#define ITVLY 	(HEIGHT / NUM) // 縦方向の横棒の間隔 [m]
+#define RANDRANGE (ITVLY / 2 * 0.75) // 横棒を置く位置を乱数で変える範囲 [m]
+
+int main(void)
+{
+    int i;
+    float x, y, z, rx, ry, rz;
+
+    x = 0;
+    y = 0;
+    z = HEIGHT / 2.0;
+    rx = 0.05;
+    ry = 0.05;
+    rz = HEIGHT;
+
+    printf("<collision name=\"jgymV1collision\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+    printf("</geometry>\n</collision>\n");
+
+    printf("<visual name=\"jgymV1visual\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+    printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+
+    x = WIDTH;
+    y = 0;
+
+    printf("<collision name=\"jgymV2collision\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+    printf("</geometry>\n</collision>\n");
+
+    printf("<visual name=\"jgymV2visual\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+    printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+
+    x = 0;
+    y = DEPTH;
+
+    printf("<collision name=\"jgymV3collision\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+    printf("</geometry>\n</collision>\n");
+
+    printf("<visual name=\"jgymV3visual\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+    printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+
+    x = WIDTH;
+    y = DEPTH;
+
+    printf("<collision name=\"jgymV4collision\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+    printf("</geometry>\n</collision>\n");
+
+    printf("<visual name=\"jgymV4visual\">\n");
+    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+    printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+
+    for (i = 0; i < NUM; i++) {
+	    z = ITVLY *	i + (random() % 1000 - 500) / 500.0 * RANDRANGE;
+	    rz = 0.05;
+
+ 	    x = WIDTH / 2;
+	    y = 0;
+	    rx = WIDTH;
+	    ry = 0.05;
+
+	    printf("<collision name=\"jgymHa%dcollision\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+	    printf("</geometry>\n</collision>\n");
+
+	    printf("<visual name=\"jgymHa%dvisual\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+	    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+            printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+
+ 	    x = WIDTH / 2;
+	    y = DEPTH;
+	    rx = WIDTH;
+	    ry = 0.05;
+
+	    printf("<collision name=\"jgymHb%dcollision\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+	    printf("</geometry>\n</collision>\n");
+
+	    printf("<visual name=\"jgymHb%dvisual\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+	    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+            printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+
+ 	    x = 0;
+	    y = DEPTH / 2;
+	    rx = 0.05;
+	    ry = DEPTH;
+
+	    printf("<collision name=\"jgymHc%dcollision\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+	    printf("</geometry>\n</collision>\n");
+
+	    printf("<visual name=\"jgymHc%dvisual\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+	    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+            printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+
+ 	    x = WIDTH;
+	    y = DEPTH / 2;
+	    rx = 0.05;
+	    ry = DEPTH;
+
+	    printf("<collision name=\"jgymHd%dcollision\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> ", rx, ry, rz);
+	    printf("</geometry>\n</collision>\n");
+
+	    printf("<visual name=\"jgymHd%dvisual\">\n", i);
+	    printf("<pose>%f %f %f %f %f %f</pose>\n", x, y, z, 0.0, 0.0, 0.0);
+	    printf("<geometry> <box> <size>%f %f %f</size> </box> </geometry>\n", rx, ry, rz);
+	    printf("<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>\n");
+            printf("<name>Gazebo/Grey</name> </script> </material>\n</visual>\n\n");
+    }
+
+    exit(EXIT_SUCCESS);
+}

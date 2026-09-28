@@ -1,0 +1,643 @@
+// image.cpp
+// 画像処理の関数
+
+#include <cmath>
+#include <iostream>
+#include <vector>
+#include "ros/ros.h"
+#include "std_msgs/Float64.h"
+#include "sensor_msgs/JointState.h"
+#include <sensor_msgs/image_encodings.h>
+//#include <sensor_msgs/LaserScan.h>
+
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+// 様々な定数の設定は const.h に移動した
+#include "const.h"
+#include "image.h" // このソースファイルに関する設定
+#include "imageclass.h"
+#include "depthclass.h"
+
+// 入力画像から「色」または「輪郭」により、物体を検出する。複数物体に対応、
+// 検出した物体の外接長方形と重心の座標を求める
+int imFindObjs(const cv::Mat *input, const int filter, const int imgORcol, const int show,
+	       const char winname[], int cog[][XY], int corners[][LURL][XY])
+/*
+cv::Mat *input, // 入力画像
+int filter,     // 使うフィルタの種類, FCO(FindColorObj), SOBEL, LAPLACIAN のどれか
+int imgORcol,   // 入力画像または色の指定, filter に FCO を使うときは RED, BLUE など「色」
+                // を指定する。filter に SOBEL, LAPLACIAN を使うときは COLOR: カラー画像, 
+                // または DEPTH: 距離画像 のどちらか、「画像の種類」を指定する。
+int show,       // 結果を表示するか否かのフラグ, SHOW, NOSHOW
+char winname[], // 結果を表示するときの window の名前
+int cog[][XY],  // 見つけた物体の重心を記録、画像中の座標
+int corners[][LURL][XY], // 見つけた物体の左上右下の座標を記録、画像中の座標
+*/
+{
+    int color = imgORcol; // 以下の imFindColorObj() では色と解釈される
+    int dummy; // 仮の返り値を受け取る
+//  int cog[objs][XY];                  // 重心、Center of Gravity、引数に移動した
+//  int corners[objs][LURL][XY];        // 外接長方形の左上右下の座標、引数に移動した
+    cv::Mat output(input -> rows, input -> cols, CV_8UC1);
+
+    switch (filter) {
+    case FOC : 
+//      dummy = imFindColorObjOld(c, d, &ix, &iy, color);  // 指定色の物体を見つける古い処理
+        dummy = imFindColorObj(input, &output, color);     // 指定色の物体を見つける
+	break;
+    case SOBEL : 
+        dummy = imSobel(input, &output, imgORcol);        // Sobel、RGB、膨張と収縮
+	break;
+    case LAPLACIAN : 
+        dummy = imLaplacian(input, &output, imgORcol);    // Laplacian、RGB、膨張と収縮
+	break;
+    default:
+        return 0;
+    }
+    int label[ROWS][COLS] = {{0}};      // ラベリングの結果を画素毎に記録する配列
+    int objs = imLabel(&output, label); // ラベリングにより物体を分離する処理
+
+    int rcode = imCogCorners(&output, objs, label, cog, corners); // 重心と外接長方形を求める関数
+                                                                  // 返り値は領域の個数
+//  fprintf(stderr, "objs:%d rcode:%d\n", objs, rcode);
+
+    if (SHOW == show) { // 結果の表示が指示されていれば
+        cv::Mat result;
+	cv::cvtColor(output, result, cv::COLOR_GRAY2RGBA); // 結果で緑色の枠を描くため一旦RGBにする
+	for (int l = 0; l < rcode; l++) { // 分離した物体毎に重心、外接長方形を描く
+	    cv::circle(result, cv::Point(cog[l][0], cog[l][1]), 2, cv::Scalar(0, 255, 0), -1);
+	    cv::rectangle(result, cv::Point(corners[l][0][0], corners[l][0][1]),
+			  cv::Point(corners[l][1][0], corners[l][1][1]),
+			  cv::Scalar(0, 255, 0), 2, 8, 0);
+	}
+	cv::imshow(winname, result); // 処理結果を画像として表示する
+	cv::waitKey(5); // 5ms 待つ、消してはいけない
+    }
+    return rcode; // 返り値は領域の個数
+}
+
+int imFindColorObj(const cv::Mat *input, cv::Mat *output, int color)
+// 指定した色 color の物体(画素の集まり)を見つけて、結果の画像を返す
+// 返り値は見つけたか、1以上なら見つかった、0 なら見つからなかった。
+{
+    cv::Mat out2; // 処理途中の画像を入れる配列
+    
+    for (int y = 0; y < input -> rows; y++) {
+        for (int x = 0; x < input -> cols; x++) {
+	    Uchar b = input -> at<cv::Vec3b>(y, x)[0];
+	    Uchar g = input -> at<cv::Vec3b>(y, x)[1];
+	    Uchar r = input -> at<cv::Vec3b>(y, x)[2];
+	    if (YES == TestColor2(r, g, b, color, 4)) { // 色の条件に合ったら
+		output -> at<Uchar>(y, x) = 255; 
+	    }
+	    else {
+		output -> at<Uchar>(y, x) = 0;
+	    }
+	}
+    }
+
+// この関数ではフィルタを使用しないので以下の処理は不要
+/*
+// ヒストグラム、輝度値の分布を調べる
+    int hist[256] = {0};
+    for (int y = 0; y < out2.rows; y++) {
+	for (int x = 0; x < out2.cols; x++) {
+//	    out2.at<Uchar>(y, x) *= 32; // cv::convertScaleAbs() と同じ結果
+	    int px = (int)(out2.at<Uchar>(y, x));
+	    if (0 <= px && px < 256) hist[px]++;
+	}
+    }
+    for (int i = 0; i < 256; i++) if (0 != hist[i]) printf("%d:%d ", i, hist[i]);
+    printf("\n");
+
+    cv::threshold(out2, out2, 0, 255, cv::THRESH_BINARY); // 2値化、背景を値０にしたのでこれで
+*/
+    out2 = output -> clone();
+
+//  cv::imshow("ColorObjBin", out2); // 処理結果を画像として表示する
+//  cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+//  離れ小島を吸収合併する処理、膨張と収縮
+    cv::dilate(out2, out2, cv::noArray(), cv::Point(-1, -1), 2); // 膨張 2 回
+    cv::erode( out2, out2, cv::noArray(), cv::Point(-1, -1), 2); // 収縮 2 回
+
+//  cv::imshow("ColorObjLast", out2); // 処理結果を画像として表示する
+//  cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+    *output = out2.clone();
+
+    return 0; // 必要なら何らかの処理結果の値を返り値とする
+}
+
+int imSobel(const cv::Mat *input, cv::Mat *output, int type)
+// 画像処理の例、Sobel フィルタで輪郭を求める。
+// cv::Mat *input,  処理対象の入力画像
+// cv::Mat *output, 次の処理のために処理結果の画像が記録される
+// int type, 画像の種類、カラーか距離、RGB or DEPTH
+{
+// 以下の3行は関数の呼出し元に移動した
+//  cv_bridge::CvImagePtr p = c -> cv_ptr; // 原画像の構造体へのポインタ
+//  cv::Mat input = p -> image; // カメラで撮影した原画像
+//  cv::Mat output; // フィルタ処理の結果が入る、配列の大きさは自動で決まる
+
+    cv::Mat gray; // グレイスケールに変換した画像用
+    cv::Mat out2; // gray を定数倍した画像、距離画像では200倍するので
+    
+// Gray 濃淡画像の場合（距離画像）    
+    if (DEPTH == type) {
+      cv::Sobel(*input, *output, CV_32FC1, 1, 1, 3, 1); // Sobel フィルタ、結果はCV_32FC1
+      gray = output -> clone();
+      for (int y = 0; y < gray.rows; y++) { // 背景を値 0.0 にして輪郭の値から離す処理
+        for (int x = 0; x < gray.cols; x++) {
+	    float f = gray.at<float>(y, x);
+	    if (FARDIST < input -> at<float>(y, x)) gray.at<float>(y, x) = 0.0; // 遠くは消す
+	    else if (1-EDGETH < f && f < 1+EDGETH) gray.at<float>(y, x) = 0.0; // 閾値にした
+//	    if (1.0 == f)                 gray.at<float>(y, x) = 0.0; // カラー画像用
+//	    if (0.9999 < f && f < 1.0001) gray.at<float>(y, x) = 0.0; // これはダメ
+//	    if (0.999  < f && f < 1.001 ) gray.at<float>(y, x) = 0.0; // これが良さそう
+//	    if (0.99   < f && f < 1.01  ) gray.at<float>(y, x) = 0.0; // これでも大体良い
+	}
+      }
+      cv::convertScaleAbs(gray, out2, 200.0, 0.0); // 各要素 * 200.0 + 0.0、絶対値、符号無8bitへ
+    }
+// Gray 濃淡画像ここまで
+    
+// RGB カラー画像の場合
+    else if (RGB == type) {
+      cv::Sobel(*input, *output, CV_32F, 1, 1, 3, 1); // Sobel フィルタ、結果はCV_32F
+      cv::cvtColor(*output, gray, cv::COLOR_BGR2GRAY); // RGB が不要なら Gray にすると後が楽
+      for (int y = 0; y < gray.rows; y++) { // 背景を値 0.0 にして輪郭の値から離す処理
+        for (int x = 0; x < gray.cols; x++) {
+	    float f = gray.at<float>(y, x);
+	    if (1.0 == f)                 gray.at<float>(y, x) = 0.0; // カラー画像はこれで
+//	    if (0.999  < f && f < 1.001 ) gray.at<float>(y, x) = 0.0; // 距離画像用
+//	    if (0.99   < f && f < 1.01  ) gray.at<float>(y, x) = 0.0; // 距離画像用
+	}
+      }
+//    out2 = gray.clone(); カラー画像は定数倍しないのでこれでもよい
+      cv::convertScaleAbs(gray, out2, 1.0, 0.0); // 各要素 * 1.0 + 0.0、絶対値、符号無8bitへ
+    }
+// RGB カラー画像ここまで
+
+// 必要ならヒストグラム、輝度値の分布を調べる
+/*  int hist[256] = {0};
+    for (int y = 0; y < out2.rows; y++) {
+	for (int x = 0; x < out2.cols; x++) {
+//	    out2.at<Uchar>(y, x) *= 32; // cv::convertScaleAbs() と同じ結果
+	    int px = (int)(out2.at<Uchar>(y, x));
+	    if (0 <= px && px < 256) hist[px]++;
+	}
+    }
+    for (int i = 0; i < 256; i++) if (0 != hist[i]) printf("%d:%d ", i, hist[i]);
+    printf("\n");
+*/
+    cv::threshold(out2, out2, 0, 255, cv::THRESH_BINARY); // 2値化、背景を値０にしたのでこれで
+
+    if (RGB == type) {
+	cv::imshow("SobelBinRGB", out2); // 処理結果を画像として表示する
+    }
+    else if (DEPTH == type) {
+	cv::imshow("SobelBinDEPTH", out2); // 処理結果を画像として表示する
+    }
+    cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+// この後出てくる機能の動作確認をするための単純な画像を描いておく
+//  DrawTestImage(&out2);
+    
+// 処理結果の全画素を調べる二重ループの例、グレイスケールとRGBの場合
+/*
+    int sum = 0; // 見つけた点の数
+    for (int y = 0; y < out2.rows; y++) {
+	for (int x = 0; x < out2.cols; x++) {
+/////////// Gray, Uchar x 1ch ならこのように書く ///////////////////////////////////////
+// imLaplacian() に例がある
+/////////// Gray ここまで //////////////////////////////////////////////////////////////
+
+/////////// RGB, Uchar x 3ch ならこのように書く ////////////////////////////////////////
+// imLaplacian() に例がある
+/////////// RGB ここまで ///////////////////////////////////////////////////////////////
+	}
+    }
+    fprintf(stderr, "\n%d\n", sum); // 輪郭の画素の個数
+*/    
+
+//  離れ小島を吸収合併する処理、膨張と収縮
+    cv::dilate(out2, out2, cv::noArray(), cv::Point(-1, -1), 2); // 膨張 2 回
+    cv::erode( out2, out2, cv::noArray(), cv::Point(-1, -1), 2); // 収縮 2 回
+
+//  cv::imshow("SobelLast", out2); // 処理結果を画像として表示する
+//  cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+    *output = out2.clone();
+
+    return 0; // 必要なら何らかの処理結果の値を返り値とする
+}
+
+int imLaplacian(const cv::Mat *input, cv::Mat *output, int type)
+// 画像処理の例、Laplacian フィルタで輪郭を求める。
+// cv::Mat *input,  処理対象の入力画像
+// cv::Mat *output, 次の処理のために処理結果の画像が記録される
+// int type, 画像の種類、カラーか距離、RGB or DEPTH 
+{
+// 以下の3行は関数の呼出し元に移動した
+//  cv_bridge::CvImagePtr p = c -> cv_ptr; // 原画像の構造体へのポインタ
+//  cv::Mat input = p -> image; // カメラで撮影した原画像
+//  cv::Mat output; // フィルタ処理の結果が入る、配列の大きさは自動で決まる
+
+    cv::Mat gray; // グレイスケールに変換した画像用
+    cv::Mat out2; // gray を定数倍した画像、距離画像では200倍するので
+
+// Gray 濃淡画像の場合（距離画像）    
+    if (DEPTH == type) {
+      cv::Laplacian(*input, *output, CV_32FC1, 1, 1, 1); // Laplacian フィルタ、輪郭はGray
+      gray = output -> clone();
+      for (int y = 0; y < gray.rows; y++) { // 背景を値 0.0 にして輪郭の値から離す処理
+        for (int x = 0; x < gray.cols; x++) {
+	    float f = gray.at<float>(y, x);
+	    if (FARDIST < input -> at<float>(y, x)) gray.at<float>(y, x) = 0.0; // 遠くは消す
+	    else if (1-EDGETH < f && f < 1+EDGETH) gray.at<float>(y, x) = 0.0; // 閾値にした
+//	    if (1.0 == f)                 gray.at<float>(y, x) = 0.0; // カラー画像用
+//	    if (0.9999 < f && f < 1.0001) gray.at<float>(y, x) = 0.0; // これはダメ
+//	    if (0.999  < f && f < 1.001 ) gray.at<float>(y, x) = 0.0; // これが良い
+//	    if (0.99   < f && f < 1.01  ) gray.at<float>(y, x) = 0.0; // これでも大体良い
+	}
+      }
+      cv::convertScaleAbs(gray, out2, 200.0, 0.0); // 各要素 * 200.0 + 0.0、絶対値、符号無8bitへ
+    }
+// Gray 濃淡画像ここまで
+    
+// RGB カラー画像の場合
+    else if (RGB == type) {
+      cv::Laplacian(*input, *output, CV_32F, 1, 1, 1); // Laplacian フィルタ、輪郭はRGB
+      cv::cvtColor(*output, gray, cv::COLOR_BGR2GRAY); // RGB が不要なら Gray にすると後が楽
+      for (int y = 0; y < gray.rows; y++) { // 背景を値 0.0 にして輪郭の値から離す処理
+        for (int x = 0; x < gray.cols; x++) {
+	    float f = gray.at<float>(y, x);
+	    if (1.0 == f)                 gray.at<float>(y, x) = 0.0; // カラー画像はこれで
+//	    if (0.999  < f && f < 1.001 ) gray.at<float>(y, x) = 0.0; // 距離画像用
+//	    if (0.99   < f && f < 1.01  ) gray.at<float>(y, x) = 0.0; // 距離画像用
+	}
+      }
+//    out2 = gray.clone(); カラー画像は定数倍しないのでこれでもよい
+      cv::convertScaleAbs(gray, out2, 1.0, 0.0); // 各要素 * 1.0 + 0.0、絶対値、符号無8bitへ
+    }
+// RGB カラー画像ここまで
+
+// 必要ならヒストグラム、輝度値の分布を調べる
+/*
+    int hist[256] = {0};
+    for (int y = 0; y < out2.rows; y++) {
+	for (int x = 0; x < out2.cols; x++) {
+//	    out2.at<Uchar>(y, x) *= 32; // cv::convertScaleAbs() と同じ結果
+	    int px = (int)(out2.at<Uchar>(y, x));
+	    if (0 <= px && px < 256) hist[px]++;
+	}
+    }
+    for (int i = 0; i < 256; i++) if (0 != hist[i]) printf("%d:%d ", i, hist[i]);
+    printf("\n");
+*/
+    cv::threshold(out2, out2, 0, 255, cv::THRESH_BINARY); // 2値化、背景を値０にしたのでこれで
+
+    if (RGB == type) {
+	cv::imshow("LapracianBinRGB", out2); // 処理結果を画像として表示する
+    }
+    else if (DEPTH == type) {
+	cv::imshow("LapracianBinDEPTH", out2); // 処理結果を画像として表示する
+    }
+    cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+// 次の行はこの後出てくる機能の動作確認をする時用、単純な画像を描く処理
+//  DrawTestImage(&out2);
+    
+// 処理結果の全画素を調べる二重ループの例、グレイスケールとRGBの場合
+/*
+    int sum = 0; // 見つけた点の数
+    for (int y = 0; y < out2.rows; y++) {
+	for (int x = 0; x < out2.cols; x++) {
+/////////// Gray, Uchar x 1ch ならこのように書く ///////////////////////////////////////
+	    if (0 < out2.at<Uchar>(y, x)) {
+                out2.at<Uchar>(y, x) = 255; // 輪郭は白に
+		sum++;
+            }
+	    else {
+		out2.at<Uchar>(y, x) = 0; // 背景は０で黒に
+	    }
+/////////// Gray ここまで //////////////////////////////////////////////////////////////
+
+/////////// RGB, Uchar x 3ch ならこのように書く ////////////////////////////////////////
+	    int b = out2.at<cv::Vec3b>(y, x)[0]; // 値は Uchar 8bit, 0−25
+	    int g = out2.at<cv::Vec3b>(y, x)[1];
+	    int r = out2.at<cv::Vec3b>(y, x)[2];
+	    if (30 < (r + g + b)) { // 閾値１０でも主要な輪郭は出る
+		fprintf(stderr, "(%d,%d,%d)", r, g, b);
+		out2.at<cv::Vec3b>(y, x)[0] = 255; // 2値化、cv::threshold() と多分同じ
+		out2.at<cv::Vec3b>(y, x)[1] = 255;
+		out2.at<cv::Vec3b>(y, x)[2] = 255;
+		sum++;
+	    }
+	    else {
+		out2.at<cv::Vec3b>(y, x)[0] = 0; // 背景は０で黒に
+		out2.at<cv::Vec3b>(y, x)[1] = 0;
+		out2.at<cv::Vec3b>(y, x)[2] = 0;
+	    }
+/////////// RGB ここまで ///////////////////////////////////////////////////////////////
+	}
+    }
+    fprintf(stderr, "\n%d\n", sum); // 輪郭の画素の個数
+*/    
+
+//  離れ小島を吸収合併する処理、膨張と収縮
+    cv::dilate(out2, out2, cv::noArray(), cv::Point(-1, -1), 3); // 膨張 2 回
+    cv::erode( out2, out2, cv::noArray(), cv::Point(-1, -1), 3); // 収縮 2 回
+    
+//  cv::imshow("LapracianLast", out2); // 処理結果を画像として表示する
+//  cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+    *output = out2.clone();
+
+    return 0; // 必要なら何らかの処理結果の値を返り値とする
+}
+
+int imLabel(const cv::Mat *input, int label[ROWS][COLS])
+// ラベリング、隣接した画素から輪郭を求め物体を分離する、膨張と収縮も
+// input は　Uchar x 1ch, 符号無 8bit, 640x480 であること
+{
+    const int FSW = 1; // 造語 Filter Scan Width, 注目画素の周囲を調べる幅、普通は１
+//  int label[ROWS][COLS] = {{0}};
+    int k = 1; // 次のラベルの値、１からはじまり最終的に物体の個数＋１になるようだ
+    int flag = 0; // 途中でラベル値の変更があったかを表すフラグ
+
+    do {
+	flag = 0;
+	for (int y = FSW; y < input -> rows - FSW; y++) { // ３ｘ３領域内をスキャンする
+	    for (int x = FSW; x < input -> cols - FSW; x++) {
+//		Uchar uc = input -> at<Uchar>(y, x);
+		if (0 < input -> at<Uchar>(y, x)) { // 0 より大きな値なら輪郭候補で以下の処理
+		    int min = k; // ラベルの最小値を仮に次の値ｋにしておく
+		    int sum = 0; // ラベルの合計値
+		    for(int i = -1*FSW; i <= FSW; i++){
+			for(int j = -1*FSW; j <= FSW; j++){
+			    sum += label[y+i][x+j]; // ３ｘ３領域内のラベル値の合計
+			    if (0 < label[y+i][x+j] && label[y+i][x+j] <= min) {
+                                min = label[y+i][x+j]; // ３ｘ３領域内のラベル最小値
+			    }
+			}
+		    }
+		    if (sum == 0) { // ３ｘ３領域でラベルが一つも付いていない
+                        label[y][x] = k++; // ラベルの値を割当、ｋの更新
+                        flag++; // ラベルの変更があった
+                    }
+		    else { // (sum != 0) ３ｘ３領域で既にラベルが付いていた 
+			if (min == label[y][x]) ; // 既にラベルが付いていれば何もしない
+			else { // ラベルが付いてなければ
+			    label[y][x] = min; // ラベルの最小値を割当
+			    flag++; // ラベルの変更があった
+			}
+		    }
+		}
+//		if (0 < label[y][x]) fprintf(stderr, "%d", label[y][x]);
+	    }
+	}
+    } while (flag > 0); // ラベルの変更がされなくなるまで繰り返す
+
+// 動作確認、各ラベルの点の個数を数えてみる
+/*
+    int n[k] = {0}; // 各 label 値の点の個数
+    for (int y = 0; y < input -> rows; y++) {
+	for (int x = 0; x < input -> cols; x++) n[label[y][x]]++;
+    }
+    int noo = 0; // num of objs
+    for (int i = 0; i < k; i++) {
+        if (0 != n[i]) {
+	    fprintf(stderr, "%d:%d ", i, n[i]);
+	    noo++;
+	}
+    }
+*/
+    return k-1; //「統合前」の物体の個数、無駄に大きいが配列中に残るラベル値が不連続なので
+}
+    
+// 各物体の重心、外接長方形を求める ////////////////////////////////////////////
+int imCogCorners(const cv::Mat *input, int noo, int label[ROWS][COLS], int cog[][XY],
+		 int corners[][LURL][XY])
+/*
+cv::Mat *input;        // ラベル付けに使用した画像 Uchar x 1ch, 符号無 8bit, 640x480
+int noo;               // 物体の個数 Number of Objects
+int label[ROWS][COLS]; // ラベル付けの結果、値が不連続なのに注意
+int cog[][XY];          // 結果、Center of Gravity 求めた重心を記録して戻す
+int corners[][LURL][XY];   // 結果、求めた外接長方形の左上と右下の座標を記録して戻す
+*/
+{
+    int l; // 探索するラベルの値
+    int noo2 = 0; // 重要：この関数で求めた物体の個数 Number of Objects
+    cv::Mat result;
+    cv::cvtColor(*input, result, cv::COLOR_GRAY2RGBA);
+
+    for (l = 1; l <= noo; l++) { // ラベルの値を順番に変えて探索する、背景を除くため1から
+	int sumx = 0, sumy= 0; // 重心計算用
+	int count = 0; // 見つけた画素の個数
+	int minx = 0, miny = 0, maxx = 0, maxy = 0; // 外接長方形のカドを探す
+	for (int y = 0; y < input -> rows; y++) {
+	    for (int x = 0; x < input -> cols; x++) {
+		if (l == label[y][x]) {
+		    sumx += x;
+		    sumy += y;
+		    if (0 == count) {
+			minx = x; miny = y;
+			maxx = x; maxy = y;
+		    }
+		    else {
+			if (x < minx) minx = x;
+			if (y < miny) miny = y;
+			if (maxx < x) maxx = x;
+			if (maxy < y) maxy = y;
+		    }
+		    count++;
+		}
+	    }
+	}
+	if (0 != count) { // 領域が見つかった
+// 適切でない領域を除外する処理、対象によって変更してもよい
+	    if (count < 3) continue; // 画素数が少なすぎる領域を除外
+	    if ((maxx - minx) < 3 && (maxy - miny) < 3) continue; // 大きさが過小領域を除外
+// 適切でない領域を除外する処理、ここまで
+	    noo2++; // ここに到達したら物体が１個見つかったことになる
+	    if (MAXOBJS == noo2) {
+		fprintf(stderr, "Warning: Too many objects found, break loop.\n");
+		break;
+	    }
+	    sumx /= count; // 座標の和を個数で除算して重心を求める
+	    sumy /= count;
+// 呼び出し元に結果を戻すために記録する
+	    cog[noo2-1][0] = sumx;
+	    cog[noo2-1][1] = sumy;
+	    corners[noo2-1][0][0] = minx;
+	    corners[noo2-1][0][1] = miny;
+	    corners[noo2-1][1][0] = maxx;
+	    corners[noo2-1][1][1] = maxy;
+// 重心と外接長方形を表示するための描画	
+//	    cv::circle(result, cv::Point(sumx, sumy), 2, cv::Scalar(255, 0, 255), -1);
+//	    cv::rectangle(result, cv::Point(minx, miny), cv::Point(maxx, maxy),
+//			  cv::Scalar(255, 0, 255), 2, 8, 0);
+	}
+    }
+//  cv::imshow("Result", result); // 処理結果を画像として表示する
+//  cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+    fprintf(stderr, "  NumOfObjs=%d\n", noo2); // 背景は除く
+    return noo2; // 領域の個数を返り値とする
+}
+
+void DrawTestImage(cv::Mat *img)
+{
+// この後の画像処理の動作確認用に、単純な画像で入力を置き換えている
+    for (int y = 0; y < img -> rows; y++) { // 背景をゼロでクリア
+	for (int x = 0; x < img -> cols; x++) img -> at<Uchar>(y, x) = 0;
+    }
+    for (int y = 100; y < 120; y++) { // 正方形を描く
+	for (int x = 100; x < 120; x++) img -> at<Uchar>(y, x) = 255;
+    }
+    for (int y = 100; y < 120; y++) { // 正方形を描く
+	for (int x = 200; x < 220; x++) img -> at<Uchar>(y, x) = 255;
+    }
+    for (int y = 200; y < 220; y++) { // 正方形を描く
+	for (int x = 100; x < 120; x++) img -> at<Uchar>(y, x) = 255;
+    }
+    for (int y = 200; y < 220; y++) { // 正方形を描く
+	for (int x = 200; x < 220; x++) img -> at<Uchar>(y, x) = 255;
+    }
+    img -> at<Uchar>(120, 120) = 255;
+    img -> at<Uchar>(121, 120) = 255;
+
+    img -> at<Uchar>(120, 124) = 255; // 間隔が3ピクセルの島
+    img -> at<Uchar>(120, 125) = 255;
+    img -> at<Uchar>(121, 124) = 255;
+    img -> at<Uchar>(121, 125) = 255;
+    
+    img -> at<Uchar>(120, 127) = 255; // 間隔が1ピクセルの島
+    img -> at<Uchar>(120, 128) = 255;
+    img -> at<Uchar>(120, 129) = 255;
+    img -> at<Uchar>(121, 127) = 255;
+    img -> at<Uchar>(121, 128) = 255;
+    img -> at<Uchar>(121, 129) = 255;
+}
+
+int imFindColorObjOld(RGBCam *c, DepthCam *d, int *x, int *y, int color)
+// 指定した色 color の物体(画素の集まり)を見つけて、重心座標を *x, *y で返す。
+// 返り値は見つけた画素の個数、1以上なら見つかった、0 なら見つからなかった。
+// 画像中の物体の個数は１個を前提としている。
+// ２個以上の場合は正しく動作しないので、別の機能を実装する必要がある。
+{
+	cv_bridge::CvImagePtr p = c -> cv_ptr;
+
+// 指定した色の画素を抽出する処理の例
+	int sumx = 0, sumy = 0, sum  = 0; // 見つけた画素の座標と個数
+	cv::Mat img(p -> image.rows, p -> image.cols, CV_8UC1); // 結果を画像として保存する場所
+	for (int y = 0; y < p -> image.rows; y++) { // 全画素を調べる二重ループの例
+	    for (int x = 0; x < p -> image.cols; x++) {
+		Uchar b = p -> image.at<cv::Vec3b>(y, x)[0];
+		Uchar g = p -> image.at<cv::Vec3b>(y, x)[1];
+		Uchar r = p -> image.at<cv::Vec3b>(y, x)[2];
+		if (YES == c -> TestColor(r, g, b, color)) { // 色の条件に合ったら
+		    sumx += x; sumy += y; sum++;
+		    img.at<Uchar>(y, x) = 255;
+		}
+		else {
+		    img.at<Uchar>(y, x) = 0;
+		}
+	    }
+	}
+	if (0 < sum) { // 指定した色の画素が見つかったとき
+	    *x = sumx/sum;
+	    *y = sumy/sum;
+//	    fprintf(stderr, "(%d,%d) ", *x, *y);
+//	    imwrite("/tmp/detect.pbm", img); // 検出結果の画像、記録して見る必要なければ実行しない
+	}
+	else { // 見つからなかったとき
+	    *x = 0; 
+	    *y = 0;
+	}
+	cv::imshow("ColorObj", img); // 検出結果を画像として表示してみる
+	cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+	return sum; // 見つかった画素の個数を返り値としている
+}
+
+int imSobelOld(RGBCam *c, DepthCam *d, int *x, int *y)
+// 画像処理の例、Sobel フィルタで輪郭を求める。
+// 次の動作で必要となる何らかの座標を求めて *x, *y で返す。
+// 処理結果を表す何らかの値を返り値とする。
+{
+    cv_bridge::CvImagePtr p = c -> cv_ptr; // 原画像の構造体へのポインタ
+
+    cv::Mat input = p -> image; // カメラで撮影した原画像
+    cv::Mat output, out2; // 配列の大きさは指定しなくてもよい、自動で決まる
+//  cv::Mat img(p -> image.rows, p -> image.cols, CV_8UC1); // 大きさを指定して確保する場合
+
+// 深度画像 d は今のところ活用していないが、必要なら利用できる
+    
+// 輪郭を抽出する処理の例
+// Sobelフィルタ(入力, 出力, 出力タイプ, x方向の微分次数, y方向の微分次数, フィルタサイズ)
+    cv::Sobel(input, output, CV_32F, 1, 1, 3);          // x, y 両方向の微分フィルタ
+//  cv::Sobel(input, output, CV_32F, 0, 1, 3);          // 参考：y方向のみの微分フィルタ
+//  次行の cv::convertScaleAbs() は、スケーリング後に絶対値を計算し，結果を8ビットに変換する
+    cv::convertScaleAbs(output, out2, 1, 0);
+
+// 処理結果 out2 の全画素を調べる二重ループの例
+    int sum = 0;
+    for (int y = 0; y < out2.rows; y++) {
+	for (int x = 0; x < out2.cols; x++) {
+	    float b = out2.at<cv::Vec3b>(y, x)[0];
+	    float g = out2.at<cv::Vec3b>(y, x)[1];
+	    float r = out2.at<cv::Vec3b>(y, x)[2];
+	    if (300 < (r + g + b)) { // 指定した条件に合ったら特定の処理をする
+		sum++; // とりあえず数えてみた
+	    }
+	}
+    }
+    fprintf(stderr, "%d ", sum);
+    
+    cv::imshow("Sobel", out2); // 検出結果を画像として表示する
+    cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+// 閾値以上の場合にエッジ（＝白）と見做して値変換 (入力, 出力, 閾値, 最大値, 閾値タイプ)
+    cv::threshold(out2, out2, 64, 255, cv::THRESH_BINARY);
+    cv::imshow("SobelBin", out2); // 検出結果を画像として表示する
+    cv::waitKey(5); // 5ms 待つ、消してはいけない
+
+    *x = 0; // 必要なら何らかの座標を呼び出し元に返す
+    *y = 0;
+
+    return 0; // 何らかの処理結果の値を返り値とする
+}
+
+int TestColor2(Uchar r, Uchar g, Uchar b, int color, float rate) // 画素の色を調べる
+{
+	if (RED == color) {
+	    if ((g*rate < r) && (b*rate < r)) return YES; // 他色より rate 倍以上 r が大なら合格
+	    return NO;
+	}
+	if (GREEN == color) {
+	    if ((r*rate < g) && (b*rate < g)) return YES; // 他色より rate 倍以上 g が大なら合格
+	    return NO;
+	}
+	if (BLUE == color) {
+	    if ((r*rate < b) && (g*rate < b)) return YES; // 他色より rate 倍以上 b が大なら合格
+	    return NO;
+	}
+/*
+	if (YELLOW == color) {
+            if ( ... ) return YES; // 独自の色判定を作ればよい
+	}
+	if (CYAN == color) {
+            if ( ... ) return YES; // 独自の色判定を作ればよい
+	}
+	if (PURPLE == color) {
+            if ( ... ) return YES; // 独自の色判定を作ればよい
+	}
+*/	
+	return NO;
+}

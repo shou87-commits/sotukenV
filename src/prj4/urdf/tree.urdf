@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<robot name="tree">
+
+    <link name="tree">
+      <visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry> <cylinder length="7" radius="0.075"/> </geometry>
+      </visual>
+      <collision>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry> <cylinder length="7" radius="0.075"/> </geometry>
+      </collision>
+      <inertial>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<mass value="78" />
+	<inertia ixx="76.8" ixy="0" ixz="0" iyy="76.8" iyz="0" izz="7" />
+      </inertial>
+    </link>
+    <gazebo reference="tree"> <material>Gazebo/Tree1</material> </gazebo>
+  
+</robot>

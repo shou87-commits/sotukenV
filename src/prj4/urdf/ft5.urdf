@@ -1,0 +1,56 @@
+<!-- ################################################################### -->
+<!-- ################################################################### -->
+
+    <joint name="jointNNFT5" type="revolute"> <!-- revolute for ft sensor -->
+        <parent link="body"/>                          <!-- senaka -->
+<!--    <parent link="linkNN172"/> -->                 <!-- hand -->
+        <child link="linkNNFT5"/>
+        <origin xyz= "0 0 0.03" rpy="0 0 0" />         <!-- senaka -->
+<!--    <origin xyz= "0 0 0.08" rpy="0 0 0" /> -->     <!-- senaka -->
+<!--    <origin xyz= "0 0.06 -0.05" rpy="0 0 0" /> --> <!-- hand -->
+        <axis xyz="1 0 0"/>
+        <limit effort="0" lower="0" upper="0" velocity="0"/>
+    </joint>
+
+    <link name="linkNNFT5">
+        <visual>
+            <origin xyz="0 0.05 0" rpy="0 0 0"/>
+            <geometry> <box size="0.01 0.01 0.01"/> </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0.05 0" rpy="0 0 0"/>
+            <geometry> <box size="0.01 0.01 0.01"/> </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0.05 0" rpy="0 0 0"/> <mass value="0.005"/>
+            <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+        </inertial>
+    </link>
+
+    <gazebo reference="linkNNFT5"> <material>Gazebo/Blue</material> </gazebo>
+
+    <gazebo reference="jointNNFT5">
+        <provideFeedback>true</provideFeedback>
+<!--    <turnGravityOff>false</turnGravityOff> -->
+    </gazebo>
+
+    <gazebo>
+        <plugin name="ft5_sensor" filename="libgazebo_ros_ft_sensor.so">
+	    <updateRate>100.0</updateRate>
+            <topicName>ftsensor_5/raw</topicName>
+            <jointName>jointNNFT5</jointName>
+            <gaussianNoise>0.0</gaussianNoise>
+	</plugin>
+    </gazebo>
+
+    <transmission name="transNNFT5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="jointNNFT5">
+	    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+	</joint>
+        <actuator name="motorNNFT5">
+    	    <hardwareInterface>EffortJointInterface</hardwareInterface>
+	    <mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+    </transmission>
+

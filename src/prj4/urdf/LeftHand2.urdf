@@ -1,0 +1,183 @@
+    <joint name="jointNN27" type="revolute">
+        <parent link="linkNN26"/>
+	<child link="linkNN27"/>
+	<origin xyz= "0 0.05 0" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN27">
+        <visual>
+	    <origin xyz="0 0 0.025" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.025" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.025" rpy="0 0 0"/> <mass value="0.05"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN27"> <material>Gazebo/GreyTransparent</material> </gazebo>
+
+    <transmission name="transNN27">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN27">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN27">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN271" type="fixed">
+        <parent link="linkNN27"/>
+	<child link="linkNN271"/>
+	<origin xyz= "0 0 0.05" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN271">
+        <visual>
+	    <origin xyz="0 0.05 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.1 0.01"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0.05 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.1 0.01"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0.05 0" rpy="0 0 0"/> <mass value="0.05"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN271"> <material>Gazebo/GreyTransparent</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN272" type="fixed">
+        <parent link="linkNN271"/>
+	<child link="linkNN272"/>
+	<origin xyz= "0 0.05 0.025" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN272">
+        <visual>
+	    <origin xyz="0 0.05 -0.05" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0.05 -0.05" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0.05 -0.05" rpy="0 0 0"/> <mass value="0.05"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN272"> <material>Gazebo/GreyTransparent</material> </gazebo>
+    <gazebo> <mu1>1.5</mu1><mu2>1.5</mu2> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN28" type="revolute">
+        <parent link="linkNN26"/>
+	<child link="linkNN28"/>
+	<origin xyz= "0 0.05 0" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN28">
+        <visual>
+	    <origin xyz="0 0 -0.025" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 -0.025" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 -0.025" rpy="0 0 0"/> <mass value="0.05"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN28"> <material>Gazebo/GreyTransparent</material> </gazebo>
+
+    <transmission name="transNN28">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN28">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN28">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN281" type="fixed">
+        <parent link="linkNN28"/>
+	<child link="linkNN281"/>
+	<origin xyz= "0 0 -0.05" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN281">
+        <visual>
+	    <origin xyz="0 0.05 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.1 0.01"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0.05 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.1 0.01"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0.05 0" rpy="0 0 0"/> <mass value="0.05"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN281"> <material>Gazebo/GreyTransparent</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN282" type="fixed">
+        <parent link="linkNN281"/>
+	<child link="linkNN282"/>
+	<origin xyz= "0 0.05 0.025" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN282">
+        <visual>
+	    <origin xyz="0 0.05 0.0" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0.05 0.0" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.01 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0.05 0.0" rpy="0 0 0"/> <mass value="0.05"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN282"><material>Gazebo/GreyTransparent</material> </gazebo>
+    <gazebo> <mu1>1.5</mu1><mu2>1.5</mu2> </gazebo>

@@ -1,0 +1,82 @@
+// user.cpp
+
+// ユーザごとに異なるプログラムを記述するための共通部分
+// 一連の動きのシークエンスを定義する関数 UserMotion() など
+// これは SuzukiMotion(), TanakaMotion() を利用するための書き方の例
+
+#include <cmath>
+#include <iostream>
+#include <vector>
+#include "ros/ros.h"
+#include "std_msgs/Float64.h"
+#include "sensor_msgs/JointState.h"
+#include <sensor_msgs/image_encodings.h>
+#include <sensor_msgs/LaserScan.h>
+
+#include <geometry_msgs/WrenchStamped.h>
+
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+#include "const.h"
+#include "motorclass.h"
+#include "imageclass.h"
+#include "depthclass.h"
+#include "lidarclass.h"
+#include "ftclass.h"
+
+#include "user.h" // user*.cpp に含まれる関数のプロトタイプ宣言
+
+int act_num  = ACT_INITPOSE;        // 次の行動を決める値、重要
+int act_last = ACT_INITPOSE;        // 直前の行動を覚えておく
+int state = ACT_START;              // 動作の状態を表す、開始、継続中、終了、エエラーなど
+float act_param[AP_PARAMS] = {0.0}; // パラメータの受け渡し用配列
+int act_next = ACT_NONE;            // 次の行動を指定する
+
+int next_a[MAX_ACTS] = {0};
+
+// LIDAR 測距センサのデータにアクセスするためのポインタ
+extern LIDAR *gLIDAR;
+
+void    UserMotion(C1 m[], RGBCam *c, DepthCam *d, FTSENSOR ft[]);
+int     UserShell(char token[][STRBUF]);
+void    UserShellHelp(void);
+
+void    SuzukiMotion(C1 m[], RGBCam *c, DepthCam *d);
+int     SuzukiShell(char token[][STRBUF]);
+void    SuzukiShellHelp(void);
+
+void    TanakaMotion(C1 m[], RGBCam *c, DepthCam *d);
+int     TanakaShell(char token[][STRBUF]);
+void    TanakaShellHelp(void);
+
+void    LessonMotion(C1 m[], RGBCam *c, DepthCam *d, FTSENSOR ft[]);
+int     LessonShell(char token[][STRBUF]);
+void    LessonShellHelp(void);
+
+
+void    UserMotion(C1 m[], RGBCam *c, DepthCam *d, FTSENSOR ft[])
+// intelligence() から呼び出される
+{
+//  SuzukiMotion(m, c, d); // 個人が作った動きを呼び出す例
+//  TanakaMotion(m, c, d); // 個人が作った動きを呼び出す例
+    LessonMotion(m, c, d, ft); // 練習用
+}
+
+int     UserShell(char token[][STRBUF])
+// shell() から呼び出される
+{
+//  return SuzukiShell(token); // 個人が作ったシェルを呼び出す例
+//  return TanakaShell(token); // 個人が作ったシェルを呼び出す例
+    return LessonShell(token); // 個人が作ったシェルを呼び出す例
+}
+
+void    UserShellHelp(void)
+// shell() から呼び出される
+{
+//  SuzukiShellHelp();
+//  TanakaShellHelp();
+    LessonShellHelp();
+}

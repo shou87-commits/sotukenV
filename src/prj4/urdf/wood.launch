@@ -1,0 +1,250 @@
+    <arg name="wood000" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc000" textfile="$(arg wood000)"/>
+    <node name="wood_spawner000" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc000 -urdf -x 21.0 -y -20.5 -z 19.6 -R 0.8 -P 0.6 -Y 1.0 -model wood000"/>
+
+    <arg name="wood001" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc001" textfile="$(arg wood001)"/>
+    <node name="wood_spawner001" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc001 -urdf -x 23.7 -y -20.6 -z 18.7 -R 0.3 -P 0.4 -Y 0.8 -model wood001"/>
+
+    <arg name="wood002" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc002" textfile="$(arg wood002)"/>
+    <node name="wood_spawner002" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc002 -urdf -x 22.0 -y -21.9 -z 19.7 -R 0.5 -P 0.5 -Y 0.7 -model wood002"/>
+
+    <arg name="wood003" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc003" textfile="$(arg wood003)"/>
+    <node name="wood_spawner003" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc003 -urdf -x 22.9 -y -24.0 -z 18.2 -R 0.7 -P 0.7 -Y 0.2 -model wood003"/>
+
+    <arg name="wood004" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc004" textfile="$(arg wood004)"/>
+    <node name="wood_spawner004" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc004 -urdf -x 20.9 -y -23.0 -z 18.4 -R 0.3 -P 1.0 -Y 0.6 -model wood004"/>
+
+    <arg name="wood005" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc005" textfile="$(arg wood005)"/>
+    <node name="wood_spawner005" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc005 -urdf -x 21.1 -y -21.2 -z 18.6 -R 0.0 -P 0.6 -Y 1.0 -model wood005"/>
+
+    <arg name="wood006" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc006" textfile="$(arg wood006)"/>
+    <node name="wood_spawner006" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc006 -urdf -x 23.1 -y -23.6 -z 19.7 -R 1.0 -P 0.6 -Y 0.7 -model wood006"/>
+
+    <arg name="wood007" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc007" textfile="$(arg wood007)"/>
+    <node name="wood_spawner007" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc007 -urdf -x 22.9 -y -23.2 -z 18.6 -R 0.6 -P 0.6 -Y 0.1 -model wood007"/>
+
+    <arg name="wood008" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc008" textfile="$(arg wood008)"/>
+    <node name="wood_spawner008" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc008 -urdf -x 23.0 -y -22.8 -z 19.1 -R 0.4 -P 1.0 -Y 0.7 -model wood008"/>
+
+    <arg name="wood009" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc009" textfile="$(arg wood009)"/>
+    <node name="wood_spawner009" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc009 -urdf -x 20.5 -y -22.2 -z 19.6 -R 0.2 -P 0.5 -Y 0.1 -model wood009"/>
+
+    <arg name="wood010" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc010" textfile="$(arg wood010)"/>
+    <node name="wood_spawner010" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc010 -urdf -x 23.8 -y -22.4 -z 19.5 -R 0.2 -P 0.2 -Y 0.6 -model wood010"/>
+
+    <arg name="wood011" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc011" textfile="$(arg wood011)"/>
+    <node name="wood_spawner011" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc011 -urdf -x 22.4 -y -22.1 -z 19.5 -R 0.9 -P 0.2 -Y 0.4 -model wood011"/>
+
+    <arg name="wood012" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc012" textfile="$(arg wood012)"/>
+    <node name="wood_spawner012" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc012 -urdf -x 22.0 -y -22.2 -z 18.4 -R 0.7 -P 0.6 -Y 0.6 -model wood012"/>
+
+    <arg name="wood013" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc013" textfile="$(arg wood013)"/>
+    <node name="wood_spawner013" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc013 -urdf -x 22.4 -y -22.3 -z 19.5 -R 0.3 -P 0.5 -Y 0.8 -model wood013"/>
+
+    <arg name="wood014" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc014" textfile="$(arg wood014)"/>
+    <node name="wood_spawner014" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc014 -urdf -x 22.5 -y -24.4 -z 18.7 -R 0.6 -P 0.4 -Y 0.5 -model wood014"/>
+
+    <arg name="wood015" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc015" textfile="$(arg wood015)"/>
+    <node name="wood_spawner015" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc015 -urdf -x 23.4 -y -21.4 -z 19.1 -R 0.6 -P 1.0 -Y 0.8 -model wood015"/>
+
+    <arg name="wood016" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc016" textfile="$(arg wood016)"/>
+    <node name="wood_spawner016" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc016 -urdf -x 21.0 -y -22.2 -z 19.0 -R 0.6 -P 0.1 -Y 0.2 -model wood016"/>
+
+    <arg name="wood017" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc017" textfile="$(arg wood017)"/>
+    <node name="wood_spawner017" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc017 -urdf -x 23.4 -y -21.6 -z 18.9 -R 1.0 -P 0.9 -Y 0.8 -model wood017"/>
+
+    <arg name="wood018" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc018" textfile="$(arg wood018)"/>
+    <node name="wood_spawner018" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc018 -urdf -x 23.0 -y -23.6 -z 19.0 -R 0.5 -P 0.1 -Y 0.8 -model wood018"/>
+
+    <arg name="wood019" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc019" textfile="$(arg wood019)"/>
+    <node name="wood_spawner019" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc019 -urdf -x 22.6 -y -22.4 -z 19.7 -R 0.9 -P 0.2 -Y 0.3 -model wood019"/>
+
+    <arg name="wood020" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc020" textfile="$(arg wood020)"/>
+    <node name="wood_spawner020" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc020 -urdf -x 24.0 -y -22.9 -z 18.4 -R 0.5 -P 0.1 -Y 0.1 -model wood020"/>
+
+    <arg name="wood021" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc021" textfile="$(arg wood021)"/>
+    <node name="wood_spawner021" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc021 -urdf -x 21.9 -y -22.8 -z 18.8 -R 0.4 -P 0.8 -Y 0.3 -model wood021"/>
+
+    <arg name="wood022" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc022" textfile="$(arg wood022)"/>
+    <node name="wood_spawner022" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc022 -urdf -x 23.5 -y -21.0 -z 19.6 -R 0.8 -P 0.3 -Y 0.9 -model wood022"/>
+
+    <arg name="wood023" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc023" textfile="$(arg wood023)"/>
+    <node name="wood_spawner023" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc023 -urdf -x 22.8 -y -24.0 -z 19.6 -R 0.9 -P 0.4 -Y 0.8 -model wood023"/>
+
+    <arg name="wood024" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc024" textfile="$(arg wood024)"/>
+    <node name="wood_spawner024" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc024 -urdf -x 20.6 -y -20.9 -z 18.2 -R 0.2 -P 0.1 -Y 0.2 -model wood024"/>
+
+    <arg name="wood025" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc025" textfile="$(arg wood025)"/>
+    <node name="wood_spawner025" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc025 -urdf -x 21.8 -y -20.6 -z 18.4 -R 0.2 -P 0.1 -Y 0.7 -model wood025"/>
+
+    <arg name="wood026" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc026" textfile="$(arg wood026)"/>
+    <node name="wood_spawner026" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc026 -urdf -x 23.2 -y -22.2 -z 18.6 -R 1.0 -P 0.9 -Y 0.2 -model wood026"/>
+
+    <arg name="wood027" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc027" textfile="$(arg wood027)"/>
+    <node name="wood_spawner027" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc027 -urdf -x 23.0 -y -20.6 -z 19.6 -R 0.8 -P 0.3 -Y 0.3 -model wood027"/>
+
+    <arg name="wood028" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc028" textfile="$(arg wood028)"/>
+    <node name="wood_spawner028" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc028 -urdf -x 22.6 -y -24.0 -z 19.8 -R 0.9 -P 0.7 -Y 0.7 -model wood028"/>
+
+    <arg name="wood029" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc029" textfile="$(arg wood029)"/>
+    <node name="wood_spawner029" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc029 -urdf -x 21.6 -y -21.9 -z 18.6 -R 0.2 -P 0.6 -Y 0.5 -model wood029"/>
+
+    <arg name="wood030" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc030" textfile="$(arg wood030)"/>
+    <node name="wood_spawner030" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc030 -urdf -x 23.7 -y -23.0 -z 19.4 -R 0.4 -P 0.4 -Y 0.6 -model wood030"/>
+
+    <arg name="wood031" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc031" textfile="$(arg wood031)"/>
+    <node name="wood_spawner031" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc031 -urdf -x 21.0 -y -20.8 -z 19.0 -R 0.5 -P 0.1 -Y 0.4 -model wood031"/>
+
+    <arg name="wood032" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc032" textfile="$(arg wood032)"/>
+    <node name="wood_spawner032" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc032 -urdf -x 23.7 -y -22.7 -z 19.4 -R 0.3 -P 0.3 -Y 0.2 -model wood032"/>
+
+    <arg name="wood033" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc033" textfile="$(arg wood033)"/>
+    <node name="wood_spawner033" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc033 -urdf -x 22.6 -y -20.9 -z 19.5 -R 0.4 -P 0.4 -Y 0.7 -model wood033"/>
+
+    <arg name="wood034" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc034" textfile="$(arg wood034)"/>
+    <node name="wood_spawner034" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc034 -urdf -x 23.9 -y -20.5 -z 19.7 -R 0.0 -P 0.3 -Y 0.8 -model wood034"/>
+
+    <arg name="wood035" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc035" textfile="$(arg wood035)"/>
+    <node name="wood_spawner035" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc035 -urdf -x 24.0 -y -22.5 -z 19.4 -R 0.0 -P 0.6 -Y 0.4 -model wood035"/>
+
+    <arg name="wood036" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc036" textfile="$(arg wood036)"/>
+    <node name="wood_spawner036" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc036 -urdf -x 24.4 -y -20.7 -z 18.7 -R 0.1 -P 0.8 -Y 0.7 -model wood036"/>
+
+    <arg name="wood037" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc037" textfile="$(arg wood037)"/>
+    <node name="wood_spawner037" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc037 -urdf -x 23.0 -y -20.7 -z 19.2 -R 0.4 -P 0.9 -Y 1.0 -model wood037"/>
+
+    <arg name="wood038" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc038" textfile="$(arg wood038)"/>
+    <node name="wood_spawner038" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc038 -urdf -x 22.4 -y -22.1 -z 18.7 -R 0.6 -P 0.4 -Y 0.5 -model wood038"/>
+
+    <arg name="wood039" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc039" textfile="$(arg wood039)"/>
+    <node name="wood_spawner039" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc039 -urdf -x 22.8 -y -21.5 -z 19.8 -R 0.4 -P 0.0 -Y 0.5 -model wood039"/>
+
+    <arg name="wood040" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc040" textfile="$(arg wood040)"/>
+    <node name="wood_spawner040" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc040 -urdf -x 24.0 -y -22.4 -z 19.1 -R 0.7 -P 0.0 -Y 0.4 -model wood040"/>
+
+    <arg name="wood041" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc041" textfile="$(arg wood041)"/>
+    <node name="wood_spawner041" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc041 -urdf -x 20.8 -y -20.9 -z 19.4 -R 0.2 -P 0.2 -Y 0.5 -model wood041"/>
+
+    <arg name="wood042" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc042" textfile="$(arg wood042)"/>
+    <node name="wood_spawner042" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc042 -urdf -x 24.4 -y -22.9 -z 19.6 -R 0.2 -P 0.7 -Y 0.9 -model wood042"/>
+
+    <arg name="wood043" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc043" textfile="$(arg wood043)"/>
+    <node name="wood_spawner043" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc043 -urdf -x 24.4 -y -24.4 -z 19.7 -R 0.2 -P 0.3 -Y 0.9 -model wood043"/>
+
+    <arg name="wood044" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc044" textfile="$(arg wood044)"/>
+    <node name="wood_spawner044" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc044 -urdf -x 21.6 -y -21.5 -z 19.1 -R 0.4 -P 0.5 -Y 0.4 -model wood044"/>
+
+    <arg name="wood045" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc045" textfile="$(arg wood045)"/>
+    <node name="wood_spawner045" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc045 -urdf -x 22.0 -y -20.8 -z 18.5 -R 0.8 -P 1.0 -Y 0.5 -model wood045"/>
+
+    <arg name="wood046" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc046" textfile="$(arg wood046)"/>
+    <node name="wood_spawner046" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc046 -urdf -x 23.4 -y -24.3 -z 18.2 -R 0.9 -P 0.9 -Y 0.9 -model wood046"/>
+
+    <arg name="wood047" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc047" textfile="$(arg wood047)"/>
+    <node name="wood_spawner047" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc047 -urdf -x 21.1 -y -23.5 -z 19.2 -R 0.0 -P 0.6 -Y 0.8 -model wood047"/>
+
+    <arg name="wood048" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc048" textfile="$(arg wood048)"/>
+    <node name="wood_spawner048" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc048 -urdf -x 21.8 -y -22.0 -z 19.2 -R 0.9 -P 0.5 -Y 0.8 -model wood048"/>
+
+    <arg name="wood049" default="$(find prj4)/urdf/wood.urdf"/>
+    <param name="wood_desc049" textfile="$(arg wood049)"/>
+    <node name="wood_spawner049" pkg="gazebo_ros" type="spawn_model"
+          args="-param wood_desc049 -urdf -x 22.4 -y -22.1 -z 19.7 -R 0.6 -P 0.2 -Y 0.5 -model wood049"/>
+

@@ -1,0 +1,1000 @@
+    <arg name="leaf000" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc000" textfile="$(arg leaf000)"/>
+    <node name="leaf_spawner000" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc000 -urdf -x 21.0 -y -20.5 -z 16.6 -R 0.8 -P 0.6 -Y 1.0 -model leaf000"/>
+
+    <arg name="leaf001" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc001" textfile="$(arg leaf001)"/>
+    <node name="leaf_spawner001" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc001 -urdf -x 23.7 -y -20.6 -z 15.7 -R 0.3 -P 0.4 -Y 0.8 -model leaf001"/>
+
+    <arg name="leaf002" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc002" textfile="$(arg leaf002)"/>
+    <node name="leaf_spawner002" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc002 -urdf -x 22.0 -y -21.9 -z 16.7 -R 0.5 -P 0.5 -Y 0.7 -model leaf002"/>
+
+    <arg name="leaf003" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc003" textfile="$(arg leaf003)"/>
+    <node name="leaf_spawner003" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc003 -urdf -x 22.9 -y -24.0 -z 15.2 -R 0.7 -P 0.7 -Y 0.2 -model leaf003"/>
+
+    <arg name="leaf004" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc004" textfile="$(arg leaf004)"/>
+    <node name="leaf_spawner004" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc004 -urdf -x 20.9 -y -23.0 -z 15.4 -R 0.3 -P 1.0 -Y 0.6 -model leaf004"/>
+
+    <arg name="leaf005" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc005" textfile="$(arg leaf005)"/>
+    <node name="leaf_spawner005" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc005 -urdf -x 21.1 -y -21.2 -z 15.6 -R 0.0 -P 0.6 -Y 1.0 -model leaf005"/>
+
+    <arg name="leaf006" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc006" textfile="$(arg leaf006)"/>
+    <node name="leaf_spawner006" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc006 -urdf -x 23.1 -y -23.6 -z 16.7 -R 1.0 -P 0.6 -Y 0.7 -model leaf006"/>
+
+    <arg name="leaf007" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc007" textfile="$(arg leaf007)"/>
+    <node name="leaf_spawner007" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc007 -urdf -x 22.9 -y -23.2 -z 15.6 -R 0.6 -P 0.6 -Y 0.1 -model leaf007"/>
+
+    <arg name="leaf008" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc008" textfile="$(arg leaf008)"/>
+    <node name="leaf_spawner008" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc008 -urdf -x 23.0 -y -22.8 -z 16.1 -R 0.4 -P 1.0 -Y 0.7 -model leaf008"/>
+
+    <arg name="leaf009" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc009" textfile="$(arg leaf009)"/>
+    <node name="leaf_spawner009" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc009 -urdf -x 20.5 -y -22.2 -z 16.6 -R 0.2 -P 0.5 -Y 0.1 -model leaf009"/>
+
+    <arg name="leaf010" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc010" textfile="$(arg leaf010)"/>
+    <node name="leaf_spawner010" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc010 -urdf -x 23.8 -y -22.4 -z 16.5 -R 0.2 -P 0.2 -Y 0.6 -model leaf010"/>
+
+    <arg name="leaf011" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc011" textfile="$(arg leaf011)"/>
+    <node name="leaf_spawner011" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc011 -urdf -x 22.4 -y -22.1 -z 16.5 -R 0.9 -P 0.2 -Y 0.4 -model leaf011"/>
+
+    <arg name="leaf012" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc012" textfile="$(arg leaf012)"/>
+    <node name="leaf_spawner012" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc012 -urdf -x 22.0 -y -22.2 -z 15.4 -R 0.7 -P 0.6 -Y 0.6 -model leaf012"/>
+
+    <arg name="leaf013" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc013" textfile="$(arg leaf013)"/>
+    <node name="leaf_spawner013" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc013 -urdf -x 22.4 -y -22.3 -z 16.5 -R 0.3 -P 0.5 -Y 0.8 -model leaf013"/>
+
+    <arg name="leaf014" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc014" textfile="$(arg leaf014)"/>
+    <node name="leaf_spawner014" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc014 -urdf -x 22.5 -y -24.4 -z 15.7 -R 0.6 -P 0.4 -Y 0.5 -model leaf014"/>
+
+    <arg name="leaf015" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc015" textfile="$(arg leaf015)"/>
+    <node name="leaf_spawner015" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc015 -urdf -x 23.4 -y -21.4 -z 16.1 -R 0.6 -P 1.0 -Y 0.8 -model leaf015"/>
+
+    <arg name="leaf016" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc016" textfile="$(arg leaf016)"/>
+    <node name="leaf_spawner016" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc016 -urdf -x 21.0 -y -22.2 -z 16.0 -R 0.6 -P 0.1 -Y 0.2 -model leaf016"/>
+
+    <arg name="leaf017" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc017" textfile="$(arg leaf017)"/>
+    <node name="leaf_spawner017" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc017 -urdf -x 23.4 -y -21.6 -z 15.9 -R 1.0 -P 0.9 -Y 0.8 -model leaf017"/>
+
+    <arg name="leaf018" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc018" textfile="$(arg leaf018)"/>
+    <node name="leaf_spawner018" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc018 -urdf -x 23.0 -y -23.6 -z 16.0 -R 0.5 -P 0.1 -Y 0.8 -model leaf018"/>
+
+    <arg name="leaf019" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc019" textfile="$(arg leaf019)"/>
+    <node name="leaf_spawner019" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc019 -urdf -x 22.6 -y -22.4 -z 16.7 -R 0.9 -P 0.2 -Y 0.3 -model leaf019"/>
+
+    <arg name="leaf020" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc020" textfile="$(arg leaf020)"/>
+    <node name="leaf_spawner020" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc020 -urdf -x 24.0 -y -22.9 -z 15.4 -R 0.5 -P 0.1 -Y 0.1 -model leaf020"/>
+
+    <arg name="leaf021" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc021" textfile="$(arg leaf021)"/>
+    <node name="leaf_spawner021" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc021 -urdf -x 21.9 -y -22.8 -z 15.8 -R 0.4 -P 0.8 -Y 0.3 -model leaf021"/>
+
+    <arg name="leaf022" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc022" textfile="$(arg leaf022)"/>
+    <node name="leaf_spawner022" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc022 -urdf -x 23.5 -y -21.0 -z 16.6 -R 0.8 -P 0.3 -Y 0.9 -model leaf022"/>
+
+    <arg name="leaf023" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc023" textfile="$(arg leaf023)"/>
+    <node name="leaf_spawner023" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc023 -urdf -x 22.8 -y -24.0 -z 16.6 -R 0.9 -P 0.4 -Y 0.8 -model leaf023"/>
+
+    <arg name="leaf024" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc024" textfile="$(arg leaf024)"/>
+    <node name="leaf_spawner024" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc024 -urdf -x 20.6 -y -20.9 -z 15.2 -R 0.2 -P 0.1 -Y 0.2 -model leaf024"/>
+
+    <arg name="leaf025" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc025" textfile="$(arg leaf025)"/>
+    <node name="leaf_spawner025" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc025 -urdf -x 21.8 -y -20.6 -z 15.4 -R 0.2 -P 0.1 -Y 0.7 -model leaf025"/>
+
+    <arg name="leaf026" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc026" textfile="$(arg leaf026)"/>
+    <node name="leaf_spawner026" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc026 -urdf -x 23.2 -y -22.2 -z 15.6 -R 1.0 -P 0.9 -Y 0.2 -model leaf026"/>
+
+    <arg name="leaf027" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc027" textfile="$(arg leaf027)"/>
+    <node name="leaf_spawner027" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc027 -urdf -x 23.0 -y -20.6 -z 16.6 -R 0.8 -P 0.3 -Y 0.3 -model leaf027"/>
+
+    <arg name="leaf028" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc028" textfile="$(arg leaf028)"/>
+    <node name="leaf_spawner028" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc028 -urdf -x 22.6 -y -24.0 -z 16.8 -R 0.9 -P 0.7 -Y 0.7 -model leaf028"/>
+
+    <arg name="leaf029" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc029" textfile="$(arg leaf029)"/>
+    <node name="leaf_spawner029" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc029 -urdf -x 21.6 -y -21.9 -z 15.6 -R 0.2 -P 0.6 -Y 0.5 -model leaf029"/>
+
+    <arg name="leaf030" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc030" textfile="$(arg leaf030)"/>
+    <node name="leaf_spawner030" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc030 -urdf -x 23.7 -y -23.0 -z 16.4 -R 0.4 -P 0.4 -Y 0.6 -model leaf030"/>
+
+    <arg name="leaf031" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc031" textfile="$(arg leaf031)"/>
+    <node name="leaf_spawner031" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc031 -urdf -x 21.0 -y -20.8 -z 16.0 -R 0.5 -P 0.1 -Y 0.4 -model leaf031"/>
+
+    <arg name="leaf032" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc032" textfile="$(arg leaf032)"/>
+    <node name="leaf_spawner032" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc032 -urdf -x 23.7 -y -22.7 -z 16.4 -R 0.3 -P 0.3 -Y 0.2 -model leaf032"/>
+
+    <arg name="leaf033" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc033" textfile="$(arg leaf033)"/>
+    <node name="leaf_spawner033" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc033 -urdf -x 22.6 -y -20.9 -z 16.5 -R 0.4 -P 0.4 -Y 0.7 -model leaf033"/>
+
+    <arg name="leaf034" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc034" textfile="$(arg leaf034)"/>
+    <node name="leaf_spawner034" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc034 -urdf -x 23.9 -y -20.5 -z 16.7 -R 0.0 -P 0.3 -Y 0.8 -model leaf034"/>
+
+    <arg name="leaf035" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc035" textfile="$(arg leaf035)"/>
+    <node name="leaf_spawner035" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc035 -urdf -x 24.0 -y -22.5 -z 16.4 -R 0.0 -P 0.6 -Y 0.4 -model leaf035"/>
+
+    <arg name="leaf036" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc036" textfile="$(arg leaf036)"/>
+    <node name="leaf_spawner036" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc036 -urdf -x 24.4 -y -20.7 -z 15.7 -R 0.1 -P 0.8 -Y 0.7 -model leaf036"/>
+
+    <arg name="leaf037" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc037" textfile="$(arg leaf037)"/>
+    <node name="leaf_spawner037" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc037 -urdf -x 23.0 -y -20.7 -z 16.2 -R 0.4 -P 0.9 -Y 1.0 -model leaf037"/>
+
+    <arg name="leaf038" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc038" textfile="$(arg leaf038)"/>
+    <node name="leaf_spawner038" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc038 -urdf -x 22.4 -y -22.1 -z 15.7 -R 0.6 -P 0.4 -Y 0.5 -model leaf038"/>
+
+    <arg name="leaf039" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc039" textfile="$(arg leaf039)"/>
+    <node name="leaf_spawner039" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc039 -urdf -x 22.8 -y -21.5 -z 16.8 -R 0.4 -P 0.0 -Y 0.5 -model leaf039"/>
+
+    <arg name="leaf040" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc040" textfile="$(arg leaf040)"/>
+    <node name="leaf_spawner040" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc040 -urdf -x 24.0 -y -22.4 -z 16.1 -R 0.7 -P 0.0 -Y 0.4 -model leaf040"/>
+
+    <arg name="leaf041" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc041" textfile="$(arg leaf041)"/>
+    <node name="leaf_spawner041" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc041 -urdf -x 20.8 -y -20.9 -z 16.4 -R 0.2 -P 0.2 -Y 0.5 -model leaf041"/>
+
+    <arg name="leaf042" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc042" textfile="$(arg leaf042)"/>
+    <node name="leaf_spawner042" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc042 -urdf -x 24.4 -y -22.9 -z 16.6 -R 0.2 -P 0.7 -Y 0.9 -model leaf042"/>
+
+    <arg name="leaf043" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc043" textfile="$(arg leaf043)"/>
+    <node name="leaf_spawner043" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc043 -urdf -x 24.4 -y -24.4 -z 16.7 -R 0.2 -P 0.3 -Y 0.9 -model leaf043"/>
+
+    <arg name="leaf044" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc044" textfile="$(arg leaf044)"/>
+    <node name="leaf_spawner044" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc044 -urdf -x 21.6 -y -21.5 -z 16.1 -R 0.4 -P 0.5 -Y 0.4 -model leaf044"/>
+
+    <arg name="leaf045" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc045" textfile="$(arg leaf045)"/>
+    <node name="leaf_spawner045" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc045 -urdf -x 22.0 -y -20.8 -z 15.5 -R 0.8 -P 1.0 -Y 0.5 -model leaf045"/>
+
+    <arg name="leaf046" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc046" textfile="$(arg leaf046)"/>
+    <node name="leaf_spawner046" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc046 -urdf -x 23.4 -y -24.3 -z 15.2 -R 0.9 -P 0.9 -Y 0.9 -model leaf046"/>
+
+    <arg name="leaf047" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc047" textfile="$(arg leaf047)"/>
+    <node name="leaf_spawner047" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc047 -urdf -x 21.1 -y -23.5 -z 16.2 -R 0.0 -P 0.6 -Y 0.8 -model leaf047"/>
+
+    <arg name="leaf048" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc048" textfile="$(arg leaf048)"/>
+    <node name="leaf_spawner048" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc048 -urdf -x 21.8 -y -22.0 -z 16.2 -R 0.9 -P 0.5 -Y 0.8 -model leaf048"/>
+
+    <arg name="leaf049" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc049" textfile="$(arg leaf049)"/>
+    <node name="leaf_spawner049" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc049 -urdf -x 22.4 -y -22.1 -z 16.7 -R 0.6 -P 0.2 -Y 0.5 -model leaf049"/>
+
+    <arg name="leaf050" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc050" textfile="$(arg leaf050)"/>
+    <node name="leaf_spawner050" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc050 -urdf -x 23.4 -y -22.0 -z 16.0 -R 0.1 -P 1.0 -Y 0.2 -model leaf050"/>
+
+    <arg name="leaf051" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc051" textfile="$(arg leaf051)"/>
+    <node name="leaf_spawner051" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc051 -urdf -x 22.2 -y -21.8 -z 16.7 -R 0.2 -P 0.6 -Y 0.8 -model leaf051"/>
+
+    <arg name="leaf052" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc052" textfile="$(arg leaf052)"/>
+    <node name="leaf_spawner052" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc052 -urdf -x 23.2 -y -24.0 -z 15.9 -R 0.2 -P 0.5 -Y 0.8 -model leaf052"/>
+
+    <arg name="leaf053" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc053" textfile="$(arg leaf053)"/>
+    <node name="leaf_spawner053" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc053 -urdf -x 21.8 -y -21.0 -z 15.7 -R 1.0 -P 0.4 -Y 0.1 -model leaf053"/>
+
+    <arg name="leaf054" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc054" textfile="$(arg leaf054)"/>
+    <node name="leaf_spawner054" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc054 -urdf -x 23.5 -y -20.6 -z 16.2 -R 0.8 -P 0.3 -Y 0.1 -model leaf054"/>
+
+    <arg name="leaf055" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc055" textfile="$(arg leaf055)"/>
+    <node name="leaf_spawner055" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc055 -urdf -x 23.2 -y -22.4 -z 16.7 -R 0.5 -P 0.5 -Y 0.3 -model leaf055"/>
+
+    <arg name="leaf056" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc056" textfile="$(arg leaf056)"/>
+    <node name="leaf_spawner056" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc056 -urdf -x 22.5 -y -23.4 -z 16.8 -R 0.6 -P 0.7 -Y 0.6 -model leaf056"/>
+
+    <arg name="leaf057" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc057" textfile="$(arg leaf057)"/>
+    <node name="leaf_spawner057" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc057 -urdf -x 20.8 -y -23.5 -z 15.3 -R 0.0 -P 0.5 -Y 0.1 -model leaf057"/>
+
+    <arg name="leaf058" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc058" textfile="$(arg leaf058)"/>
+    <node name="leaf_spawner058" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc058 -urdf -x 23.0 -y -21.8 -z 16.6 -R 0.9 -P 0.9 -Y 0.5 -model leaf058"/>
+
+    <arg name="leaf059" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc059" textfile="$(arg leaf059)"/>
+    <node name="leaf_spawner059" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc059 -urdf -x 22.0 -y -21.4 -z 16.4 -R 0.9 -P 0.5 -Y 0.0 -model leaf059"/>
+
+    <arg name="leaf060" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc060" textfile="$(arg leaf060)"/>
+    <node name="leaf_spawner060" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc060 -urdf -x 21.6 -y -20.6 -z 15.3 -R 0.9 -P 0.2 -Y 0.5 -model leaf060"/>
+
+    <arg name="leaf061" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc061" textfile="$(arg leaf061)"/>
+    <node name="leaf_spawner061" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc061 -urdf -x 22.4 -y -24.4 -z 15.2 -R 0.2 -P 0.5 -Y 0.8 -model leaf061"/>
+
+    <arg name="leaf062" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc062" textfile="$(arg leaf062)"/>
+    <node name="leaf_spawner062" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc062 -urdf -x 23.6 -y -20.7 -z 16.6 -R 0.8 -P 0.9 -Y 0.1 -model leaf062"/>
+
+    <arg name="leaf063" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc063" textfile="$(arg leaf063)"/>
+    <node name="leaf_spawner063" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc063 -urdf -x 23.9 -y -20.8 -z 15.7 -R 1.0 -P 0.2 -Y 0.5 -model leaf063"/>
+
+    <arg name="leaf064" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc064" textfile="$(arg leaf064)"/>
+    <node name="leaf_spawner064" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc064 -urdf -x 22.4 -y -24.1 -z 16.0 -R 0.7 -P 0.1 -Y 0.7 -model leaf064"/>
+
+    <arg name="leaf065" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc065" textfile="$(arg leaf065)"/>
+    <node name="leaf_spawner065" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc065 -urdf -x 21.1 -y -23.8 -z 15.8 -R 0.7 -P 0.6 -Y 0.3 -model leaf065"/>
+
+    <arg name="leaf066" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc066" textfile="$(arg leaf066)"/>
+    <node name="leaf_spawner066" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc066 -urdf -x 24.4 -y -21.9 -z 15.8 -R 0.7 -P 0.4 -Y 0.7 -model leaf066"/>
+
+    <arg name="leaf067" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc067" textfile="$(arg leaf067)"/>
+    <node name="leaf_spawner067" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc067 -urdf -x 24.4 -y -21.6 -z 16.2 -R 0.1 -P 1.0 -Y 0.5 -model leaf067"/>
+
+    <arg name="leaf068" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc068" textfile="$(arg leaf068)"/>
+    <node name="leaf_spawner068" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc068 -urdf -x 22.3 -y -21.2 -z 15.5 -R 0.7 -P 0.4 -Y 0.9 -model leaf068"/>
+
+    <arg name="leaf069" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc069" textfile="$(arg leaf069)"/>
+    <node name="leaf_spawner069" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc069 -urdf -x 22.5 -y -21.2 -z 15.9 -R 0.4 -P 0.6 -Y 0.2 -model leaf069"/>
+
+    <arg name="leaf070" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc070" textfile="$(arg leaf070)"/>
+    <node name="leaf_spawner070" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc070 -urdf -x 23.9 -y -20.5 -z 16.6 -R 0.7 -P 0.0 -Y 0.5 -model leaf070"/>
+
+    <arg name="leaf071" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc071" textfile="$(arg leaf071)"/>
+    <node name="leaf_spawner071" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc071 -urdf -x 24.3 -y -20.6 -z 16.4 -R 0.2 -P 0.9 -Y 0.1 -model leaf071"/>
+
+    <arg name="leaf072" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc072" textfile="$(arg leaf072)"/>
+    <node name="leaf_spawner072" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc072 -urdf -x 23.5 -y -23.1 -z 15.8 -R 0.0 -P 0.5 -Y 0.8 -model leaf072"/>
+
+    <arg name="leaf073" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc073" textfile="$(arg leaf073)"/>
+    <node name="leaf_spawner073" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc073 -urdf -x 23.1 -y -22.8 -z 15.2 -R 0.3 -P 0.9 -Y 0.6 -model leaf073"/>
+
+    <arg name="leaf074" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc074" textfile="$(arg leaf074)"/>
+    <node name="leaf_spawner074" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc074 -urdf -x 21.2 -y -22.6 -z 15.5 -R 0.9 -P 0.5 -Y 0.0 -model leaf074"/>
+
+    <arg name="leaf075" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc075" textfile="$(arg leaf075)"/>
+    <node name="leaf_spawner075" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc075 -urdf -x 24.1 -y -21.6 -z 15.2 -R 0.6 -P 0.4 -Y 0.8 -model leaf075"/>
+
+    <arg name="leaf076" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc076" textfile="$(arg leaf076)"/>
+    <node name="leaf_spawner076" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc076 -urdf -x 21.7 -y -24.1 -z 15.9 -R 0.8 -P 0.6 -Y 0.9 -model leaf076"/>
+
+    <arg name="leaf077" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc077" textfile="$(arg leaf077)"/>
+    <node name="leaf_spawner077" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc077 -urdf -x 21.0 -y -20.6 -z 16.7 -R 0.8 -P 0.0 -Y 0.3 -model leaf077"/>
+
+    <arg name="leaf078" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc078" textfile="$(arg leaf078)"/>
+    <node name="leaf_spawner078" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc078 -urdf -x 23.4 -y -21.3 -z 15.7 -R 0.3 -P 0.3 -Y 0.9 -model leaf078"/>
+
+    <arg name="leaf079" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc079" textfile="$(arg leaf079)"/>
+    <node name="leaf_spawner079" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc079 -urdf -x 20.8 -y -23.4 -z 15.5 -R 0.3 -P 0.5 -Y 0.5 -model leaf079"/>
+
+    <arg name="leaf080" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc080" textfile="$(arg leaf080)"/>
+    <node name="leaf_spawner080" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc080 -urdf -x 23.2 -y -23.7 -z 15.5 -R 0.7 -P 0.7 -Y 0.6 -model leaf080"/>
+
+    <arg name="leaf081" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc081" textfile="$(arg leaf081)"/>
+    <node name="leaf_spawner081" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc081 -urdf -x 22.6 -y -21.6 -z 15.9 -R 0.1 -P 0.1 -Y 0.5 -model leaf081"/>
+
+    <arg name="leaf082" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc082" textfile="$(arg leaf082)"/>
+    <node name="leaf_spawner082" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc082 -urdf -x 24.2 -y -24.0 -z 16.2 -R 0.4 -P 0.3 -Y 0.0 -model leaf082"/>
+
+    <arg name="leaf083" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc083" textfile="$(arg leaf083)"/>
+    <node name="leaf_spawner083" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc083 -urdf -x 21.2 -y -23.8 -z 16.1 -R 0.7 -P 0.6 -Y 0.9 -model leaf083"/>
+
+    <arg name="leaf084" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc084" textfile="$(arg leaf084)"/>
+    <node name="leaf_spawner084" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc084 -urdf -x 23.0 -y -21.3 -z 16.7 -R 0.1 -P 0.9 -Y 0.6 -model leaf084"/>
+
+    <arg name="leaf085" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc085" textfile="$(arg leaf085)"/>
+    <node name="leaf_spawner085" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc085 -urdf -x 24.1 -y -20.6 -z 15.9 -R 0.2 -P 1.0 -Y 0.0 -model leaf085"/>
+
+    <arg name="leaf086" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc086" textfile="$(arg leaf086)"/>
+    <node name="leaf_spawner086" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc086 -urdf -x 22.4 -y -22.9 -z 16.8 -R 0.2 -P 0.6 -Y 0.9 -model leaf086"/>
+
+    <arg name="leaf087" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc087" textfile="$(arg leaf087)"/>
+    <node name="leaf_spawner087" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc087 -urdf -x 24.4 -y -24.1 -z 15.3 -R 0.8 -P 0.1 -Y 0.6 -model leaf087"/>
+
+    <arg name="leaf088" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc088" textfile="$(arg leaf088)"/>
+    <node name="leaf_spawner088" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc088 -urdf -x 23.7 -y -20.8 -z 16.4 -R 0.4 -P 0.6 -Y 0.2 -model leaf088"/>
+
+    <arg name="leaf089" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc089" textfile="$(arg leaf089)"/>
+    <node name="leaf_spawner089" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc089 -urdf -x 22.4 -y -21.0 -z 16.3 -R 0.4 -P 0.3 -Y 0.2 -model leaf089"/>
+
+    <arg name="leaf090" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc090" textfile="$(arg leaf090)"/>
+    <node name="leaf_spawner090" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc090 -urdf -x 20.7 -y -22.8 -z 16.7 -R 0.8 -P 0.6 -Y 0.9 -model leaf090"/>
+
+    <arg name="leaf091" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc091" textfile="$(arg leaf091)"/>
+    <node name="leaf_spawner091" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc091 -urdf -x 23.4 -y -21.1 -z 16.5 -R 0.1 -P 0.1 -Y 0.6 -model leaf091"/>
+
+    <arg name="leaf092" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc092" textfile="$(arg leaf092)"/>
+    <node name="leaf_spawner092" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc092 -urdf -x 20.8 -y -24.0 -z 15.2 -R 0.3 -P 0.2 -Y 0.8 -model leaf092"/>
+
+    <arg name="leaf093" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc093" textfile="$(arg leaf093)"/>
+    <node name="leaf_spawner093" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc093 -urdf -x 23.4 -y -21.5 -z 16.3 -R 0.5 -P 0.0 -Y 0.8 -model leaf093"/>
+
+    <arg name="leaf094" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc094" textfile="$(arg leaf094)"/>
+    <node name="leaf_spawner094" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc094 -urdf -x 23.6 -y -22.9 -z 15.6 -R 0.5 -P 0.4 -Y 0.3 -model leaf094"/>
+
+    <arg name="leaf095" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc095" textfile="$(arg leaf095)"/>
+    <node name="leaf_spawner095" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc095 -urdf -x 23.7 -y -23.4 -z 16.5 -R 0.6 -P 0.2 -Y 0.7 -model leaf095"/>
+
+    <arg name="leaf096" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc096" textfile="$(arg leaf096)"/>
+    <node name="leaf_spawner096" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc096 -urdf -x 22.5 -y -21.0 -z 15.2 -R 0.9 -P 0.1 -Y 0.7 -model leaf096"/>
+
+    <arg name="leaf097" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc097" textfile="$(arg leaf097)"/>
+    <node name="leaf_spawner097" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc097 -urdf -x 23.0 -y -22.6 -z 16.3 -R 0.2 -P 0.4 -Y 0.9 -model leaf097"/>
+
+    <arg name="leaf098" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc098" textfile="$(arg leaf098)"/>
+    <node name="leaf_spawner098" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc098 -urdf -x 21.5 -y -23.9 -z 15.9 -R 0.8 -P 0.4 -Y 0.6 -model leaf098"/>
+
+    <arg name="leaf099" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc099" textfile="$(arg leaf099)"/>
+    <node name="leaf_spawner099" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc099 -urdf -x 21.7 -y -23.6 -z 15.8 -R 0.6 -P 0.7 -Y 0.9 -model leaf099"/>
+
+    <arg name="leaf100" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc100" textfile="$(arg leaf100)"/>
+    <node name="leaf_spawner100" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc100 -urdf -x 23.3 -y -21.0 -z 15.7 -R 0.5 -P 0.4 -Y 0.6 -model leaf100"/>
+
+    <arg name="leaf101" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc101" textfile="$(arg leaf101)"/>
+    <node name="leaf_spawner101" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc101 -urdf -x 20.8 -y -22.5 -z 15.7 -R 0.9 -P 0.4 -Y 0.2 -model leaf101"/>
+
+    <arg name="leaf102" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc102" textfile="$(arg leaf102)"/>
+    <node name="leaf_spawner102" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc102 -urdf -x 23.2 -y -23.6 -z 16.2 -R 0.3 -P 0.2 -Y 0.2 -model leaf102"/>
+
+    <arg name="leaf103" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc103" textfile="$(arg leaf103)"/>
+    <node name="leaf_spawner103" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc103 -urdf -x 20.8 -y -20.8 -z 15.5 -R 0.3 -P 0.0 -Y 0.1 -model leaf103"/>
+
+    <arg name="leaf104" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc104" textfile="$(arg leaf104)"/>
+    <node name="leaf_spawner104" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc104 -urdf -x 21.5 -y -20.5 -z 16.6 -R 0.9 -P 0.1 -Y 1.0 -model leaf104"/>
+
+    <arg name="leaf105" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc105" textfile="$(arg leaf105)"/>
+    <node name="leaf_spawner105" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc105 -urdf -x 23.0 -y -24.4 -z 16.6 -R 0.1 -P 0.5 -Y 0.7 -model leaf105"/>
+
+    <arg name="leaf106" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc106" textfile="$(arg leaf106)"/>
+    <node name="leaf_spawner106" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc106 -urdf -x 22.0 -y -24.5 -z 16.5 -R 0.3 -P 0.2 -Y 0.5 -model leaf106"/>
+
+    <arg name="leaf107" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc107" textfile="$(arg leaf107)"/>
+    <node name="leaf_spawner107" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc107 -urdf -x 21.5 -y -23.8 -z 16.2 -R 0.8 -P 0.2 -Y 0.6 -model leaf107"/>
+
+    <arg name="leaf108" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc108" textfile="$(arg leaf108)"/>
+    <node name="leaf_spawner108" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc108 -urdf -x 21.8 -y -22.6 -z 16.3 -R 0.2 -P 0.8 -Y 0.9 -model leaf108"/>
+
+    <arg name="leaf109" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc109" textfile="$(arg leaf109)"/>
+    <node name="leaf_spawner109" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc109 -urdf -x 21.2 -y -24.5 -z 15.7 -R 0.7 -P 0.1 -Y 0.1 -model leaf109"/>
+
+    <arg name="leaf110" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc110" textfile="$(arg leaf110)"/>
+    <node name="leaf_spawner110" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc110 -urdf -x 22.3 -y -21.9 -z 16.3 -R 0.5 -P 0.6 -Y 0.7 -model leaf110"/>
+
+    <arg name="leaf111" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc111" textfile="$(arg leaf111)"/>
+    <node name="leaf_spawner111" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc111 -urdf -x 23.0 -y -21.5 -z 15.2 -R 0.3 -P 0.6 -Y 0.2 -model leaf111"/>
+
+    <arg name="leaf112" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc112" textfile="$(arg leaf112)"/>
+    <node name="leaf_spawner112" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc112 -urdf -x 23.8 -y -22.5 -z 15.4 -R 0.3 -P 0.4 -Y 0.8 -model leaf112"/>
+
+    <arg name="leaf113" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc113" textfile="$(arg leaf113)"/>
+    <node name="leaf_spawner113" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc113 -urdf -x 22.8 -y -24.1 -z 15.8 -R 0.7 -P 0.2 -Y 0.1 -model leaf113"/>
+
+    <arg name="leaf114" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc114" textfile="$(arg leaf114)"/>
+    <node name="leaf_spawner114" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc114 -urdf -x 24.5 -y -22.1 -z 16.1 -R 0.1 -P 0.2 -Y 0.4 -model leaf114"/>
+
+    <arg name="leaf115" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc115" textfile="$(arg leaf115)"/>
+    <node name="leaf_spawner115" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc115 -urdf -x 24.5 -y -22.4 -z 15.6 -R 0.3 -P 0.4 -Y 0.5 -model leaf115"/>
+
+    <arg name="leaf116" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc116" textfile="$(arg leaf116)"/>
+    <node name="leaf_spawner116" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc116 -urdf -x 23.2 -y -21.0 -z 15.7 -R 0.6 -P 0.9 -Y 0.4 -model leaf116"/>
+
+    <arg name="leaf117" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc117" textfile="$(arg leaf117)"/>
+    <node name="leaf_spawner117" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc117 -urdf -x 23.1 -y -22.5 -z 16.0 -R 1.0 -P 0.6 -Y 0.9 -model leaf117"/>
+
+    <arg name="leaf118" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc118" textfile="$(arg leaf118)"/>
+    <node name="leaf_spawner118" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc118 -urdf -x 21.0 -y -23.1 -z 15.5 -R 0.1 -P 0.2 -Y 0.2 -model leaf118"/>
+
+    <arg name="leaf119" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc119" textfile="$(arg leaf119)"/>
+    <node name="leaf_spawner119" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc119 -urdf -x 22.4 -y -23.0 -z 15.5 -R 0.6 -P 0.9 -Y 0.0 -model leaf119"/>
+
+    <arg name="leaf120" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc120" textfile="$(arg leaf120)"/>
+    <node name="leaf_spawner120" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc120 -urdf -x 22.9 -y -22.6 -z 16.5 -R 1.0 -P 0.4 -Y 0.8 -model leaf120"/>
+
+    <arg name="leaf121" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc121" textfile="$(arg leaf121)"/>
+    <node name="leaf_spawner121" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc121 -urdf -x 23.8 -y -23.5 -z 15.7 -R 0.2 -P 0.1 -Y 0.4 -model leaf121"/>
+
+    <arg name="leaf122" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc122" textfile="$(arg leaf122)"/>
+    <node name="leaf_spawner122" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc122 -urdf -x 22.7 -y -22.8 -z 16.7 -R 0.6 -P 0.4 -Y 0.3 -model leaf122"/>
+
+    <arg name="leaf123" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc123" textfile="$(arg leaf123)"/>
+    <node name="leaf_spawner123" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc123 -urdf -x 21.1 -y -23.8 -z 15.9 -R 0.1 -P 0.9 -Y 0.0 -model leaf123"/>
+
+    <arg name="leaf124" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc124" textfile="$(arg leaf124)"/>
+    <node name="leaf_spawner124" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc124 -urdf -x 24.3 -y -20.5 -z 15.5 -R 0.5 -P 0.8 -Y 0.2 -model leaf124"/>
+
+    <arg name="leaf125" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc125" textfile="$(arg leaf125)"/>
+    <node name="leaf_spawner125" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc125 -urdf -x 22.1 -y -22.1 -z 16.4 -R 0.5 -P 0.8 -Y 0.2 -model leaf125"/>
+
+    <arg name="leaf126" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc126" textfile="$(arg leaf126)"/>
+    <node name="leaf_spawner126" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc126 -urdf -x 20.6 -y -24.5 -z 16.7 -R 0.3 -P 0.1 -Y 0.8 -model leaf126"/>
+
+    <arg name="leaf127" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc127" textfile="$(arg leaf127)"/>
+    <node name="leaf_spawner127" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc127 -urdf -x 23.5 -y -24.0 -z 15.4 -R 0.9 -P 0.9 -Y 0.7 -model leaf127"/>
+
+    <arg name="leaf128" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc128" textfile="$(arg leaf128)"/>
+    <node name="leaf_spawner128" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc128 -urdf -x 23.6 -y -23.9 -z 15.8 -R 0.2 -P 0.6 -Y 0.9 -model leaf128"/>
+
+    <arg name="leaf129" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc129" textfile="$(arg leaf129)"/>
+    <node name="leaf_spawner129" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc129 -urdf -x 20.5 -y -22.6 -z 16.6 -R 0.1 -P 0.4 -Y 0.4 -model leaf129"/>
+
+    <arg name="leaf130" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc130" textfile="$(arg leaf130)"/>
+    <node name="leaf_spawner130" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc130 -urdf -x 21.4 -y -21.2 -z 16.6 -R 0.6 -P 0.9 -Y 0.6 -model leaf130"/>
+
+    <arg name="leaf131" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc131" textfile="$(arg leaf131)"/>
+    <node name="leaf_spawner131" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc131 -urdf -x 23.0 -y -22.8 -z 15.3 -R 0.6 -P 0.6 -Y 0.0 -model leaf131"/>
+
+    <arg name="leaf132" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc132" textfile="$(arg leaf132)"/>
+    <node name="leaf_spawner132" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc132 -urdf -x 21.4 -y -23.0 -z 16.1 -R 0.2 -P 0.8 -Y 0.7 -model leaf132"/>
+
+    <arg name="leaf133" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc133" textfile="$(arg leaf133)"/>
+    <node name="leaf_spawner133" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc133 -urdf -x 24.1 -y -23.5 -z 16.4 -R 0.4 -P 0.3 -Y 0.3 -model leaf133"/>
+
+    <arg name="leaf134" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc134" textfile="$(arg leaf134)"/>
+    <node name="leaf_spawner134" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc134 -urdf -x 22.6 -y -23.5 -z 15.4 -R 0.4 -P 0.1 -Y 0.6 -model leaf134"/>
+
+    <arg name="leaf135" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc135" textfile="$(arg leaf135)"/>
+    <node name="leaf_spawner135" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc135 -urdf -x 20.6 -y -24.4 -z 15.7 -R 0.6 -P 0.9 -Y 1.0 -model leaf135"/>
+
+    <arg name="leaf136" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc136" textfile="$(arg leaf136)"/>
+    <node name="leaf_spawner136" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc136 -urdf -x 21.9 -y -22.9 -z 16.1 -R 0.2 -P 0.3 -Y 0.3 -model leaf136"/>
+
+    <arg name="leaf137" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc137" textfile="$(arg leaf137)"/>
+    <node name="leaf_spawner137" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc137 -urdf -x 24.0 -y -20.6 -z 16.1 -R 0.1 -P 0.4 -Y 0.4 -model leaf137"/>
+
+    <arg name="leaf138" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc138" textfile="$(arg leaf138)"/>
+    <node name="leaf_spawner138" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc138 -urdf -x 22.2 -y -24.4 -z 16.3 -R 0.9 -P 0.2 -Y 0.8 -model leaf138"/>
+
+    <arg name="leaf139" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc139" textfile="$(arg leaf139)"/>
+    <node name="leaf_spawner139" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc139 -urdf -x 23.8 -y -23.5 -z 16.4 -R 0.5 -P 0.0 -Y 0.4 -model leaf139"/>
+
+    <arg name="leaf140" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc140" textfile="$(arg leaf140)"/>
+    <node name="leaf_spawner140" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc140 -urdf -x 24.0 -y -24.3 -z 15.9 -R 0.7 -P 0.5 -Y 0.2 -model leaf140"/>
+
+    <arg name="leaf141" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc141" textfile="$(arg leaf141)"/>
+    <node name="leaf_spawner141" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc141 -urdf -x 21.9 -y -24.1 -z 15.2 -R 0.5 -P 0.5 -Y 0.7 -model leaf141"/>
+
+    <arg name="leaf142" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc142" textfile="$(arg leaf142)"/>
+    <node name="leaf_spawner142" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc142 -urdf -x 24.2 -y -23.8 -z 16.4 -R 1.0 -P 0.4 -Y 0.3 -model leaf142"/>
+
+    <arg name="leaf143" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc143" textfile="$(arg leaf143)"/>
+    <node name="leaf_spawner143" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc143 -urdf -x 24.1 -y -21.1 -z 16.6 -R 0.4 -P 0.6 -Y 0.9 -model leaf143"/>
+
+    <arg name="leaf144" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc144" textfile="$(arg leaf144)"/>
+    <node name="leaf_spawner144" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc144 -urdf -x 22.4 -y -23.5 -z 15.6 -R 0.1 -P 0.4 -Y 0.0 -model leaf144"/>
+
+    <arg name="leaf145" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc145" textfile="$(arg leaf145)"/>
+    <node name="leaf_spawner145" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc145 -urdf -x 23.0 -y -23.4 -z 16.3 -R 0.8 -P 0.7 -Y 0.4 -model leaf145"/>
+
+    <arg name="leaf146" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc146" textfile="$(arg leaf146)"/>
+    <node name="leaf_spawner146" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc146 -urdf -x 23.3 -y -21.9 -z 16.1 -R 0.4 -P 0.4 -Y 0.7 -model leaf146"/>
+
+    <arg name="leaf147" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc147" textfile="$(arg leaf147)"/>
+    <node name="leaf_spawner147" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc147 -urdf -x 22.5 -y -20.8 -z 15.2 -R 0.5 -P 0.2 -Y 1.0 -model leaf147"/>
+
+    <arg name="leaf148" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc148" textfile="$(arg leaf148)"/>
+    <node name="leaf_spawner148" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc148 -urdf -x 22.5 -y -21.6 -z 15.7 -R 0.4 -P 0.2 -Y 0.8 -model leaf148"/>
+
+    <arg name="leaf149" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc149" textfile="$(arg leaf149)"/>
+    <node name="leaf_spawner149" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc149 -urdf -x 23.8 -y -23.8 -z 15.8 -R 0.9 -P 0.1 -Y 0.1 -model leaf149"/>
+
+    <arg name="leaf150" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc150" textfile="$(arg leaf150)"/>
+    <node name="leaf_spawner150" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc150 -urdf -x 23.4 -y -21.0 -z 16.3 -R 0.8 -P 0.9 -Y 0.9 -model leaf150"/>
+
+    <arg name="leaf151" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc151" textfile="$(arg leaf151)"/>
+    <node name="leaf_spawner151" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc151 -urdf -x 24.1 -y -24.3 -z 16.3 -R 0.3 -P 0.8 -Y 0.2 -model leaf151"/>
+
+    <arg name="leaf152" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc152" textfile="$(arg leaf152)"/>
+    <node name="leaf_spawner152" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc152 -urdf -x 23.4 -y -21.7 -z 15.8 -R 0.5 -P 0.9 -Y 0.8 -model leaf152"/>
+
+    <arg name="leaf153" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc153" textfile="$(arg leaf153)"/>
+    <node name="leaf_spawner153" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc153 -urdf -x 22.9 -y -23.4 -z 15.7 -R 0.6 -P 0.2 -Y 0.1 -model leaf153"/>
+
+    <arg name="leaf154" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc154" textfile="$(arg leaf154)"/>
+    <node name="leaf_spawner154" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc154 -urdf -x 22.4 -y -23.2 -z 15.2 -R 0.7 -P 0.4 -Y 0.7 -model leaf154"/>
+
+    <arg name="leaf155" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc155" textfile="$(arg leaf155)"/>
+    <node name="leaf_spawner155" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc155 -urdf -x 21.6 -y -22.4 -z 15.4 -R 0.5 -P 0.1 -Y 0.7 -model leaf155"/>
+
+    <arg name="leaf156" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc156" textfile="$(arg leaf156)"/>
+    <node name="leaf_spawner156" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc156 -urdf -x 22.1 -y -21.8 -z 15.7 -R 0.2 -P 0.0 -Y 0.8 -model leaf156"/>
+
+    <arg name="leaf157" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc157" textfile="$(arg leaf157)"/>
+    <node name="leaf_spawner157" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc157 -urdf -x 21.0 -y -23.5 -z 16.2 -R 0.0 -P 0.1 -Y 0.6 -model leaf157"/>
+
+    <arg name="leaf158" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc158" textfile="$(arg leaf158)"/>
+    <node name="leaf_spawner158" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc158 -urdf -x 21.0 -y -21.2 -z 16.2 -R 0.3 -P 0.7 -Y 0.5 -model leaf158"/>
+
+    <arg name="leaf159" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc159" textfile="$(arg leaf159)"/>
+    <node name="leaf_spawner159" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc159 -urdf -x 21.7 -y -24.5 -z 16.6 -R 0.0 -P 0.9 -Y 0.5 -model leaf159"/>
+
+    <arg name="leaf160" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc160" textfile="$(arg leaf160)"/>
+    <node name="leaf_spawner160" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc160 -urdf -x 22.6 -y -22.2 -z 16.1 -R 0.5 -P 0.8 -Y 1.0 -model leaf160"/>
+
+    <arg name="leaf161" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc161" textfile="$(arg leaf161)"/>
+    <node name="leaf_spawner161" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc161 -urdf -x 22.5 -y -23.1 -z 16.2 -R 0.2 -P 0.4 -Y 0.8 -model leaf161"/>
+
+    <arg name="leaf162" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc162" textfile="$(arg leaf162)"/>
+    <node name="leaf_spawner162" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc162 -urdf -x 23.2 -y -20.8 -z 16.6 -R 0.2 -P 0.5 -Y 0.9 -model leaf162"/>
+
+    <arg name="leaf163" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc163" textfile="$(arg leaf163)"/>
+    <node name="leaf_spawner163" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc163 -urdf -x 23.1 -y -20.5 -z 16.7 -R 0.6 -P 0.1 -Y 0.2 -model leaf163"/>
+
+    <arg name="leaf164" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc164" textfile="$(arg leaf164)"/>
+    <node name="leaf_spawner164" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc164 -urdf -x 22.4 -y -22.2 -z 15.9 -R 0.3 -P 0.1 -Y 0.3 -model leaf164"/>
+
+    <arg name="leaf165" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc165" textfile="$(arg leaf165)"/>
+    <node name="leaf_spawner165" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc165 -urdf -x 20.5 -y -22.9 -z 15.7 -R 0.7 -P 0.3 -Y 0.8 -model leaf165"/>
+
+    <arg name="leaf166" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc166" textfile="$(arg leaf166)"/>
+    <node name="leaf_spawner166" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc166 -urdf -x 24.4 -y -20.8 -z 15.2 -R 0.9 -P 0.3 -Y 0.5 -model leaf166"/>
+
+    <arg name="leaf167" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc167" textfile="$(arg leaf167)"/>
+    <node name="leaf_spawner167" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc167 -urdf -x 21.5 -y -23.6 -z 15.5 -R 0.0 -P 0.6 -Y 0.9 -model leaf167"/>
+
+    <arg name="leaf168" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc168" textfile="$(arg leaf168)"/>
+    <node name="leaf_spawner168" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc168 -urdf -x 22.9 -y -23.8 -z 15.9 -R 0.3 -P 0.6 -Y 0.4 -model leaf168"/>
+
+    <arg name="leaf169" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc169" textfile="$(arg leaf169)"/>
+    <node name="leaf_spawner169" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc169 -urdf -x 22.0 -y -23.0 -z 15.6 -R 0.4 -P 0.6 -Y 0.0 -model leaf169"/>
+
+    <arg name="leaf170" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc170" textfile="$(arg leaf170)"/>
+    <node name="leaf_spawner170" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc170 -urdf -x 20.5 -y -24.0 -z 16.7 -R 0.2 -P 0.1 -Y 0.7 -model leaf170"/>
+
+    <arg name="leaf171" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc171" textfile="$(arg leaf171)"/>
+    <node name="leaf_spawner171" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc171 -urdf -x 24.4 -y -22.5 -z 16.3 -R 0.6 -P 0.2 -Y 0.6 -model leaf171"/>
+
+    <arg name="leaf172" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc172" textfile="$(arg leaf172)"/>
+    <node name="leaf_spawner172" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc172 -urdf -x 21.4 -y -23.8 -z 15.9 -R 0.0 -P 0.9 -Y 0.6 -model leaf172"/>
+
+    <arg name="leaf173" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc173" textfile="$(arg leaf173)"/>
+    <node name="leaf_spawner173" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc173 -urdf -x 21.5 -y -21.7 -z 16.1 -R 0.3 -P 0.2 -Y 0.2 -model leaf173"/>
+
+    <arg name="leaf174" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc174" textfile="$(arg leaf174)"/>
+    <node name="leaf_spawner174" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc174 -urdf -x 21.2 -y -22.9 -z 16.5 -R 0.1 -P 0.1 -Y 0.6 -model leaf174"/>
+
+    <arg name="leaf175" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc175" textfile="$(arg leaf175)"/>
+    <node name="leaf_spawner175" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc175 -urdf -x 22.0 -y -24.2 -z 16.0 -R 0.4 -P 0.1 -Y 0.6 -model leaf175"/>
+
+    <arg name="leaf176" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc176" textfile="$(arg leaf176)"/>
+    <node name="leaf_spawner176" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc176 -urdf -x 20.9 -y -23.1 -z 16.1 -R 0.4 -P 0.8 -Y 0.7 -model leaf176"/>
+
+    <arg name="leaf177" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc177" textfile="$(arg leaf177)"/>
+    <node name="leaf_spawner177" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc177 -urdf -x 20.7 -y -23.1 -z 16.3 -R 0.5 -P 0.9 -Y 0.1 -model leaf177"/>
+
+    <arg name="leaf178" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc178" textfile="$(arg leaf178)"/>
+    <node name="leaf_spawner178" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc178 -urdf -x 21.6 -y -21.2 -z 15.9 -R 0.7 -P 0.7 -Y 0.2 -model leaf178"/>
+
+    <arg name="leaf179" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc179" textfile="$(arg leaf179)"/>
+    <node name="leaf_spawner179" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc179 -urdf -x 21.8 -y -22.5 -z 15.7 -R 0.8 -P 0.5 -Y 0.1 -model leaf179"/>
+
+    <arg name="leaf180" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc180" textfile="$(arg leaf180)"/>
+    <node name="leaf_spawner180" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc180 -urdf -x 24.1 -y -21.6 -z 15.9 -R 0.9 -P 0.6 -Y 0.6 -model leaf180"/>
+
+    <arg name="leaf181" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc181" textfile="$(arg leaf181)"/>
+    <node name="leaf_spawner181" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc181 -urdf -x 22.2 -y -22.4 -z 16.7 -R 0.5 -P 0.7 -Y 0.6 -model leaf181"/>
+
+    <arg name="leaf182" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc182" textfile="$(arg leaf182)"/>
+    <node name="leaf_spawner182" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc182 -urdf -x 24.0 -y -21.3 -z 15.9 -R 0.8 -P 0.3 -Y 0.4 -model leaf182"/>
+
+    <arg name="leaf183" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc183" textfile="$(arg leaf183)"/>
+    <node name="leaf_spawner183" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc183 -urdf -x 21.7 -y -23.0 -z 16.5 -R 0.9 -P 0.1 -Y 0.1 -model leaf183"/>
+
+    <arg name="leaf184" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc184" textfile="$(arg leaf184)"/>
+    <node name="leaf_spawner184" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc184 -urdf -x 23.1 -y -23.1 -z 16.2 -R 0.1 -P 0.3 -Y 0.5 -model leaf184"/>
+
+    <arg name="leaf185" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc185" textfile="$(arg leaf185)"/>
+    <node name="leaf_spawner185" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc185 -urdf -x 23.4 -y -21.2 -z 15.3 -R 0.6 -P 0.7 -Y 0.6 -model leaf185"/>
+
+    <arg name="leaf186" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc186" textfile="$(arg leaf186)"/>
+    <node name="leaf_spawner186" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc186 -urdf -x 23.6 -y -22.6 -z 15.3 -R 1.0 -P 0.3 -Y 0.0 -model leaf186"/>
+
+    <arg name="leaf187" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc187" textfile="$(arg leaf187)"/>
+    <node name="leaf_spawner187" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc187 -urdf -x 23.8 -y -24.0 -z 16.8 -R 0.0 -P 0.9 -Y 0.1 -model leaf187"/>
+
+    <arg name="leaf188" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc188" textfile="$(arg leaf188)"/>
+    <node name="leaf_spawner188" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc188 -urdf -x 23.1 -y -23.0 -z 16.6 -R 0.8 -P 0.2 -Y 0.6 -model leaf188"/>
+
+    <arg name="leaf189" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc189" textfile="$(arg leaf189)"/>
+    <node name="leaf_spawner189" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc189 -urdf -x 20.5 -y -22.0 -z 16.6 -R 0.4 -P 1.0 -Y 0.9 -model leaf189"/>
+
+    <arg name="leaf190" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc190" textfile="$(arg leaf190)"/>
+    <node name="leaf_spawner190" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc190 -urdf -x 21.9 -y -24.1 -z 16.8 -R 0.9 -P 0.3 -Y 0.4 -model leaf190"/>
+
+    <arg name="leaf191" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc191" textfile="$(arg leaf191)"/>
+    <node name="leaf_spawner191" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc191 -urdf -x 21.8 -y -21.2 -z 16.0 -R 0.4 -P 0.6 -Y 1.0 -model leaf191"/>
+
+    <arg name="leaf192" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc192" textfile="$(arg leaf192)"/>
+    <node name="leaf_spawner192" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc192 -urdf -x 22.6 -y -21.4 -z 16.6 -R 0.7 -P 0.2 -Y 0.4 -model leaf192"/>
+
+    <arg name="leaf193" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc193" textfile="$(arg leaf193)"/>
+    <node name="leaf_spawner193" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc193 -urdf -x 22.2 -y -22.5 -z 16.4 -R 0.8 -P 0.9 -Y 1.0 -model leaf193"/>
+
+    <arg name="leaf194" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc194" textfile="$(arg leaf194)"/>
+    <node name="leaf_spawner194" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc194 -urdf -x 21.4 -y -22.9 -z 15.7 -R 0.1 -P 0.7 -Y 0.3 -model leaf194"/>
+
+    <arg name="leaf195" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc195" textfile="$(arg leaf195)"/>
+    <node name="leaf_spawner195" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc195 -urdf -x 21.4 -y -23.8 -z 15.5 -R 0.7 -P 0.6 -Y 0.4 -model leaf195"/>
+
+    <arg name="leaf196" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc196" textfile="$(arg leaf196)"/>
+    <node name="leaf_spawner196" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc196 -urdf -x 23.0 -y -23.2 -z 15.3 -R 0.3 -P 0.1 -Y 0.5 -model leaf196"/>
+
+    <arg name="leaf197" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc197" textfile="$(arg leaf197)"/>
+    <node name="leaf_spawner197" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc197 -urdf -x 21.5 -y -24.5 -z 16.2 -R 0.8 -P 0.8 -Y 0.4 -model leaf197"/>
+
+    <arg name="leaf198" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc198" textfile="$(arg leaf198)"/>
+    <node name="leaf_spawner198" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc198 -urdf -x 24.0 -y -21.5 -z 16.7 -R 0.9 -P 1.0 -Y 0.9 -model leaf198"/>
+
+    <arg name="leaf199" default="$(find prj4)/urdf/leaf.urdf"/>
+    <param name="leaf_desc199" textfile="$(arg leaf199)"/>
+    <node name="leaf_spawner199" pkg="gazebo_ros" type="spawn_model"
+          args="-param leaf_desc199 -urdf -x 21.9 -y -21.8 -z 16.4 -R 0.2 -P 0.0 -Y 0.5 -model leaf199"/>
+

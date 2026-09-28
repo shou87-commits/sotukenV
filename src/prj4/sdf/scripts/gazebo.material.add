@@ -1,0 +1,501 @@
+
+material Gazebo/Tree
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree3.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tree1
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree1.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tree2
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree2.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tree3
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree3.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tree4
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree4.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tree5
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree5.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tree6
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree6.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tree7
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tree7.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Soil1
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture soil1.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Soil2
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture soil2.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Soil3
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture soil3.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Soil4
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture soil4.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Grass2
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture grass2.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Granite
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture granite.jpg
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Cat
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture cat.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Dog
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture dog.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Tiger
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture tiger.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Gazebo/Grey17 : Gazebo/DarkGrey
+{
+}
+
+material Gazebo/Gray17 : Gazebo/DarkGrey
+{
+}
+
+material Gazebo/Grey30 : Gazebo/Grey
+{
+}
+
+material Gazebo/Gray30 : Gazebo/Grey
+{
+}
+
+material Gazebo/DarkGrey2
+{
+  technique
+  {
+    pass main
+    {
+      ambient .25 .25 .25  1.0
+      diffuse .25 .25 .25  1.0
+      specular .25 .25 .25 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/DarkGray2 : Gazebo/DarkGrey2
+{
+}
+
+material Gazebo/Grey25 : Gazebo/DarkGrey2
+{
+}
+
+material Gazebo/Gray25 : Gazebo/DarkGrey2
+{
+}
+
+material Gazebo/DimGrey
+{
+  technique
+  {
+    pass main
+    {
+      ambient .4157 .4157 .4157  1.0
+      diffuse .4157 .4157 .4157  1.0
+      specular .4157 .4157 .4157 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/DimGray : Gazebo/DimGrey
+{
+}
+
+material Gazebo/Grey41 : Gazebo/DimGrey
+{
+}
+
+material Gazebo/Gray41 : Gazebo/DimGrey
+{
+}
+
+material Gazebo/LightGrey
+{
+  technique
+  {
+    pass main
+    {
+      ambient .6667 .6667 .6667  1.0
+      diffuse .6667 .6667 .6667  1.0
+      specular .6667 .6667 .6667 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/LightGray : Gazebo/LightGrey
+{
+}
+
+material Gazebo/Grey66 : Gazebo/LightGrey
+{
+}
+
+material Gazebo/Gray66 : Gazebo/LightGrey
+{
+}
+
+material Gazebo/Silver
+{
+  technique
+  {
+    pass main
+    {
+      ambient .7569 .7569 .7569  1.0
+      diffuse .7569 .7569 .7569  1.0
+      specular .7569 .7569 .7569 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/Grey75 : Gazebo/Silver
+{
+}
+
+material Gazebo/Gray75 : Gazebo/Silver
+{
+}
+
+material Gazebo/mirucha
+{
+  technique
+  {
+    pass main
+    {
+      ambient 0.352941 0.329412 0.294118 1.0
+      diffuse 0.352941 0.329412 0.294118 1.0
+      specular 0.352941 0.329412 0.294118 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/kourainando
+{
+  technique
+  {
+    pass main
+    {
+      ambient 0.172549 0.309804 0.329412 1.0
+      diffuse 0.172549 0.309804 0.329412 1.0
+      specular 0.172549 0.309804 0.329412 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/benifujiiro
+{
+  technique
+  {
+    pass main
+    {
+      ambient 0.8 0.650980 0.749020 1.0
+      diffuse 0.8 0.650980 0.749020 1.0
+      specular 0.8 0.650980 0.749020 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/jinzamomi
+{
+  technique
+  {
+    pass main
+    {
+      ambient 0.933333 0.509804 0.486275 1.0
+      diffuse 0.933333 0.509804 0.486275 1.0
+      specular 0.933333 0.509804 0.486275 1.0 1.5
+    }
+  }
+}
+
+material Gazebo/kouzome
+{
+  technique
+  {
+    pass main
+    {
+      ambient 0.678431 0.490196 0.298039 1.0
+      diffuse 0.678431 0.490196 0.298039 1.0
+      specular 0.678431 0.490196 0.298039 1.0 1.5
+    }
+  }
+}
+

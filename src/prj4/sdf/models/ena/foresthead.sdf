@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="woodbox">
+    <static>true</static>
+    <link name="link">
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>1.00 1.00 1.00</scale>
+            <uri>model://ena/meshes/enamesh.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode> <mu>1.2</mu> <mu2>1.2</mu2> </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+	    <scale>1.00 1.00 1.00</scale>
+            <uri>model://ena/meshes/enamesh.stl</uri>
+          </mesh>
+        </geometry>
+	<material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Soil1</name>
+          </script>
+        </material>
+      </visual>
+
+<collision name="wood00collision">
+<pose>1 1 10 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>20.00</length> </cylinder> </geometry>
+</collision>
+<visual name="wood00visual">
+  <pose>1 1 10 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>20.00</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree3</name> </script> </material>
+</visual>
+
+<collision name="wood01collision">
+<pose>35.5 1 5 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>10.00</length> </cylinder> </geometry>
+</collision>
+<visual name="wood01visual">
+<pose>35.5 1 5 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>10.00</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree4</name> </script> </material>
+</visual>
+
+<collision name="wood02collision">
+<pose>1 35.3 7.5 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>15.00</length> </cylinder> </geometry>
+</collision>
+<visual name="wood02visual">
+<pose>1 35.5 7.5 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>15.00</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree3</name> </script> </material>
+</visual>
+
+<collision name="wood03collision">
+<pose>35.5 35.5 5 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>10.00</length> </cylinder> </geometry>
+</collision>
+<visual name="wood03visual">
+<pose>35.5 35.5 5 0 0 0</pose>
+<geometry> <cylinder> <radius>0.15</radius> <length>10.00</length> </cylinder> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Tree7</name> </script> </material>
+</visual>
+
+

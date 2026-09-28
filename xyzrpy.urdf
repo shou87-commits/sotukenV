@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<robot name="points">
+<link name="p0">
+<visual>
+<origin xyz="2.088 -0.212 0.460" rpy="0 0 0" />
+<geometry> <box size="0.2 0.2 0.2"/> </geometry>
+</visual>
+<collision>
+<origin xyz="2.088 -0.212 0.460" rpy="0 0 0" />
+<geometry> <box size="0.2 0.2 0.2"/> </geometry>
+</collision>
+<inertial>
+<origin xyz="2.088 -0.212 0.460" rpy="0 0 0" />
+<mass value="0.1" />
+<inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+</inertial>
+</link>
+<gazebo reference="p0"> <material>Gazebo/Yellow</material> </gazebo>
+
+<joint name="j01" type="fixed">
+<parent link="p0"/>
+<child link="p1"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+<link name="p1">
+<visual>
+<origin xyz="-0.014 0.005 0.291" rpy="0 0 0" />
+<geometry> <box size="0.2 0.2 0.2"/> </geometry>
+</visual>
+</link>
+<gazebo reference="p1"> <material>Gazebo/Yellow</material> </gazebo>
+
+<joint name="j02" type="fixed">
+<parent link="p0"/>
+<child link="p2"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+<link name="p2">
+<visual>
+<origin xyz="1.057 -0.242 0.356" rpy="0 0 0" />
+<geometry> <box size="0.2 0.2 0.2"/> </geometry>
+</visual>
+</link>
+<gazebo reference="p2"> <material>Gazebo/Yellow</material> </gazebo>
+
+<joint name="j03" type="fixed">
+<parent link="p0"/>
+<child link="p3"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+<link name="p3">
+<visual>
+<origin xyz="1.308 -0.298 0.312" rpy="0 0 0" />
+<geometry> <box size="0.2 0.2 0.2"/> </geometry>
+</visual>
+</link>
+<gazebo reference="p3"> <material>Gazebo/Yellow</material> </gazebo>
+
+<joint name="j04" type="fixed">
+<parent link="p0"/>
+<child link="p4"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+<link name="p4">
+<visual>
+<origin xyz="1.258 -0.314 0.364" rpy="0 0 0" />
+<geometry> <box size="0.2 0.2 0.2"/> </geometry>
+</visual>
+</link>
+<gazebo reference="p4"> <material>Gazebo/Yellow</material> </gazebo>
+
+<joint name="j05" type="fixed">
+<parent link="p0"/>
+<child link="p5"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+<link name="p5">
+<visual>
+<origin xyz="2.094 -0.402 0.371" rpy="0 0 0" />
+<geometry> <box size="0.2 0.2 0.2"/> </geometry>
+</visual>
+</link>
+<gazebo reference="p5"> <material>Gazebo/Yellow</material> </gazebo>

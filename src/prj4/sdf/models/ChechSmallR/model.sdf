@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="ChechSmallR">
+    <static>false</static>
+    <link name="link">
+
+<collision name="Xcollision">
+<pose>0.00 0.00 0.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.1 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="Xvisual">
+<pose>0.00 0.00 0.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.1 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+      
+<collision name="Ycollision">
+<pose>0.00 0.00 0.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.1 0.05</size> </box> </geometry>
+</collision>
+<visual name="Yvisual">
+<pose>0.00 0.00 0.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.1 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="Zcollision">
+<pose>0.00 0.00 0.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 0.1</size> </box> </geometry>
+</collision>
+<visual name="Zvisual">
+<pose>0.00 0.00 0.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 0.1</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<inertial>
+<pose>0 0 0 0 0 0</pose>
+<mass>0.3</mass>
+<inertia>
+<ixx>0.003</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+<iyy>0.003</iyy> <iyz>0.0</iyz> <izz>0.003</izz>
+</inertia>
+</inertial>
+
+    </link>
+  </model>
+</sdf>

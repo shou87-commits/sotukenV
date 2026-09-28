@@ -1,0 +1,39 @@
+// user.cpp
+// 一連の動きのシークエンスを定義する関数 UserMotion()
+// これは SuzukiMotion() を利用するための書き方の例
+// 2023年8月の時点ではやや内容が古いので注意、user.cpp.lessonを見よ
+
+#include <math.h>
+#include <iostream>
+#include <vector>
+#include "ros/ros.h"
+#include "std_msgs/Float64.h"
+#include "sensor_msgs/JointState.h"
+#include <sensor_msgs/image_encodings.h>
+#include <sensor_msgs/LaserScan.h>
+
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+#include "const.h"
+#include "motorclass.h"
+#include "imageclass.h"
+#include "depthclass.h"
+#include "lidarclass.h"
+
+#include "user.h" // user*.cpp に含まれる関数のプロトタイプ宣言
+
+// 定数の設定は const.h に移動した
+
+// LIDAR 測距センサのデータにアクセスするためのポインタ
+extern LIDAR *gLIDAR;
+
+void SuzukiMotion(C1 m[], RGBCam *c, DepthCam *d);
+
+void    UserMotion(C1 m[], RGBCam *c, DepthCam *d)
+// intelligence() から呼び出される
+{
+    SuzukiMotion(m, c, d); // 個人が作った動きを呼び出す例
+}

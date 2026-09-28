@@ -1,0 +1,118 @@
+// prg4.h
+
+#ifndef	HEADER_PRG4
+#define	HEADER_PRG4
+
+const int NUMPARAM = 4; // param[] の配列の要素数
+
+const int NUMJOINTS = 50; // Joint の総数
+
+const int A1J1 = 0; // id number of joint, 各ジョイントにID番号を付ける。
+const int A1J2 = 1; // 連番にすること、読み出した角度がこの順番で配列に入る。
+const int A1J3 = 2; // class　の初期化は必ずこの順番で行う。
+const int A1J4 = 3; // この値は読み出した角度の配列の添字に使える。
+const int A1J5 = 4;
+const int A1J6 = 5;
+const int A1J7 = 6;
+const int A1J8 = 7;
+
+const int A2J1 = 8;
+const int A2J2 = 9;
+const int A2J3 = 10;
+const int A2J4 = 11;
+const int A2J5 = 12;
+const int A2J6 = 13;
+const int A2J7 = 14;
+const int A2J8 = 15;
+
+const int A3J1 = 16; // 3番のアームの1番のジョイント
+const int A3J2 = 17;
+const int A3J3 = 18;
+const int A3J4 = 19;
+const int A3J5 = 20;
+const int A3J6 = 21;
+const int A3J7 = 22;
+const int A3J8 = 23;
+
+const int A4J1 = 24;
+const int A4J2 = 25;
+const int A4J3 = 26;
+const int A4J4 = 27;
+const int A4J5 = 28;
+const int A4J6 = 29;
+const int A4J7 = 30;
+const int A4J8 = 31;
+
+const int A5J1 = 32;
+const int A5J2 = 33;
+const int A5J3 = 34;
+const int A5J4 = 35;
+const int A5J5 = 36;
+const int A5J6 = 37;
+const int A5J7 = 38;
+const int A5J8 = 39;
+
+const int A6J1 = 40;
+const int A6J2 = 41;
+const int A6J3 = 42;
+const int A6J4 = 43;
+const int A6J5 = 44;
+const int A6J6 = 45;
+const int A6J7 = 46;
+const int A6J8 = 47;
+
+const int A7J1 = 48; // 首
+const int A7J2 = 49; // 首
+
+const int MODENONE     = 0; // 制御の種類、シンプルなPID制御
+const int MODEPROFILE  = 1; // プロファイルを使った滑らかな動き
+const int MODEPROFILE2 = 2; // プロファイルを使った滑らかな動き
+
+const int MOVING = 0; // モータの状態、動作中
+const int DONE   = 1; // モータの状態、目標角度に達した
+
+const int PROFSIZE = 1024; // モータの角度指定プロファイルの配列サイズ、10.24秒
+
+class C1
+{
+public:
+    C1(char *name, int id, float param[NUMPARAM]);
+    void timerCallback(const ros::TimerEvent&);
+    std_msgs::Float64 anglenow;    // モータの現在角度
+    std_msgs::Float64 targetangle; // モータの目標角度
+    float duration;         // この時間で回転する、単位は秒
+    int ctrlmode;           // 制御の種類 MODENONE, MODEPROFILE
+    int state;              // モータの状態、MOVING, DONE 
+private:
+    int id;
+    float lasttarget;       // 以前の目標角度、初期値は意味のない仮の値
+    float width;            // 回転させたい角度の幅
+    int goal;               // 制御の指示を繰り返す合計回数
+    int count;              // プロファイルをどこまで実行したかカウント、記憶する
+    float profile[PROFSIZE]; // プロファイル、目標角度の時系列、MotorCtrlITVL==0.01なら10.24秒
+
+    const float AttackTime = 0.25; // プロファイル中の立ち上がり時間の割合
+    const float ReleaseTime = 0.25;// プロファイル中の立ち下がり時間の割合
+    const float SustainTime = 1.0 - AttackTime - ReleaseTime; // プロファイル中の持続時間の割合
+    const float Attack  = 0.1;     // 立ち上がり区間で回転させる角度の割合
+    const float Release = 0.1;     // 立ち下がり区間で回転させる角度の割合
+    const float Sustain = 1.0 - Attack - Release; // 持続区間の回転角度の割合
+
+    ros::Publisher c_pub;
+    ros::Timer timer;
+    ros::NodeHandle nh;
+};
+
+class C2
+{
+public:
+    C2(char *name, int id, float param[NUMPARAM]);
+    void timerCallback(const ros::TimerEvent&);
+private:
+    int id;
+    ros::Publisher c_pub;
+    ros::Timer timer;
+    ros::NodeHandle nh;
+};
+
+#endif // HEADER_PRG4

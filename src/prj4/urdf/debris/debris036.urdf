@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<robot name="debris036">
+
+<link name="debris036">
+<visual> <origin xyz="0 0 0" rpy="0 0 0" />
+<geometry> <box size="0.94 0.46 0.43"/> </geometry>
+</visual>
+<collision> <origin xyz="0 0 0" rpy="0 0 0" />
+<geometry> <box size="0.94 0.46 0.43"/> </geometry>
+</collision>
+<inertial> <origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="10.0" />
+<inertia ixx="0.6208" ixy="0" ixz="0" iyy="0.6208" iyz="0" izz="0.6208" />
+</inertial>
+</link>
+<gazebo reference="debris036"> <material>Gazebo/Tree</material> </gazebo>
+
+<link name="debris0360">
+<visual> <origin xyz="-0.43 0 0" rpy="0 0 0" />
+<geometry> <box size="0.05 0.56 0.53"/> </geometry>
+</visual>
+<collision> <origin xyz="-0.43 0 0" rpy="0 0 0" />
+<geometry> <box size="0.05 0.56 0.53"/> </geometry>
+</collision>
+<inertial> <origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="0.1" />
+<inertia ixx="0.0100" ixy="0" ixz="0" iyy="0.0100" iyz="0" izz="0.0100" />
+</inertial>
+</link>
+<gazebo reference="debris0360"> <material>Gazebo/Tree</material> </gazebo>
+
+<joint name="debris0360joint" type="fixed">
+<parent link="debris036"/>
+<child link="debris0360"/>
+<origin xyz="0 0 0" rpy="0 0 0" />
+</joint>
+
+<link name="debris0361">
+<visual> <origin xyz="0.00 0 0" rpy="0 0 0" />
+<geometry> <box size="0.05 0.56 0.53"/> </geometry>
+</visual>
+<collision> <origin xyz="0.00 0 0" rpy="0 0 0" />
+<geometry> <box size="0.05 0.56 0.53"/> </geometry>
+</collision>
+<inertial> <origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="0.1" />
+<inertia ixx="0.0100" ixy="0" ixz="0" iyy="0.0100" iyz="0" izz="0.0100" />
+</inertial>
+</link>
+<gazebo reference="debris0361"> <material>Gazebo/Tree</material> </gazebo>
+
+<joint name="debris0361joint" type="fixed">
+<parent link="debris036"/>
+<child link="debris0361"/>
+<origin xyz="0 0 0" rpy="0 0 0" />
+</joint>
+
+<link name="debris0362">
+<visual> <origin xyz="0.43 0 0" rpy="0 0 0" />
+<geometry> <box size="0.05 0.56 0.53"/> </geometry>
+</visual>
+<collision> <origin xyz="0.43 0 0" rpy="0 0 0" />
+<geometry> <box size="0.05 0.56 0.53"/> </geometry>
+</collision>
+<inertial> <origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="0.1" />
+<inertia ixx="0.0100" ixy="0" ixz="0" iyy="0.0100" iyz="0" izz="0.0100" />
+</inertial>
+</link>
+<gazebo reference="debris0362"> <material>Gazebo/Tree</material> </gazebo>
+
+<joint name="debris0362joint" type="fixed">
+<parent link="debris036"/>
+<child link="debris0362"/>
+<origin xyz="0 0 0" rpy="0 0 0" />
+</joint>
+
+</robot>

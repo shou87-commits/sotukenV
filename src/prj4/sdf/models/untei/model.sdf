@@ -1,0 +1,465 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="untei">
+    <static>true</static>
+    <link name="link">
+
+<collision name="unteiV1collision">
+<pose>0.00 0.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+</collision>
+<visual name="unteiV1visual">
+<pose>0.00 0.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiV2collision">
+<pose>1.00 0.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+</collision>
+<visual name="unteiV2visual">
+<pose>1.00 0.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH1collision">
+<pose>0.50 0.00 0.486533 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH1visual">
+<pose>0.50 0.00 0.486533 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH2collision">
+<pose>0.50 0.00 1.221067 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH2visual">
+<pose>0.50 0.00 1.221067 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH3collision">
+<pose>0.50 0.00 1.710800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH3visual">
+<pose>0.50 0.00 1.710800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH4collision">
+<pose>0.50 0.00 2.299333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH4visual">
+<pose>0.50 0.00 2.299333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH5collision">
+<pose>0.50 0.00 2.783867 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH5visual">
+<pose>0.50 0.00 2.783867 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH6collision">
+<pose>0.50 0.00 3.134000 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH6visual">
+<pose>0.50 0.00 3.134000 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH7collision">
+<pose>0.50 0.00 3.687733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH7visual">
+<pose>0.50 0.00 3.687733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH8collision">
+<pose>0.50 0.00 4.263467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH8visual">
+<pose>0.50 0.00 4.263467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH9collision">
+<pose>0.50 0.00 4.859600 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH9visual">
+<pose>0.50 0.00 4.859600 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH10collision">
+<pose>0.50 0.00 5.301733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH10visual">
+<pose>0.50 0.00 5.301733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH11collision">
+<pose>0.50 0.00 5.811467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH11visual">
+<pose>0.50 0.00 5.811467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH12collision">
+<pose>0.50 0.00 6.210800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH12visual">
+<pose>0.50 0.00 6.210800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH13collision">
+<pose>0.50 0.00 7.009333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH13visual">
+<pose>0.50 0.00 7.009333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="unteiH14collision">
+<pose>0.50 0.00 7.290267 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="unteiH14visual">
+<pose>0.50 0.00 7.290267 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+
+
+
+<collision name="untei2V1collision">
+<pose>0.00 8.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+</collision>
+<visual name="untei2V1visual">
+<pose>0.00 8.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2V2collision">
+<pose>1.00 8.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+</collision>
+<visual name="untei2V2visual">
+<pose>1.00 8.00 4.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 0.05 8.00</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H1collision">
+<pose>0.50 8.00 0.486533 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H1visual">
+<pose>0.50 8.00 0.486533 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H2collision">
+<pose>0.50 8.00 1.221067 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H2visual">
+<pose>0.50 8.00 1.221067 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H3collision">
+<pose>0.50 8.00 1.710800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H3visual">
+<pose>0.50 8.00 1.710800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H4collision">
+<pose>0.50 8.00 2.299333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H4visual">
+<pose>0.50 8.00 2.299333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H5collision">
+<pose>0.50 8.00 2.783867 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H5visual">
+<pose>0.50 8.00 2.783867 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H6collision">
+<pose>0.50 8.00 3.134000 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H6visual">
+<pose>0.50 8.00 3.134000 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H7collision">
+<pose>0.50 8.00 3.687733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H7visual">
+<pose>0.50 8.00 3.687733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H8collision">
+<pose>0.50 8.00 4.263467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H8visual">
+<pose>0.50 8.00 4.263467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H9collision">
+<pose>0.50 8.00 4.859600 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H9visual">
+<pose>0.50 8.00 4.859600 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H10collision">
+<pose>0.50 8.00 5.301733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H10visual">
+<pose>0.50 8.00 5.301733 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H11collision">
+<pose>0.50 8.00 5.811467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H11visual">
+<pose>0.50 8.00 5.811467 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H12collision">
+<pose>0.50 8.00 6.210800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H12visual">
+<pose>0.50 8.00 6.210800 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H13collision">
+<pose>0.50 8.00 7.009333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H13visual">
+<pose>0.50 8.00 7.009333 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei2H14collision">
+<pose>0.50 8.00 7.290267 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei2H14visual">
+<pose>0.50 8.00 7.290267 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+
+<collision name="untei3H1collision">
+<pose>0.00 4.00 8.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 8.00 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H1visual">
+<pose>0.00 4.00 8.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 8.00 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H2collision">
+<pose>1.00 4.00 8.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 8.00 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H2visual">
+<pose>1.00 4.00 8.00 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.05 8.00 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H3collision">
+<pose>0.50 1.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H3visual">
+<pose>0.50 1.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H4collision">
+<pose>0.50 2.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H4visual">
+<pose>0.50 2.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H5collision">
+<pose>0.50 3.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H5visual">
+<pose>0.50 3.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H6collision">
+<pose>0.50 4.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H6visual">
+<pose>0.50 4.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H7collision">
+<pose>0.50 5.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H7visual">
+<pose>0.50 5.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H8collision">
+<pose>0.50 6.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H8visual">
+<pose>0.50 6.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="untei3H9collision">
+<pose>0.50 7.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+</collision>
+<visual name="untei3H9visual">
+<pose>0.50 7.00 8.0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>1.00 0.05 0.05</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+
+    </link>
+  </model>
+</sdf>

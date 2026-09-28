@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+
+<model name="debris000">
+<static>false</static>
+<link name="link">
+
+<visual name="debris000visual">
+<pose>0 0 0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.5 0.5 0.2</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="debris000collision">
+<pose>0 0 0 0.00 0.00 0.00</pose>
+<geometry> <box> <size>0.5 0.5 0.2</size> </box> </geometry>
+</collision>
+
+<inertial> <mass>10.0</mass>
+<inertia> <ixx>0.26</ixx> <ixy>0</ixy> <ixz>0</ixz>
+<iyy>0.26</iyy> <iyz>0</iyz> <izz>0.26</izz> </inertia>
+</inertial>
+
+</link>
+</model>
+</sdf>

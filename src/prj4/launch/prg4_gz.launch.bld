@@ -1,0 +1,39 @@
+<launch>
+<!-- comment -->
+<!-- 
+    <include file="$(find prj4)/launch/empty_sky.launch">
+    <include file="$(find prj4)/launch/empty_world.launch">
+    <include file="$(find prj4)/launch/myworld_full.launch">
+    <include file="$(find prj4)/launch/myworld_simple.launch">
+-->
+    <include file="$(find prj4)/launch/myworld_light.launch">
+        <arg name="paused" value="true"/>
+    </include>
+
+    <arg name="model" default="$(find prj4)/urdf/prg4.urdf" />
+    <param name="robot_description" textfile="$(arg model)" />
+    <node name="spawn_urdf_gz" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model prj4 -x -0.15 -y 0 -z 0.75 -R 0 -P 0 -Y 0" />
+
+    <node name="robot_state_publisher_gz" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <rosparam file="$(find prj4)/config/prg4.yaml" command="load" />
+
+    <node name="ctrl_spawner_gz" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+    	  ns="/prj4" args="j_state_con 
+	  a1j1_pos_con  a1j2_pos_con  a1j3_pos_con  a1j4_pos_con  a1j5_pos_con  a1j6_pos_con  
+	  a1j7_pos_con  a1j8_pos_con  a2j1_pos_con  a2j2_pos_con  a2j3_pos_con  a2j4_pos_con  
+	  a2j5_pos_con  a2j6_pos_con  a2j7_pos_con  a2j8_pos_con  a3j1_pos_con  a3j2_pos_con  
+	  a3j3_pos_con  a3j4_pos_con  a3j5_pos_con  a3j6_pos_con  a3j7_pos_con  a3j8_pos_con 
+	  a4j1_pos_con  a4j2_pos_con  a4j3_pos_con  a4j4_pos_con  a4j5_pos_con  a4j6_pos_con  
+	  a4j7_pos_con  a4j8_pos_con  a5j1_pos_con  a5j2_pos_con  a5j3_pos_con  a5j4_pos_con  
+	  a5j5_pos_con  a5j6_pos_con  a5j7_pos_con  a5j8_pos_con  a6j1_pos_con  a6j2_pos_con  
+	  a6j3_pos_con  a6j4_pos_con  a6j5_pos_con  a6j6_pos_con  a6j7_pos_con  a6j8_pos_con 
+	  a7j1_pos_con  a7j2_pos_con " />
+
+    <arg name="bldwall" default="$(find prj4)/sdf/bldwall.sdf"/>
+    <param name="bldwall_description" textfile="$(arg bldwall)"/>
+    <node name="bldwall_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param bldwall_description -sdf -x 1 -y -4 -z 0.0 -Y 1.5708 -model bldwall" />
+
+</launch>

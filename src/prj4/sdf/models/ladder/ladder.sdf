@@ -1,0 +1,176 @@
+<collision name="ladderV1collision">
+<pose>0.000000 0.000000 4.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 8.000000</size> </box> </geometry>
+</collision>
+<visual name="ladderV1visual">
+<pose>0.000000 0.000000 4.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 8.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderV2collision">
+<pose>1.000000 0.000000 4.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 8.000000</size> </box> </geometry>
+</collision>
+<visual name="ladderV2visual">
+<pose>1.000000 0.000000 4.000000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.050000 0.050000 8.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH1collision">
+<pose>0.500000 0.000000 0.486533 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH1visual">
+<pose>0.500000 0.000000 0.486533 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH2collision">
+<pose>0.500000 0.000000 1.221067 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH2visual">
+<pose>0.500000 0.000000 1.221067 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH3collision">
+<pose>0.500000 0.000000 1.710800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH3visual">
+<pose>0.500000 0.000000 1.710800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH4collision">
+<pose>0.500000 0.000000 2.299333 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH4visual">
+<pose>0.500000 0.000000 2.299333 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH5collision">
+<pose>0.500000 0.000000 2.783867 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH5visual">
+<pose>0.500000 0.000000 2.783867 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH6collision">
+<pose>0.500000 0.000000 3.134000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH6visual">
+<pose>0.500000 0.000000 3.134000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH7collision">
+<pose>0.500000 0.000000 3.687733 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH7visual">
+<pose>0.500000 0.000000 3.687733 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH8collision">
+<pose>0.500000 0.000000 4.263467 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH8visual">
+<pose>0.500000 0.000000 4.263467 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH9collision">
+<pose>0.500000 0.000000 4.859600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH9visual">
+<pose>0.500000 0.000000 4.859600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH10collision">
+<pose>0.500000 0.000000 5.301733 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH10visual">
+<pose>0.500000 0.000000 5.301733 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH11collision">
+<pose>0.500000 0.000000 5.811467 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH11visual">
+<pose>0.500000 0.000000 5.811467 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH12collision">
+<pose>0.500000 0.000000 6.210800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH12visual">
+<pose>0.500000 0.000000 6.210800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH13collision">
+<pose>0.500000 0.000000 7.009333 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH13visual">
+<pose>0.500000 0.000000 7.009333 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="ladderH14collision">
+<pose>0.500000 0.000000 7.290267 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="ladderH14visual">
+<pose>0.500000 0.000000 7.290267 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>1.000000 0.050000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+

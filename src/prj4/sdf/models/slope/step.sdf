@@ -1,0 +1,1100 @@
+<collision name="step00collision">
+<pose>-4.581900 -3.779800 10.025000 0.000000 0.000000 0.651882</pose>
+<geometry> <box> <size>0.050000 0.255400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step00visual">
+<pose>-4.581900 -3.779800 10.025000 0.000000 0.000000 0.651882</pose>
+<geometry> <box> <size>0.050000 0.255400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step01collision">
+<pose>-3.615500 -4.129800 10.025000 0.000000 0.000000 0.234049</pose>
+<geometry> <box> <size>0.050000 0.198400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step01visual">
+<pose>-3.615500 -4.129800 10.025000 0.000000 0.000000 0.234049</pose>
+<geometry> <box> <size>0.050000 0.198400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step02collision">
+<pose>-2.596600 -4.381100 10.025000 0.000000 0.000000 -0.692723</pose>
+<geometry> <box> <size>0.050000 0.238000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step02visual">
+<pose>-2.596600 -4.381100 10.025000 0.000000 0.000000 -0.692723</pose>
+<geometry> <box> <size>0.050000 0.238000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step03collision">
+<pose>-1.201800 -4.022000 10.025000 0.000000 0.000000 -0.515222</pose>
+<geometry> <box> <size>0.050000 0.185200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step03visual">
+<pose>-1.201800 -4.022000 10.025000 0.000000 0.000000 -0.515222</pose>
+<geometry> <box> <size>0.050000 0.185200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step04collision">
+<pose>-0.702300 -4.142400 10.025000 0.000000 0.000000 -0.111527</pose>
+<geometry> <box> <size>0.050000 0.213400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step04visual">
+<pose>-0.702300 -4.142400 10.025000 0.000000 0.000000 -0.111527</pose>
+<geometry> <box> <size>0.050000 0.213400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step05collision">
+<pose>0.521000 -3.796600 10.025000 0.000000 0.000000 -0.680156</pose>
+<geometry> <box> <size>0.050000 0.124600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step05visual">
+<pose>0.521000 -3.796600 10.025000 0.000000 0.000000 -0.680156</pose>
+<geometry> <box> <size>0.050000 0.124600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step06collision">
+<pose>1.800300 -3.838600 10.025000 0.000000 0.000000 -0.694294</pose>
+<geometry> <box> <size>0.050000 0.104400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step06visual">
+<pose>1.800300 -3.838600 10.025000 0.000000 0.000000 -0.694294</pose>
+<geometry> <box> <size>0.050000 0.104400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step07collision">
+<pose>2.266900 -4.124900 10.025000 0.000000 0.000000 -0.768121</pose>
+<geometry> <box> <size>0.050000 0.191200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step07visual">
+<pose>2.266900 -4.124900 10.025000 0.000000 0.000000 -0.768121</pose>
+<geometry> <box> <size>0.050000 0.191200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step08collision">
+<pose>3.310300 -4.138900 10.025000 0.000000 0.000000 0.658165</pose>
+<geometry> <box> <size>0.050000 0.184200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step08visual">
+<pose>3.310300 -4.138900 10.025000 0.000000 0.000000 0.658165</pose>
+<geometry> <box> <size>0.050000 0.184200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step09collision">
+<pose>4.525900 -4.261400 10.025000 0.000000 0.000000 -0.290598</pose>
+<geometry> <box> <size>0.050000 0.164800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step09visual">
+<pose>4.525900 -4.261400 10.025000 0.000000 0.000000 -0.290598</pose>
+<geometry> <box> <size>0.050000 0.164800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step10collision">
+<pose>-4.560900 -3.131800 10.025000 0.000000 0.000000 0.753984</pose>
+<geometry> <box> <size>0.050000 0.118200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step10visual">
+<pose>-4.560900 -3.131800 10.025000 0.000000 0.000000 0.753984</pose>
+<geometry> <box> <size>0.050000 0.118200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step11collision">
+<pose>-3.238900 -2.896600 10.025000 0.000000 0.000000 0.779117</pose>
+<geometry> <box> <size>0.050000 0.134000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step11visual">
+<pose>-3.238900 -2.896600 10.025000 0.000000 0.000000 0.779117</pose>
+<geometry> <box> <size>0.050000 0.134000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step12collision">
+<pose>-2.636500 -2.852500 10.025000 0.000000 0.000000 -0.271748</pose>
+<geometry> <box> <size>0.050000 0.116800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step12visual">
+<pose>-2.636500 -2.852500 10.025000 0.000000 0.000000 -0.271748</pose>
+<geometry> <box> <size>0.050000 0.116800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step13collision">
+<pose>-1.496500 -2.907800 10.025000 0.000000 0.000000 -0.293740</pose>
+<geometry> <box> <size>0.050000 0.245800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step13visual">
+<pose>-1.496500 -2.907800 10.025000 0.000000 0.000000 -0.293740</pose>
+<geometry> <box> <size>0.050000 0.245800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step14collision">
+<pose>-0.763200 -2.873500 10.025000 0.000000 0.000000 0.070686</pose>
+<geometry> <box> <size>0.050000 0.216400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step14visual">
+<pose>-0.763200 -2.873500 10.025000 0.000000 0.000000 0.070686</pose>
+<geometry> <box> <size>0.050000 0.216400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step15collision">
+<pose>0.406900 -3.196200 10.025000 0.000000 0.000000 -0.717856</pose>
+<geometry> <box> <size>0.050000 0.172800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step15visual">
+<pose>0.406900 -3.196200 10.025000 0.000000 0.000000 -0.717856</pose>
+<geometry> <box> <size>0.050000 0.172800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step16collision">
+<pose>1.210900 -2.934400 10.025000 0.000000 0.000000 -0.505798</pose>
+<geometry> <box> <size>0.050000 0.155200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step16visual">
+<pose>1.210900 -2.934400 10.025000 0.000000 0.000000 -0.505798</pose>
+<geometry> <box> <size>0.050000 0.155200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step17collision">
+<pose>2.558800 -3.217900 10.025000 0.000000 0.000000 0.398983</pose>
+<geometry> <box> <size>0.050000 0.230200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step17visual">
+<pose>2.558800 -3.217900 10.025000 0.000000 0.000000 0.398983</pose>
+<geometry> <box> <size>0.050000 0.230200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step18collision">
+<pose>3.802400 -3.458000 10.025000 0.000000 0.000000 -0.207346</pose>
+<geometry> <box> <size>0.050000 0.235200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step18visual">
+<pose>3.802400 -3.458000 10.025000 0.000000 0.000000 -0.207346</pose>
+<geometry> <box> <size>0.050000 0.235200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step19collision">
+<pose>4.158400 -3.341800 10.025000 0.000000 0.000000 -0.637745</pose>
+<geometry> <box> <size>0.050000 0.217200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step19visual">
+<pose>4.158400 -3.341800 10.025000 0.000000 0.000000 -0.637745</pose>
+<geometry> <box> <size>0.050000 0.217200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step20collision">
+<pose>-4.293500 -2.201000 10.025000 0.000000 0.000000 -0.191638</pose>
+<geometry> <box> <size>0.050000 0.186800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step20visual">
+<pose>-4.293500 -2.201000 10.025000 0.000000 0.000000 -0.191638</pose>
+<geometry> <box> <size>0.050000 0.186800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step21collision">
+<pose>-3.429300 -2.532100 10.025000 0.000000 0.000000 -0.287456</pose>
+<geometry> <box> <size>0.050000 0.280400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step21visual">
+<pose>-3.429300 -2.532100 10.025000 0.000000 0.000000 -0.287456</pose>
+<geometry> <box> <size>0.050000 0.280400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step22collision">
+<pose>-2.393600 -2.070800 10.025000 0.000000 0.000000 -0.345576</pose>
+<geometry> <box> <size>0.050000 0.160200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step22visual">
+<pose>-2.393600 -2.070800 10.025000 0.000000 0.000000 -0.345576</pose>
+<geometry> <box> <size>0.050000 0.160200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step23collision">
+<pose>-1.541300 -1.994500 10.025000 0.000000 0.000000 -0.087965</pose>
+<geometry> <box> <size>0.050000 0.237800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step23visual">
+<pose>-1.541300 -1.994500 10.025000 0.000000 0.000000 -0.087965</pose>
+<geometry> <box> <size>0.050000 0.237800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step24collision">
+<pose>-0.542000 -2.089700 10.025000 0.000000 0.000000 -0.601616</pose>
+<geometry> <box> <size>0.050000 0.106200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step24visual">
+<pose>-0.542000 -2.089700 10.025000 0.000000 0.000000 -0.601616</pose>
+<geometry> <box> <size>0.050000 0.106200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step25collision">
+<pose>0.689700 -2.263300 10.025000 0.000000 0.000000 0.328297</pose>
+<geometry> <box> <size>0.050000 0.235000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step25visual">
+<pose>0.689700 -2.263300 10.025000 0.000000 0.000000 0.328297</pose>
+<geometry> <box> <size>0.050000 0.235000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step26collision">
+<pose>1.546900 -2.000800 10.025000 0.000000 0.000000 -0.230908</pose>
+<geometry> <box> <size>0.050000 0.199400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step26visual">
+<pose>1.546900 -2.000800 10.025000 0.000000 0.000000 -0.230908</pose>
+<geometry> <box> <size>0.050000 0.199400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step27collision">
+<pose>2.825500 -2.385800 10.025000 0.000000 0.000000 -0.441395</pose>
+<geometry> <box> <size>0.050000 0.236600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step27visual">
+<pose>2.825500 -2.385800 10.025000 0.000000 0.000000 -0.441395</pose>
+<geometry> <box> <size>0.050000 0.236600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step28collision">
+<pose>3.519600 -1.990300 10.025000 0.000000 0.000000 0.516793</pose>
+<geometry> <box> <size>0.050000 0.246400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step28visual">
+<pose>3.519600 -1.990300 10.025000 0.000000 0.000000 0.516793</pose>
+<geometry> <box> <size>0.050000 0.246400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step29collision">
+<pose>4.163300 -2.411000 10.025000 0.000000 0.000000 0.326726</pose>
+<geometry> <box> <size>0.050000 0.173600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step29visual">
+<pose>4.163300 -2.411000 10.025000 0.000000 0.000000 0.326726</pose>
+<geometry> <box> <size>0.050000 0.173600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step30collision">
+<pose>-4.612000 -1.595700 10.025000 0.000000 0.000000 0.350288</pose>
+<geometry> <box> <size>0.050000 0.259200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step30visual">
+<pose>-4.612000 -1.595700 10.025000 0.000000 0.000000 0.350288</pose>
+<geometry> <box> <size>0.050000 0.259200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step31collision">
+<pose>-3.678500 -1.107800 10.025000 0.000000 0.000000 0.661307</pose>
+<geometry> <box> <size>0.050000 0.190200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step31visual">
+<pose>-3.678500 -1.107800 10.025000 0.000000 0.000000 0.661307</pose>
+<geometry> <box> <size>0.050000 0.190200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step32collision">
+<pose>-2.584700 -1.358400 10.025000 0.000000 0.000000 -0.427258</pose>
+<geometry> <box> <size>0.050000 0.252800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step32visual">
+<pose>-2.584700 -1.358400 10.025000 0.000000 0.000000 -0.427258</pose>
+<geometry> <box> <size>0.050000 0.252800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step33collision">
+<pose>-1.605000 -1.564900 10.025000 0.000000 0.000000 -0.731993</pose>
+<geometry> <box> <size>0.050000 0.200000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step33visual">
+<pose>-1.605000 -1.564900 10.025000 0.000000 0.000000 -0.731993</pose>
+<geometry> <box> <size>0.050000 0.200000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step34collision">
+<pose>-0.763200 -1.060200 10.025000 0.000000 0.000000 0.559205</pose>
+<geometry> <box> <size>0.050000 0.297400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step34visual">
+<pose>-0.763200 -1.060200 10.025000 0.000000 0.000000 0.559205</pose>
+<geometry> <box> <size>0.050000 0.297400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step35collision">
+<pose>0.493700 -1.541100 10.025000 0.000000 0.000000 0.563917</pose>
+<geometry> <box> <size>0.050000 0.173000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step35visual">
+<pose>0.493700 -1.541100 10.025000 0.000000 0.000000 0.563917</pose>
+<geometry> <box> <size>0.050000 0.173000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step36collision">
+<pose>1.452400 -1.314300 10.025000 0.000000 0.000000 -0.427258</pose>
+<geometry> <box> <size>0.050000 0.187400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step36visual">
+<pose>1.452400 -1.314300 10.025000 0.000000 0.000000 -0.427258</pose>
+<geometry> <box> <size>0.050000 0.187400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step37collision">
+<pose>2.434900 -1.368200 10.025000 0.000000 0.000000 0.562346</pose>
+<geometry> <box> <size>0.050000 0.124200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step37visual">
+<pose>2.434900 -1.368200 10.025000 0.000000 0.000000 0.562346</pose>
+<geometry> <box> <size>0.050000 0.124200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step38collision">
+<pose>3.170300 -1.534100 10.025000 0.000000 0.000000 0.460244</pose>
+<geometry> <box> <size>0.050000 0.147000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step38visual">
+<pose>3.170300 -1.534100 10.025000 0.000000 0.000000 0.460244</pose>
+<geometry> <box> <size>0.050000 0.147000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step39collision">
+<pose>4.449600 -1.599900 10.025000 0.000000 0.000000 0.672302</pose>
+<geometry> <box> <size>0.050000 0.102200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step39visual">
+<pose>4.449600 -1.599900 10.025000 0.000000 0.000000 0.672302</pose>
+<geometry> <box> <size>0.050000 0.102200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step40collision">
+<pose>-4.306800 -0.517200 10.025000 0.000000 0.000000 0.413120</pose>
+<geometry> <box> <size>0.050000 0.188600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step40visual">
+<pose>-4.306800 -0.517200 10.025000 0.000000 0.000000 0.413120</pose>
+<geometry> <box> <size>0.050000 0.188600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step41collision">
+<pose>-3.473400 -0.375800 10.025000 0.000000 0.000000 0.634603</pose>
+<geometry> <box> <size>0.050000 0.268000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step41visual">
+<pose>-3.473400 -0.375800 10.025000 0.000000 0.000000 0.634603</pose>
+<geometry> <box> <size>0.050000 0.268000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step42collision">
+<pose>-2.760400 -0.318400 10.025000 0.000000 0.000000 0.655024</pose>
+<geometry> <box> <size>0.050000 0.173800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step42visual">
+<pose>-2.760400 -0.318400 10.025000 0.000000 0.000000 0.655024</pose>
+<geometry> <box> <size>0.050000 0.173800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step43collision">
+<pose>-1.152800 -0.573200 10.025000 0.000000 0.000000 -0.047124</pose>
+<geometry> <box> <size>0.050000 0.248600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step43visual">
+<pose>-1.152800 -0.573200 10.025000 0.000000 0.000000 -0.047124</pose>
+<geometry> <box> <size>0.050000 0.248600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step44collision">
+<pose>-0.507000 -0.450700 10.025000 0.000000 0.000000 0.353430</pose>
+<geometry> <box> <size>0.050000 0.254400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step44visual">
+<pose>-0.507000 -0.450700 10.025000 0.000000 0.000000 0.353430</pose>
+<geometry> <box> <size>0.050000 0.254400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step45collision">
+<pose>0.563000 -0.446500 10.025000 0.000000 0.000000 0.713143</pose>
+<geometry> <box> <size>0.050000 0.127800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step45visual">
+<pose>0.563000 -0.446500 10.025000 0.000000 0.000000 0.713143</pose>
+<geometry> <box> <size>0.050000 0.127800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step46collision">
+<pose>1.618300 -0.742600 10.025000 0.000000 0.000000 -0.056549</pose>
+<geometry> <box> <size>0.050000 0.208400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step46visual">
+<pose>1.618300 -0.742600 10.025000 0.000000 0.000000 -0.056549</pose>
+<geometry> <box> <size>0.050000 0.208400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step47collision">
+<pose>2.504900 -0.551500 10.025000 0.000000 0.000000 -0.238762</pose>
+<geometry> <box> <size>0.050000 0.260800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step47visual">
+<pose>2.504900 -0.551500 10.025000 0.000000 0.000000 -0.238762</pose>
+<geometry> <box> <size>0.050000 0.260800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step48collision">
+<pose>3.585400 -0.220400 10.025000 0.000000 0.000000 -0.246616</pose>
+<geometry> <box> <size>0.050000 0.159800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step48visual">
+<pose>3.585400 -0.220400 10.025000 0.000000 0.000000 -0.246616</pose>
+<geometry> <box> <size>0.050000 0.159800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step49collision">
+<pose>4.547600 -0.562000 10.025000 0.000000 0.000000 -0.296881</pose>
+<geometry> <box> <size>0.050000 0.184400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step49visual">
+<pose>4.547600 -0.562000 10.025000 0.000000 0.000000 -0.296881</pose>
+<geometry> <box> <size>0.050000 0.184400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step50collision">
+<pose>-4.426500 0.660700 10.025000 0.000000 0.000000 0.361284</pose>
+<geometry> <box> <size>0.050000 0.232200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step50visual">
+<pose>-4.426500 0.660700 10.025000 0.000000 0.000000 0.361284</pose>
+<geometry> <box> <size>0.050000 0.232200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step51collision">
+<pose>-3.636500 0.324000 10.025000 0.000000 0.000000 -0.087965</pose>
+<geometry> <box> <size>0.050000 0.247200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step51visual">
+<pose>-3.636500 0.324000 10.025000 0.000000 0.000000 -0.087965</pose>
+<geometry> <box> <size>0.050000 0.247200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step52collision">
+<pose>-2.484600 0.425500 10.025000 0.000000 0.000000 -0.131947</pose>
+<geometry> <box> <size>0.050000 0.241600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step52visual">
+<pose>-2.484600 0.425500 10.025000 0.000000 0.000000 -0.131947</pose>
+<geometry> <box> <size>0.050000 0.241600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step53collision">
+<pose>-1.669400 0.746800 10.025000 0.000000 0.000000 -0.688010</pose>
+<geometry> <box> <size>0.050000 0.227400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step53visual">
+<pose>-1.669400 0.746800 10.025000 0.000000 0.000000 -0.688010</pose>
+<geometry> <box> <size>0.050000 0.227400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step54collision">
+<pose>-0.430000 0.125200 10.025000 0.000000 0.000000 0.626749</pose>
+<geometry> <box> <size>0.050000 0.190400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step54visual">
+<pose>-0.430000 0.125200 10.025000 0.000000 0.000000 0.626749</pose>
+<geometry> <box> <size>0.050000 0.190400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step55collision">
+<pose>0.535000 0.427600 10.025000 0.000000 0.000000 0.742988</pose>
+<geometry> <box> <size>0.050000 0.114200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step55visual">
+<pose>0.535000 0.427600 10.025000 0.000000 0.000000 0.742988</pose>
+<geometry> <box> <size>0.050000 0.114200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step56collision">
+<pose>1.766700 0.751000 10.025000 0.000000 0.000000 0.618895</pose>
+<geometry> <box> <size>0.050000 0.286600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step56visual">
+<pose>1.766700 0.751000 10.025000 0.000000 0.000000 0.618895</pose>
+<geometry> <box> <size>0.050000 0.286600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step57collision">
+<pose>2.264100 0.239300 10.025000 0.000000 0.000000 0.626749</pose>
+<geometry> <box> <size>0.050000 0.296200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step57visual">
+<pose>2.264100 0.239300 10.025000 0.000000 0.000000 0.626749</pose>
+<geometry> <box> <size>0.050000 0.296200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step58collision">
+<pose>3.821300 0.641100 10.025000 0.000000 0.000000 0.263894</pose>
+<geometry> <box> <size>0.050000 0.262600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step58visual">
+<pose>3.821300 0.641100 10.025000 0.000000 0.000000 0.263894</pose>
+<geometry> <box> <size>0.050000 0.262600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step59collision">
+<pose>4.216500 0.748200 10.025000 0.000000 0.000000 -0.653453</pose>
+<geometry> <box> <size>0.050000 0.193200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step59visual">
+<pose>4.216500 0.748200 10.025000 0.000000 0.000000 -0.653453</pose>
+<geometry> <box> <size>0.050000 0.193200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step60collision">
+<pose>-4.787000 1.478800 10.025000 0.000000 0.000000 0.065974</pose>
+<geometry> <box> <size>0.050000 0.175200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step60visual">
+<pose>-4.787000 1.478800 10.025000 0.000000 0.000000 0.065974</pose>
+<geometry> <box> <size>0.050000 0.175200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step61collision">
+<pose>-3.775100 1.311500 10.025000 0.000000 0.000000 -0.504227</pose>
+<geometry> <box> <size>0.050000 0.251200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step61visual">
+<pose>-3.775100 1.311500 10.025000 0.000000 0.000000 -0.504227</pose>
+<geometry> <box> <size>0.050000 0.251200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step62collision">
+<pose>-2.229100 1.288400 10.025000 0.000000 0.000000 -0.515222</pose>
+<geometry> <box> <size>0.050000 0.169600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step62visual">
+<pose>-2.229100 1.288400 10.025000 0.000000 0.000000 -0.515222</pose>
+<geometry> <box> <size>0.050000 0.169600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step63collision">
+<pose>-1.843700 1.235200 10.025000 0.000000 0.000000 -0.248186</pose>
+<geometry> <box> <size>0.050000 0.142000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step63visual">
+<pose>-1.843700 1.235200 10.025000 0.000000 0.000000 -0.248186</pose>
+<geometry> <box> <size>0.050000 0.142000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step64collision">
+<pose>-0.705800 1.210700 10.025000 0.000000 0.000000 -0.201062</pose>
+<geometry> <box> <size>0.050000 0.242600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step64visual">
+<pose>-0.705800 1.210700 10.025000 0.000000 0.000000 -0.201062</pose>
+<geometry> <box> <size>0.050000 0.242600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step65collision">
+<pose>0.328500 1.573300 10.025000 0.000000 0.000000 0.347147</pose>
+<geometry> <box> <size>0.050000 0.219800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step65visual">
+<pose>0.328500 1.573300 10.025000 0.000000 0.000000 0.347147</pose>
+<geometry> <box> <size>0.050000 0.219800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step66collision">
+<pose>1.807300 1.567700 10.025000 0.000000 0.000000 0.262324</pose>
+<geometry> <box> <size>0.050000 0.288000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step66visual">
+<pose>1.807300 1.567700 10.025000 0.000000 0.000000 0.262324</pose>
+<geometry> <box> <size>0.050000 0.288000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step67collision">
+<pose>2.309600 1.088900 10.025000 0.000000 0.000000 0.760267</pose>
+<geometry> <box> <size>0.050000 0.130000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step67visual">
+<pose>2.309600 1.088900 10.025000 0.000000 0.000000 0.760267</pose>
+<geometry> <box> <size>0.050000 0.130000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step68collision">
+<pose>3.794000 1.156800 10.025000 0.000000 0.000000 -0.362855</pose>
+<geometry> <box> <size>0.050000 0.184400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step68visual">
+<pose>3.794000 1.156800 10.025000 0.000000 0.000000 -0.362855</pose>
+<geometry> <box> <size>0.050000 0.184400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step69collision">
+<pose>4.206700 1.441000 10.025000 0.000000 0.000000 -0.326726</pose>
+<geometry> <box> <size>0.050000 0.116800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step69visual">
+<pose>4.206700 1.441000 10.025000 0.000000 0.000000 -0.326726</pose>
+<geometry> <box> <size>0.050000 0.116800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step70collision">
+<pose>-4.379600 2.495000 10.025000 0.000000 0.000000 -0.180642</pose>
+<geometry> <box> <size>0.050000 0.225000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step70visual">
+<pose>-4.379600 2.495000 10.025000 0.000000 0.000000 -0.180642</pose>
+<geometry> <box> <size>0.050000 0.225000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step71collision">
+<pose>-3.640700 2.348000 10.025000 0.000000 0.000000 0.625178</pose>
+<geometry> <box> <size>0.050000 0.108400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step71visual">
+<pose>-3.640700 2.348000 10.025000 0.000000 0.000000 0.625178</pose>
+<geometry> <box> <size>0.050000 0.108400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step72collision">
+<pose>-2.641400 2.033000 10.025000 0.000000 0.000000 0.141372</pose>
+<geometry> <box> <size>0.050000 0.204800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step72visual">
+<pose>-2.641400 2.033000 10.025000 0.000000 0.000000 0.141372</pose>
+<geometry> <box> <size>0.050000 0.204800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step73collision">
+<pose>-1.443300 2.473300 10.025000 0.000000 0.000000 0.364426</pose>
+<geometry> <box> <size>0.050000 0.167200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step73visual">
+<pose>-1.443300 2.473300 10.025000 0.000000 0.000000 0.364426</pose>
+<geometry> <box> <size>0.050000 0.167200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step74collision">
+<pose>-0.154200 1.902800 10.025000 0.000000 0.000000 0.422545</pose>
+<geometry> <box> <size>0.050000 0.175800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step74visual">
+<pose>-0.154200 1.902800 10.025000 0.000000 0.000000 0.422545</pose>
+<geometry> <box> <size>0.050000 0.175800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step75collision">
+<pose>0.693200 2.495000 10.025000 0.000000 0.000000 0.565488</pose>
+<geometry> <box> <size>0.050000 0.151000 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step75visual">
+<pose>0.693200 2.495000 10.025000 0.000000 0.000000 0.565488</pose>
+<geometry> <box> <size>0.050000 0.151000 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step76collision">
+<pose>1.555300 2.518800 10.025000 0.000000 0.000000 -0.463386</pose>
+<geometry> <box> <size>0.050000 0.298600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step76visual">
+<pose>1.555300 2.518800 10.025000 0.000000 0.000000 -0.463386</pose>
+<geometry> <box> <size>0.050000 0.298600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step77collision">
+<pose>2.546900 2.252800 10.025000 0.000000 0.000000 0.724139</pose>
+<geometry> <box> <size>0.050000 0.222600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step77visual">
+<pose>2.546900 2.252800 10.025000 0.000000 0.000000 0.724139</pose>
+<geometry> <box> <size>0.050000 0.222600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step78collision">
+<pose>3.378200 2.081300 10.025000 0.000000 0.000000 -0.468098</pose>
+<geometry> <box> <size>0.050000 0.288800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step78visual">
+<pose>3.378200 2.081300 10.025000 0.000000 0.000000 -0.468098</pose>
+<geometry> <box> <size>0.050000 0.288800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step79collision">
+<pose>4.504200 2.448800 10.025000 0.000000 0.000000 0.537214</pose>
+<geometry> <box> <size>0.050000 0.104200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step79visual">
+<pose>4.504200 2.448800 10.025000 0.000000 0.000000 0.537214</pose>
+<geometry> <box> <size>0.050000 0.104200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step80collision">
+<pose>-4.480400 2.932300 10.025000 0.000000 0.000000 0.640886</pose>
+<geometry> <box> <size>0.050000 0.274400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step80visual">
+<pose>-4.480400 2.932300 10.025000 0.000000 0.000000 0.640886</pose>
+<geometry> <box> <size>0.050000 0.274400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step81collision">
+<pose>-3.501400 2.825200 10.025000 0.000000 0.000000 0.397412</pose>
+<geometry> <box> <size>0.050000 0.261600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step81visual">
+<pose>-3.501400 2.825200 10.025000 0.000000 0.000000 0.397412</pose>
+<geometry> <box> <size>0.050000 0.261600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step82collision">
+<pose>-2.637900 3.033100 10.025000 0.000000 0.000000 0.232478</pose>
+<geometry> <box> <size>0.050000 0.126600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step82visual">
+<pose>-2.637900 3.033100 10.025000 0.000000 0.000000 0.232478</pose>
+<geometry> <box> <size>0.050000 0.126600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step83collision">
+<pose>-1.322200 3.196900 10.025000 0.000000 0.000000 -0.207346</pose>
+<geometry> <box> <size>0.050000 0.249200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step83visual">
+<pose>-1.322200 3.196900 10.025000 0.000000 0.000000 -0.207346</pose>
+<geometry> <box> <size>0.050000 0.249200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step84collision">
+<pose>-0.500000 2.832200 10.025000 0.000000 0.000000 0.466528</pose>
+<geometry> <box> <size>0.050000 0.257600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step84visual">
+<pose>-0.500000 2.832200 10.025000 0.000000 0.000000 0.466528</pose>
+<geometry> <box> <size>0.050000 0.257600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step85collision">
+<pose>0.843000 3.012100 10.025000 0.000000 0.000000 -0.215200</pose>
+<geometry> <box> <size>0.050000 0.106600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step85visual">
+<pose>0.843000 3.012100 10.025000 0.000000 0.000000 -0.215200</pose>
+<geometry> <box> <size>0.050000 0.106600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step86collision">
+<pose>1.327100 3.424400 10.025000 0.000000 0.000000 -0.589050</pose>
+<geometry> <box> <size>0.050000 0.237200 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step86visual">
+<pose>1.327100 3.424400 10.025000 0.000000 0.000000 -0.589050</pose>
+<geometry> <box> <size>0.050000 0.237200 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step87collision">
+<pose>2.847200 3.482500 10.025000 0.000000 0.000000 -0.538784</pose>
+<geometry> <box> <size>0.050000 0.137600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step87visual">
+<pose>2.847200 3.482500 10.025000 0.000000 0.000000 -0.538784</pose>
+<geometry> <box> <size>0.050000 0.137600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step88collision">
+<pose>3.455200 3.122000 10.025000 0.000000 0.000000 0.661307</pose>
+<geometry> <box> <size>0.050000 0.182800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step88visual">
+<pose>3.455200 3.122000 10.025000 0.000000 0.000000 0.661307</pose>
+<geometry> <box> <size>0.050000 0.182800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step89collision">
+<pose>4.362800 2.819600 10.025000 0.000000 0.000000 -0.706860</pose>
+<geometry> <box> <size>0.050000 0.105400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step89visual">
+<pose>4.362800 2.819600 10.025000 0.000000 0.000000 -0.706860</pose>
+<geometry> <box> <size>0.050000 0.105400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step90collision">
+<pose>-4.460800 4.331400 10.025000 0.000000 0.000000 0.309448</pose>
+<geometry> <box> <size>0.050000 0.258800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step90visual">
+<pose>-4.460800 4.331400 10.025000 0.000000 0.000000 0.309448</pose>
+<geometry> <box> <size>0.050000 0.258800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step91collision">
+<pose>-3.819900 3.727300 10.025000 0.000000 0.000000 -0.113098</pose>
+<geometry> <box> <size>0.050000 0.100400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step91visual">
+<pose>-3.819900 3.727300 10.025000 0.000000 0.000000 -0.113098</pose>
+<geometry> <box> <size>0.050000 0.100400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step92collision">
+<pose>-2.500000 4.176700 10.025000 0.000000 0.000000 0.059690</pose>
+<geometry> <box> <size>0.050000 0.229400 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step92visual">
+<pose>-2.500000 4.176700 10.025000 0.000000 0.000000 0.059690</pose>
+<geometry> <box> <size>0.050000 0.229400 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step93collision">
+<pose>-1.744300 4.074500 10.025000 0.000000 0.000000 -0.252899</pose>
+<geometry> <box> <size>0.050000 0.126800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step93visual">
+<pose>-1.744300 4.074500 10.025000 0.000000 0.000000 -0.252899</pose>
+<geometry> <box> <size>0.050000 0.126800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step94collision">
+<pose>-0.699500 3.788900 10.025000 0.000000 0.000000 0.202633</pose>
+<geometry> <box> <size>0.050000 0.200800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step94visual">
+<pose>-0.699500 3.788900 10.025000 0.000000 0.000000 0.202633</pose>
+<geometry> <box> <size>0.050000 0.200800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step95collision">
+<pose>0.824800 3.899500 10.025000 0.000000 0.000000 -0.246616</pose>
+<geometry> <box> <size>0.050000 0.185800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step95visual">
+<pose>0.824800 3.899500 10.025000 0.000000 0.000000 -0.246616</pose>
+<geometry> <box> <size>0.050000 0.185800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step96collision">
+<pose>1.273900 4.330000 10.025000 0.000000 0.000000 0.739847</pose>
+<geometry> <box> <size>0.050000 0.147600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step96visual">
+<pose>1.273900 4.330000 10.025000 0.000000 0.000000 0.739847</pose>
+<geometry> <box> <size>0.050000 0.147600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step97collision">
+<pose>2.352300 3.956900 10.025000 0.000000 0.000000 -0.326726</pose>
+<geometry> <box> <size>0.050000 0.297600 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step97visual">
+<pose>2.352300 3.956900 10.025000 0.000000 0.000000 -0.326726</pose>
+<geometry> <box> <size>0.050000 0.297600 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step98collision">
+<pose>3.670100 3.800800 10.025000 0.000000 0.000000 -0.172788</pose>
+<geometry> <box> <size>0.050000 0.265800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step98visual">
+<pose>3.670100 3.800800 10.025000 0.000000 0.000000 -0.172788</pose>
+<geometry> <box> <size>0.050000 0.265800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+
+<collision name="step99collision">
+<pose>4.388000 4.078700 10.025000 0.000000 0.000000 0.512081</pose>
+<geometry> <box> <size>0.050000 0.213800 0.050000</size> </box> </geometry>
+</collision>
+<visual name="step99visual">
+<pose>4.388000 4.078700 10.025000 0.000000 0.000000 0.512081</pose>
+<geometry> <box> <size>0.050000 0.213800 0.050000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Soil1</name> </script> </material>
+</visual>
+

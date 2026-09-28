@@ -1,0 +1,90 @@
+import * from "grid.material"
+material Gazebo/DepthMap
+material Gazebo/XYZPoints
+material Gazebo/Reflectance
+material Gazebo/XYZNormals
+material Gazebo/LaserScan1st
+material Gazebo/LaserScan2nd
+material Gazebo/Grey
+material Gazebo/Gray : Gazebo/Grey
+material Gazebo/DarkGrey
+material Gazebo/DarkGray : Gazebo/DarkGrey
+material Gazebo/White
+material Gazebo/FlatBlack
+material Gazebo/Black
+material Gazebo/Red
+material Gazebo/RedBright
+material Gazebo/Green
+material Gazebo/Blue
+material Gazebo/SkyBlue
+material Gazebo/Yellow
+material Gazebo/ZincYellow
+material Gazebo/DarkYellow
+material Gazebo/Purple
+material Gazebo/Turquoise
+material Gazebo/Orange
+material Gazebo/Indigo
+material Gazebo/WhiteGlow : Gazebo/White
+material Gazebo/RedGlow
+material Gazebo/GreenGlow : Gazebo/Green
+material Gazebo/BlueGlow : Gazebo/Blue
+material Gazebo/YellowGlow : Gazebo/Yellow
+material Gazebo/PurpleGlow : Gazebo/Purple
+material Gazebo/TurquoiseGlow : Gazebo/Turquoise
+material Gazebo/TurquoiseGlowOutline
+material Gazebo/RedTransparentOverlay
+material Gazebo/BlueTransparentOverlay
+material Gazebo/GreenTransparentOverlay
+material Gazebo/OrangeTransparentOverlay
+material Gazebo/DarkOrangeTransparentOverlay
+material Gazebo/RedTransparent
+material Gazebo/GreenTransparent
+material Gazebo/BlueTransparent
+material Gazebo/DarkMagentaTransparent
+material Gazebo/GreyTransparent
+material Gazebo/BlackTransparent
+material Gazebo/YellowTransparent
+material Gazebo/LightOn
+material Gazebo/LightOff
+material Gazebo/LightBlueLaser
+material Gazebo/BlueLaser
+material Gazebo/OrangeTransparent
+material Gazebo/JointAnchor
+material Gazebo/CoM
+material Gazebo/WoodFloor
+material Gazebo/CeilingTiled
+material Gazebo/PaintedWall
+material Gazebo/PioneerBody
+material Gazebo/Pioneer2Body
+material Gazebo/Gold
+material Gazebo/GreyGradientSky
+material Gazebo/CloudySky
+material Gazebo/WoodPallet
+material Gazebo/Wood
+material Gazebo/Bricks
+material Gazebo/Road
+material Gazebo/Residential
+material Gazebo/Tertiary
+material Gazebo/Pedestrian
+material Gazebo/Footway
+material Gazebo/Motorway
+material Gazebo/Lanes_6
+material Gazebo/Trunk
+material Gazebo/Lanes_4
+material Gazebo/Primary
+material Gazebo/Lanes_2
+material Gazebo/Secondary
+material Gazebo/Lane_1
+material Gazebo/Steps
+material drc/san_fauxcity_sign
+material Gazebo/GaussianCameraNoise
+material Gazebo/CameraDistortionMap
+material Gazebo/WideLensMap
+material Gazebo/CameraLensFlare
+material Gazebo/PointCloud
+material Gazebo/PointHandle
+material Gazebo/BuildingFrame
+material Gazebo/Runway
+material Gazebo/Grass
+material Gazebo/Editor
+material Gazebo/EditorPlane

@@ -1,0 +1,275 @@
+<collision name="rock00collision">
+<pose>-4.163800 -3.059600 10.050000 -0.345576 -0.238762 -0.016755</pose>
+<geometry> <box> <size>0.255400 0.283000 0.258600</size> </box> </geometry>
+</collision>
+<visual name="rock00visual">
+<pose>-4.163800 -3.059600 10.050000 -0.345576 -0.238762 -0.016755</pose>
+<geometry> <box> <size>0.255400 0.283000 0.258600</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock01collision">
+<pose>-2.110600 -3.793200 10.050000 0.550827 0.892214 0.083776</pose>
+<geometry> <box> <size>0.105400 0.238000 0.111800</size> </box> </geometry>
+</collision>
+<visual name="rock01visual">
+<pose>-2.110600 -3.793200 10.050000 0.550827 0.892214 0.083776</pose>
+<geometry> <box> <size>0.105400 0.238000 0.111800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock02collision">
+<pose>-0.459200 -3.269600 10.050000 -0.148702 0.590621 0.062832</pose>
+<geometry> <box> <size>0.142200 0.173600 0.213400</size> </box> </geometry>
+</collision>
+<visual name="rock02visual">
+<pose>-0.459200 -3.269600 10.050000 -0.148702 0.590621 0.062832</pose>
+<geometry> <box> <size>0.142200 0.173600 0.213400</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock03collision">
+<pose>1.472200 -4.206200 10.050000 -1.001123 -0.925725 -0.902686</pose>
+<geometry> <box> <size>0.127000 0.285800 0.260400</size> </box> </geometry>
+</collision>
+<visual name="rock03visual">
+<pose>1.472200 -4.206200 10.050000 -1.001123 -0.925725 -0.902686</pose>
+<geometry> <box> <size>0.127000 0.285800 0.260400</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock04collision">
+<pose>3.850200 -3.661600 10.050000 -0.265989 -0.165458 0.877554</pose>
+<geometry> <box> <size>0.102200 0.108400 0.145800</size> </box> </geometry>
+</collision>
+<visual name="rock04visual">
+<pose>3.850200 -3.661600 10.050000 -0.265989 -0.165458 0.877554</pose>
+<geometry> <box> <size>0.102200 0.108400 0.145800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock10collision">
+<pose>-3.948200 -2.222800 10.050000 -0.182213 0.054454 -0.856610</pose>
+<geometry> <box> <size>0.164800 0.163000 0.174000</size> </box> </geometry>
+</collision>
+<visual name="rock10visual">
+<pose>-3.948200 -2.222800 10.050000 -0.182213 0.054454 -0.856610</pose>
+<geometry> <box> <size>0.164800 0.163000 0.174000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock11collision">
+<pose>-1.361600 -1.277800 10.050000 -0.458674 -0.408408 0.890120</pose>
+<geometry> <box> <size>0.272400 0.134000 0.299200</size> </box> </geometry>
+</collision>
+<visual name="rock11visual">
+<pose>-1.361600 -1.277800 10.050000 -0.458674 -0.408408 0.890120</pose>
+<geometry> <box> <size>0.272400 0.134000 0.299200</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock12collision">
+<pose>-0.242200 -2.029600 10.050000 -0.391653 0.747701 -0.787494</pose>
+<geometry> <box> <size>0.201000 0.269200 0.245800</size> </box> </geometry>
+</collision>
+<visual name="rock12visual">
+<pose>-0.242200 -2.029600 10.050000 -0.391653 0.747701 -0.787494</pose>
+<geometry> <box> <size>0.201000 0.269200 0.245800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock13collision">
+<pose>2.114800 -1.737000 10.050000 -0.284838 -0.957141 0.523600</pose>
+<geometry> <box> <size>0.262800 0.173400 0.186800</size> </box> </geometry>
+</collision>
+<visual name="rock13visual">
+<pose>2.114800 -1.737000 10.050000 -0.284838 -0.957141 0.523600</pose>
+<geometry> <box> <size>0.262800 0.173400 0.186800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock14collision">
+<pose>4.431200 -2.113600 10.050000 -0.203157 0.316254 0.531978</pose>
+<geometry> <box> <size>0.135600 0.257600 0.216800</size> </box> </geometry>
+</collision>
+<visual name="rock14visual">
+<pose>4.431200 -2.113600 10.050000 -0.203157 0.316254 0.531978</pose>
+<geometry> <box> <size>0.135600 0.257600 0.216800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock20collision">
+<pose>-3.395200 -0.616000 10.050000 -1.022067 -0.573866 0.180118</pose>
+<geometry> <box> <size>0.235200 0.173600 0.247800</size> </box> </geometry>
+</collision>
+<visual name="rock20visual">
+<pose>-3.395200 -0.616000 10.050000 -1.022067 -0.573866 0.180118</pose>
+<geometry> <box> <size>0.235200 0.173600 0.247800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock21collision">
+<pose>-1.945400 0.413000 10.050000 -0.069115 0.211534 -0.844043</pose>
+<geometry> <box> <size>0.214000 0.186800 0.175600</size> </box> </geometry>
+</collision>
+<visual name="rock21visual">
+<pose>-1.945400 0.413000 10.050000 -0.069115 0.211534 -0.844043</pose>
+<geometry> <box> <size>0.214000 0.186800 0.175600</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock22collision">
+<pose>-0.256200 -0.011200 10.050000 -0.460768 -0.448202 -0.123570</pose>
+<geometry> <box> <size>0.230400 0.251200 0.160200</size> </box> </geometry>
+</collision>
+<visual name="rock22visual">
+<pose>-0.256200 -0.011200 10.050000 -0.460768 -0.448202 -0.123570</pose>
+<geometry> <box> <size>0.230400 0.251200 0.160200</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock23collision">
+<pose>2.264600 -0.078400 10.050000 -0.982274 -0.802155 -0.844043</pose>
+<geometry> <box> <size>0.223800 0.188000 0.245800</size> </box> </geometry>
+</collision>
+<visual name="rock23visual">
+<pose>2.264600 -0.078400 10.050000 -0.982274 -0.802155 -0.844043</pose>
+<geometry> <box> <size>0.223800 0.188000 0.245800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock24collision">
+<pose>3.973400 0.245000 10.050000 0.745606 -0.006283 -0.307877</pose>
+<geometry> <box> <size>0.241800 0.285400 0.213400</size> </box> </geometry>
+</collision>
+<visual name="rock24visual">
+<pose>3.973400 0.245000 10.050000 0.745606 -0.006283 -0.307877</pose>
+<geometry> <box> <size>0.241800 0.285400 0.213400</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock30collision">
+<pose>-3.349000 1.528400 10.050000 0.058643 0.777022 0.485901</pose>
+<geometry> <box> <size>0.236600 0.143800 0.224800</size> </box> </geometry>
+</collision>
+<visual name="rock30visual">
+<pose>-3.349000 1.528400 10.050000 0.058643 0.777022 0.485901</pose>
+<geometry> <box> <size>0.236600 0.143800 0.224800</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock31collision">
+<pose>-1.995800 1.126600 10.050000 0.450296 -0.335104 -0.735134</pose>
+<geometry> <box> <size>0.154000 0.173600 0.241600</size> </box> </geometry>
+</collision>
+<visual name="rock31visual">
+<pose>-1.995800 1.126600 10.050000 0.450296 -0.335104 -0.735134</pose>
+<geometry> <box> <size>0.154000 0.173600 0.241600</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock32collision">
+<pose>0.312200 1.965200 10.050000 0.881742 0.115192 -0.253422</pose>
+<geometry> <box> <size>0.149000 0.269200 0.190200</size> </box> </geometry>
+</collision>
+<visual name="rock32visual">
+<pose>0.312200 1.965200 10.050000 0.881742 0.115192 -0.253422</pose>
+<geometry> <box> <size>0.149000 0.269200 0.190200</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock33collision">
+<pose>2.369600 1.419200 10.050000 0.000000 -0.975990 0.552922</pose>
+<geometry> <box> <size>0.268200 0.170000 0.138600</size> </box> </geometry>
+</collision>
+<visual name="rock33visual">
+<pose>2.369600 1.419200 10.050000 0.000000 -0.975990 0.552922</pose>
+<geometry> <box> <size>0.268200 0.170000 0.138600</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock34collision">
+<pose>4.579600 2.481800 10.050000 -0.571771 -0.282744 0.751890</pose>
+<geometry> <box> <size>0.271200 0.248600 0.198200</size> </box> </geometry>
+</collision>
+<visual name="rock34visual">
+<pose>4.579600 2.481800 10.050000 -0.571771 -0.282744 0.751890</pose>
+<geometry> <box> <size>0.271200 0.248600 0.198200</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock40collision">
+<pose>-4.095200 3.671400 10.050000 -0.194779 -0.054454 -0.793778</pose>
+<geometry> <box> <size>0.187400 0.145600 0.155000</size> </box> </geometry>
+</collision>
+<visual name="rock40visual">
+<pose>-4.095200 3.671400 10.050000 -0.194779 -0.054454 -0.793778</pose>
+<geometry> <box> <size>0.187400 0.145600 0.155000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock41collision">
+<pose>-2.147000 2.940600 10.050000 0.666019 -0.150797 -0.747701</pose>
+<geometry> <box> <size>0.147400 0.147000 0.258600</size> </box> </geometry>
+</collision>
+<visual name="rock41visual">
+<pose>-2.147000 2.940600 10.050000 0.666019 -0.150797 -0.747701</pose>
+<geometry> <box> <size>0.147400 0.147000 0.258600</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock42collision">
+<pose>0.599200 3.640600 10.050000 0.550827 0.236667 0.079587</pose>
+<geometry> <box> <size>0.255200 0.180800 0.188600</size> </box> </geometry>
+</collision>
+<visual name="rock42visual">
+<pose>0.599200 3.640600 10.050000 0.550827 0.236667 0.079587</pose>
+<geometry> <box> <size>0.255200 0.180800 0.188600</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock43collision">
+<pose>2.476000 4.165600 10.050000 -0.274366 0.873365 0.873365</pose>
+<geometry> <box> <size>0.263600 0.125600 0.237600</size> </box> </geometry>
+</collision>
+<visual name="rock43visual">
+<pose>2.476000 4.165600 10.050000 -0.274366 0.873365 0.873365</pose>
+<geometry> <box> <size>0.263600 0.125600 0.237600</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="rock44collision">
+<pose>3.753600 3.940200 10.050000 -0.002094 0.569677 0.471240</pose>
+<geometry> <box> <size>0.194000 0.136600 0.198000</size> </box> </geometry>
+</collision>
+<visual name="rock44visual">
+<pose>3.753600 3.940200 10.050000 -0.002094 0.569677 0.471240</pose>
+<geometry> <box> <size>0.194000 0.136600 0.198000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+

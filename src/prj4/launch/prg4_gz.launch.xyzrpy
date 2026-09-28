@@ -1,0 +1,17 @@
+<launch>
+<!-- comment -->
+<!-- 
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="paused" value="true"/>
+    </include>
+-->
+    <include file="$(find prj4)/launch/myworld.launch">
+        <arg name="paused" value="true"/>
+    </include>
+
+    <arg name="xyzrpy" default="$(find prj4)/urdf/xyzrpy.urdf"/>
+    <param name="xyzrpy_description" textfile="$(arg xyzrpy)"/>
+    <node name="xyzrpy_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param xyzrpy_description -urdf -x 0 -y 0 -z 0 -model xyzrpy2" />
+
+</launch>

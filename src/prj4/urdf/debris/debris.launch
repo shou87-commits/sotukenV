@@ -1,0 +1,200 @@
+    <arg name="debris000" default="$(find prj4)/urdf/debris/debris000.urdf"/>
+    <param name="debris_desc000" textfile="$(arg debris000)"/>
+    <node name="debris_spawner000" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc000 -urdf -x 4.1 -y -0.7 -z 0.7 -R 0.8 -P 0.4 -Y 0.3 -model debris000"/>
+
+    <arg name="debris001" default="$(find prj4)/urdf/debris/debris001.urdf"/>
+    <param name="debris_desc001" textfile="$(arg debris001)"/>
+    <node name="debris_spawner001" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc001 -urdf -x 6.8 -y -0.9 -z 0.3 -R 0.7 -P 0.7 -Y 0.3 -model debris001"/>
+
+    <arg name="debris002" default="$(find prj4)/urdf/debris/debris002.urdf"/>
+    <param name="debris_desc002" textfile="$(arg debris002)"/>
+    <node name="debris_spawner002" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc002 -urdf -x 3.3 -y -0.3 -z 0.4 -R 0.3 -P 1.0 -Y 0.6 -model debris002"/>
+
+    <arg name="debris003" default="$(find prj4)/urdf/debris/debris003.urdf"/>
+    <param name="debris_desc003" textfile="$(arg debris003)"/>
+    <node name="debris_spawner003" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc003 -urdf -x 3.0 -y 1.1 -z 0.9 -R 0.8 -P 0.7 -Y 1.0 -model debris003"/>
+
+    <arg name="debris004" default="$(find prj4)/urdf/debris/debris004.urdf"/>
+    <param name="debris_desc004" textfile="$(arg debris004)"/>
+    <node name="debris_spawner004" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc004 -urdf -x 4.0 -y 0.2 -z 0.9 -R 0.1 -P 0.9 -Y 0.8 -model debris004"/>
+
+    <arg name="debris005" default="$(find prj4)/urdf/debris/debris005.urdf"/>
+    <param name="debris_desc005" textfile="$(arg debris005)"/>
+    <node name="debris_spawner005" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc005 -urdf -x 3.0 -y 0.2 -z 1.3 -R 0.2 -P 0.5 -Y 0.1 -model debris005"/>
+
+    <arg name="debris006" default="$(find prj4)/urdf/debris/debris006.urdf"/>
+    <param name="debris_desc006" textfile="$(arg debris006)"/>
+    <node name="debris_spawner006" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc006 -urdf -x 6.8 -y -0.7 -z 1.1 -R 0.7 -P 0.9 -Y 0.9 -model debris006"/>
+
+    <arg name="debris007" default="$(find prj4)/urdf/debris/debris007.urdf"/>
+    <param name="debris_desc007" textfile="$(arg debris007)"/>
+    <node name="debris_spawner007" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc007 -urdf -x 3.5 -y 0.3 -z 1.2 -R 0.6 -P 0.4 -Y 0.0 -model debris007"/>
+
+    <arg name="debris008" default="$(find prj4)/urdf/debris/debris008.urdf"/>
+    <param name="debris_desc008" textfile="$(arg debris008)"/>
+    <node name="debris_spawner008" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc008 -urdf -x 4.9 -y -1.1 -z 1.1 -R 0.6 -P 0.4 -Y 0.5 -model debris008"/>
+
+    <arg name="debris009" default="$(find prj4)/urdf/debris/debris009.urdf"/>
+    <param name="debris_desc009" textfile="$(arg debris009)"/>
+    <node name="debris_spawner009" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc009 -urdf -x 5.8 -y 0.0 -z 1.1 -R 0.6 -P 0.0 -Y 0.6 -model debris009"/>
+
+    <arg name="debris010" default="$(find prj4)/urdf/debris/debris010.urdf"/>
+    <param name="debris_desc010" textfile="$(arg debris010)"/>
+    <node name="debris_spawner010" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc010 -urdf -x 4.8 -y -0.6 -z 1.4 -R 0.8 -P 0.1 -Y 0.8 -model debris010"/>
+
+    <arg name="debris011" default="$(find prj4)/urdf/debris/debris011.urdf"/>
+    <param name="debris_desc011" textfile="$(arg debris011)"/>
+    <node name="debris_spawner011" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc011 -urdf -x 5.1 -y 0.1 -z 2.0 -R 0.9 -P 0.2 -Y 0.3 -model debris011"/>
+
+    <arg name="debris012" default="$(find prj4)/urdf/debris/debris012.urdf"/>
+    <param name="debris_desc012" textfile="$(arg debris012)"/>
+    <node name="debris_spawner012" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc012 -urdf -x 4.2 -y 0.8 -z 1.6 -R 0.7 -P 0.7 -Y 0.4 -model debris012"/>
+
+    <arg name="debris013" default="$(find prj4)/urdf/debris/debris013.urdf"/>
+    <param name="debris_desc013" textfile="$(arg debris013)"/>
+    <node name="debris_spawner013" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc013 -urdf -x 6.5 -y -0.8 -z 1.5 -R 0.9 -P 0.1 -Y 0.9 -model debris013"/>
+
+    <arg name="debris014" default="$(find prj4)/urdf/debris/debris014.urdf"/>
+    <param name="debris_desc014" textfile="$(arg debris014)"/>
+    <node name="debris_spawner014" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc014 -urdf -x 3.1 -y 1.0 -z 1.5 -R 0.2 -P 0.1 -Y 0.2 -model debris014"/>
+
+    <arg name="debris015" default="$(find prj4)/urdf/debris/debris015.urdf"/>
+    <param name="debris_desc015" textfile="$(arg debris015)"/>
+    <node name="debris_spawner015" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc015 -urdf -x 6.2 -y 0.8 -z 2.2 -R 0.4 -P 0.4 -Y 1.0 -model debris015"/>
+
+    <arg name="debris016" default="$(find prj4)/urdf/debris/debris016.urdf"/>
+    <param name="debris_desc016" textfile="$(arg debris016)"/>
+    <node name="debris_spawner016" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc016 -urdf -x 6.6 -y 0.0 -z 2.2 -R 0.3 -P 0.2 -Y 0.3 -model debris016"/>
+
+    <arg name="debris017" default="$(find prj4)/urdf/debris/debris017.urdf"/>
+    <param name="debris_desc017" textfile="$(arg debris017)"/>
+    <node name="debris_spawner017" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc017 -urdf -x 4.1 -y 0.4 -z 2.0 -R 0.2 -P 0.6 -Y 0.5 -model debris017"/>
+
+    <arg name="debris018" default="$(find prj4)/urdf/debris/debris018.urdf"/>
+    <param name="debris_desc018" textfile="$(arg debris018)"/>
+    <node name="debris_spawner018" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc018 -urdf -x 4.0 -y 1.1 -z 2.0 -R 0.1 -P 0.0 -Y 0.5 -model debris018"/>
+
+    <arg name="debris019" default="$(find prj4)/urdf/debris/debris019.urdf"/>
+    <param name="debris_desc019" textfile="$(arg debris019)"/>
+    <node name="debris_spawner019" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc019 -urdf -x 5.9 -y -1.0 -z 2.3 -R 0.2 -P 0.6 -Y 0.5 -model debris019"/>
+
+    <arg name="debris020" default="$(find prj4)/urdf/debris/debris020.urdf"/>
+    <param name="debris_desc020" textfile="$(arg debris020)"/>
+    <node name="debris_spawner020" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc020 -urdf -x 6.4 -y 1.2 -z 2.8 -R 0.0 -P 0.3 -Y 0.8 -model debris020"/>
+
+    <arg name="debris021" default="$(find prj4)/urdf/debris/debris021.urdf"/>
+    <param name="debris_desc021" textfile="$(arg debris021)"/>
+    <node name="debris_spawner021" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc021 -urdf -x 6.2 -y -1.2 -z 3.0 -R 0.8 -P 0.1 -Y 0.1 -model debris021"/>
+
+    <arg name="debris022" default="$(find prj4)/urdf/debris/debris022.urdf"/>
+    <param name="debris_desc022" textfile="$(arg debris022)"/>
+    <node name="debris_spawner022" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc022 -urdf -x 5.4 -y 0.6 -z 2.3 -R 1.0 -P 0.6 -Y 0.5 -model debris022"/>
+
+    <arg name="debris023" default="$(find prj4)/urdf/debris/debris023.urdf"/>
+    <param name="debris_desc023" textfile="$(arg debris023)"/>
+    <node name="debris_spawner023" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc023 -urdf -x 5.3 -y 0.6 -z 3.2 -R 0.4 -P 0.0 -Y 0.5 -model debris023"/>
+
+    <arg name="debris024" default="$(find prj4)/urdf/debris/debris024.urdf"/>
+    <param name="debris_desc024" textfile="$(arg debris024)"/>
+    <node name="debris_spawner024" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc024 -urdf -x 5.2 -y 0.7 -z 2.5 -R 0.1 -P 0.2 -Y 0.2 -model debris024"/>
+
+    <arg name="debris025" default="$(find prj4)/urdf/debris/debris025.urdf"/>
+    <param name="debris_desc025" textfile="$(arg debris025)"/>
+    <node name="debris_spawner025" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc025 -urdf -x 6.4 -y 1.2 -z 3.1 -R 0.9 -P 0.2 -Y 0.2 -model debris025"/>
+
+    <arg name="debris026" default="$(find prj4)/urdf/debris/debris026.urdf"/>
+    <param name="debris_desc026" textfile="$(arg debris026)"/>
+    <node name="debris_spawner026" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc026 -urdf -x 4.2 -y 0.6 -z 3.2 -R 0.4 -P 0.5 -Y 0.4 -model debris026"/>
+
+    <arg name="debris027" default="$(find prj4)/urdf/debris/debris027.urdf"/>
+    <param name="debris_desc027" textfile="$(arg debris027)"/>
+    <node name="debris_spawner027" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc027 -urdf -x 6.9 -y -0.9 -z 3.4 -R 0.6 -P 0.6 -Y 0.9 -model debris027"/>
+
+    <arg name="debris028" default="$(find prj4)/urdf/debris/debris028.urdf"/>
+    <param name="debris_desc028" textfile="$(arg debris028)"/>
+    <node name="debris_spawner028" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc028 -urdf -x 5.5 -y -1.2 -z 3.1 -R 0.8 -P 0.5 -Y 0.3 -model debris028"/>
+
+    <arg name="debris029" default="$(find prj4)/urdf/debris/debris029.urdf"/>
+    <param name="debris_desc029" textfile="$(arg debris029)"/>
+    <node name="debris_spawner029" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc029 -urdf -x 4.8 -y 0.2 -z 3.8 -R 0.6 -P 0.2 -Y 0.5 -model debris029"/>
+
+    <arg name="debris030" default="$(find prj4)/urdf/debris/debris030.urdf"/>
+    <param name="debris_desc030" textfile="$(arg debris030)"/>
+    <node name="debris_spawner030" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc030 -urdf -x 6.8 -y 0.0 -z 3.5 -R 0.2 -P 0.4 -Y 0.2 -model debris030"/>
+
+    <arg name="debris031" default="$(find prj4)/urdf/debris/debris031.urdf"/>
+    <param name="debris_desc031" textfile="$(arg debris031)"/>
+    <node name="debris_spawner031" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc031 -urdf -x 4.8 -y 0.5 -z 3.3 -R 0.8 -P 0.4 -Y 0.5 -model debris031"/>
+
+    <arg name="debris032" default="$(find prj4)/urdf/debris/debris032.urdf"/>
+    <param name="debris_desc032" textfile="$(arg debris032)"/>
+    <node name="debris_spawner032" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc032 -urdf -x 6.0 -y 1.1 -z 3.8 -R 0.8 -P 0.3 -Y 0.1 -model debris032"/>
+
+    <arg name="debris033" default="$(find prj4)/urdf/debris/debris033.urdf"/>
+    <param name="debris_desc033" textfile="$(arg debris033)"/>
+    <node name="debris_spawner033" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc033 -urdf -x 6.4 -y 0.9 -z 3.8 -R 0.0 -P 1.0 -Y 0.6 -model debris033"/>
+
+    <arg name="debris034" default="$(find prj4)/urdf/debris/debris034.urdf"/>
+    <param name="debris_desc034" textfile="$(arg debris034)"/>
+    <node name="debris_spawner034" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc034 -urdf -x 3.2 -y 0.1 -z 3.8 -R 0.1 -P 0.3 -Y 0.9 -model debris034"/>
+
+    <arg name="debris035" default="$(find prj4)/urdf/debris/debris035.urdf"/>
+    <param name="debris_desc035" textfile="$(arg debris035)"/>
+    <node name="debris_spawner035" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc035 -urdf -x 4.6 -y 0.7 -z 4.2 -R 0.9 -P 0.5 -Y 0.0 -model debris035"/>
+
+    <arg name="debris036" default="$(find prj4)/urdf/debris/debris036.urdf"/>
+    <param name="debris_desc036" textfile="$(arg debris036)"/>
+    <node name="debris_spawner036" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc036 -urdf -x 5.2 -y -0.4 -z 4.1 -R 0.4 -P 0.0 -Y 0.2 -model debris036"/>
+
+    <arg name="debris037" default="$(find prj4)/urdf/debris/debris037.urdf"/>
+    <param name="debris_desc037" textfile="$(arg debris037)"/>
+    <node name="debris_spawner037" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc037 -urdf -x 6.4 -y -0.6 -z 4.5 -R 0.1 -P 0.9 -Y 0.7 -model debris037"/>
+
+    <arg name="debris038" default="$(find prj4)/urdf/debris/debris038.urdf"/>
+    <param name="debris_desc038" textfile="$(arg debris038)"/>
+    <node name="debris_spawner038" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc038 -urdf -x 4.9 -y -1.0 -z 4.3 -R 0.7 -P 0.1 -Y 0.7 -model debris038"/>
+
+    <arg name="debris039" default="$(find prj4)/urdf/debris/debris039.urdf"/>
+    <param name="debris_desc039" textfile="$(arg debris039)"/>
+    <node name="debris_spawner039" pkg="gazebo_ros" type="spawn_model"
+          args="-param debris_desc039 -urdf -x 3.8 -y -0.4 -z 4.8 -R 0.7 -P 0.7 -Y 0.7 -model debris039"/>
+

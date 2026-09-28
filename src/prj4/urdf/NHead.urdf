@@ -1,0 +1,47 @@
+<!-- NHead -->
+    <joint name="jointNNNHead" type="fixed">
+        <parent link="LIDAR_base"/>
+	<child  link="NHead"/>
+	<origin xyz="-0.025 0 0" rpy="0 0 0"/>
+    </joint>
+    <link name="NHead">
+        <visual>
+            <origin xyz="-0.075 0 -0.03" rpy="0 0 0"/>
+            <geometry> <box size="0.15 0.2 0.08"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="-0.075 0 -0.03" rpy="0 0 0"/>
+	    <geometry> <box size="0.15 0.2 0.08"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="-0.075 0 -0.03" rpy="0 0 0"/> <mass value="0.5"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+    <gazebo reference="NHead"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="NHeadEye1" type="fixed"> <!-- lens -->
+        <parent link="NHead"/>
+	<child  link="NHeadEye1"/>
+	<origin xyz="0.025 0.075 -0.03" rpy="0 1.5708 0"/>
+    </joint>
+    <link name="NHeadEye1">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <cylinder length="0.05" radius="0.03"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="NHeadEye1"> <material>Gazebo/BlackTransparent</material> </gazebo>
+
+    <joint name="NHeadEye2" type="fixed"> <!-- lens -->
+        <parent link="NHead"/>
+	<child  link="NHeadEye2"/>
+	<origin xyz="0.025 -0.075 -0.03" rpy="0 1.5708 0"/>
+    </joint>
+    <link name="NHeadEye2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <cylinder length="0.05" radius="0.03"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="NHeadEye2"> <material>Gazebo/BlackTransparent</material> </gazebo>

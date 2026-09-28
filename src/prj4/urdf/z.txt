@@ -1,0 +1,16 @@
+  <link name="world"> </link> // not move
+
+  <gazebo> <static>true</static> </gazebo>
+  <link name="world"> </link> // not move
+
+  <gazebo> <static>false</static> </gazebo>
+  <link name="world"> </link> // not move
+
+  <link name="base_link"> </link> // move
+
+  <gazebo> <static>true</static> </gazebo>
+  <link name="base_link"> </link> // not move
+
+  <gazebo> <static>false</static> </gazebo>
+  <link name="base_link"> </link> // move
+

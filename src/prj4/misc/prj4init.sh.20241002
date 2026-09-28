@@ -1,0 +1,107 @@
+#! /bin/sh
+
+#function necho() for bash 
+necho()
+{
+    echo "e: " $1
+    $1
+}
+
+user=`whoami`
+prjdir=`pwd`
+echo $prjdir
+
+cd ../..
+wsdir=`pwd`
+echo $wsdir
+cd $prjdir
+
+rosversion=`printenv ROS_DISTRO`
+echo $rosversion
+
+if [ "noetic" = $rosversion ]
+then
+    gazeboversion="gazebo-11"
+else
+    gazeboversion="unspecified gazebo version"
+fi
+echo $gazeboversion
+
+if [ -d /home/$user/.gazebo/models ]
+then
+    necho "echo /home/$user/.gazebo/models exists"
+else
+    necho "mkdir -p /home/$user/.gazebo/models"
+fi
+necho "cd"
+necho "cd ./.gazebo/models"
+
+if [ -e /home/$user/.gazebo/models/bldwall ]
+then
+    necho "rm slope woodbox ladder jgym bldwall ena untei chech"
+else
+    necho "echo no links to sdf exist"
+fi
+
+necho "ln -s $prjdir/sdf/models/bldwall"
+necho "ln -s $prjdir/sdf/models/chech"
+necho "ln -s $prjdir/sdf/models/ena"
+necho "ln -s $prjdir/sdf/models/jgym"
+necho "ln -s $prjdir/sdf/models/ladder"
+necho "ln -s $prjdir/sdf/models/slope"
+necho "ln -s $prjdir/sdf/models/untei"
+necho "ln -s $prjdir/sdf/models/woodbox"
+
+
+necho "cd /usr/share/$gazeboversion/worlds"
+if [ -e /usr/share/$gazeboversion/worlds/mysky.world ]
+then
+    necho "sudo rm mysky.world mysky_full.world mysky_light.world"
+    necho "sudo rm mysky_simple.world spotlight.world"
+else
+    necho "echo no world links exist"
+fi
+
+necho "sudo ln -s $prjdir/worlds/mysky.world"
+necho "sudo ln -s $prjdir/worlds/mysky_simple.world"
+necho "sudo ln -s $prjdir/worlds/mysky_full.world"
+necho "sudo ln -s $prjdir/worlds/mysky_light.world"
+necho "sudo ln -s $prjdir/worlds/spotlight.world"
+
+necho "cd /usr/share/$gazeboversion/media/materials/textures"
+if [ -e /usr/share/$gazeboversion/media/materials/textures/cat.png ]
+then
+    necho "sudo rm tree?.png soil?.png cat.png dog.png tiger.png grass2.png"
+else
+    necho "echo no texture links exist"
+fi
+
+necho "sudo ln -s $prjdir/sdf/textures/tree1.png"
+necho "sudo ln -s $prjdir/sdf/textures/tree2.png"
+necho "sudo ln -s $prjdir/sdf/textures/tree3.png"
+necho "sudo ln -s $prjdir/sdf/textures/tree4.png"
+necho "sudo ln -s $prjdir/sdf/textures/tree5.png"
+necho "sudo ln -s $prjdir/sdf/textures/tree6.png"
+necho "sudo ln -s $prjdir/sdf/textures/tree7.png"
+necho "sudo ln -s $prjdir/sdf/textures/soil1.png"
+necho "sudo ln -s $prjdir/sdf/textures/soil2.png"
+necho "sudo ln -s $prjdir/sdf/textures/soil3.png"
+necho "sudo ln -s $prjdir/sdf/textures/soil4.png"
+necho "sudo ln -s $prjdir/sdf/textures/grass2.png"
+necho "sudo ln -s $prjdir/sdf/textures/cat.png"
+necho "sudo ln -s $prjdir/sdf/textures/dog.png"
+necho "sudo ln -s $prjdir/sdf/textures/tiger.png"
+
+necho "cd /usr/share/$gazeboversion/media/materials/scripts"
+necho "sudo cp ./gazebo.material ./gazebo.material.org"
+necho "sudo cp $prjdir/sdf/scripts/gazebo.material.replace ./gazebo.material"
+
+necho "cd"
+echo "source /opt/ros/$rosversion/setup.bash" >> ./.bashrc
+echo "source $wsdir/devel/setup.bash" >> ./.bashrc
+necho "source ./.bashrc"
+
+necho "sudo apt install ros-noetic-effort-controllers"
+
+necho "cd $prjdir"
+necho "ls -l"

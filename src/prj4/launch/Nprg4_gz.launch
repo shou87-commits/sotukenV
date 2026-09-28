@@ -1,0 +1,75 @@
+<launch>
+<!-- comment -->
+<!-- 
+    <include file="$(find prj4)/launch/empty_sky.launch">
+    <include file="$(find prj4)/launch/empty_world.launch">
+    <include file="$(find prj4)/launch/myworld_full.launch">
+-->
+    <include file="$(find prj4)/launch/myworld_simple.launch">
+        <arg name="paused" value="true"/>
+    </include>
+
+    <arg name="model" default="$(find prj4)/urdf/Nprg4.urdf" />
+    <param name="robot_description" textfile="$(arg model)" />
+    <node name="spawn_urdf_gz" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model prj4 -x -0.29 -y 0 -z 0.38 -R 0 -P 0 -Y 0" />
+
+    <node name="robot_state_publisher_gz" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <rosparam file="$(find prj4)/config/prg4.yaml" command="load" />
+
+    <node name="ctrl_spawner_gz" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+    	  ns="/prj4" args="j_state_con 
+	  a1j1_pos_con  a1j2_pos_con  a1j3_pos_con  a1j4_pos_con  a1j5_pos_con  a1j6_pos_con  
+	  a1j7_pos_con  a1j8_pos_con  a4j1_pos_con  a4j2_pos_con  a4j3_pos_con  a4j4_pos_con  
+	  a4j5_pos_con  a4j6_pos_con  a4j7_pos_con  a4j8_pos_con  
+	  a7j1_pos_con  a7j2_pos_con " />
+
+    <arg name="tablef" default="$(find prj4)/sdf/tablef.sdf"/>
+    <param name="tablef_description" textfile="$(arg tablef)"/>
+    <node name="tablef_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param tablef_description -sdf -x 0.5 -y 0 -z 0.0 -R 0 -P 0 -Y 1.5708 -model tablef" />
+
+    <arg name="chechSR" default="$(find prj4)/urdf/ChechSmallR.urdf"/>
+    <param name="chechSR_description" textfile="$(arg chechSR)"/>
+    <node name="chechSR_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSR_description -urdf -x 0.5 -y 0 -z 1.3 -R 0 -P 0 -Y 0 -model chechSR1" />
+<!--
+    <node name="chechSR_spawner_gz2" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSR_description -urdf -x 0.55 -y 0.1 -z 1.3 -R 0 -P 0 -Y 0 -model chechSR2" />
+
+    <node name="chechSR_spawner_gz3" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSR_description -urdf -x 0.5 -y 0.15 -z 1.4 -R 0 -P 0 -Y 0 -model chechSR3" />
+
+    <node name="chechSR_spawner_gz4" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSR_description -urdf -x 0.55 -y 0.17 -z 1.6 -R 0 -P 0 -Y 0 -model chechSR4" />
+-->
+    <arg name="chechSG" default="$(find prj4)/urdf/ChechSmallG.urdf"/>
+    <param name="chechSG_description" textfile="$(arg chechSG)"/>
+    <node name="chechSG_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSG_description -urdf -x 0.5 -y 0.2 -z 1.3 -R 0 -P 0 -Y 0 -model chechSG1" />
+
+    <node name="chechSG_spawner_gz2" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSG_description -urdf -x 0.55 -y 0.21 -z 1.3 -R 0 -P 0 -Y 0 -model chechSG2" />
+
+    <node name="chechSG_spawner_gz3" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSG_description -urdf -x 0.55 -y 0.23 -z 1.5 -R 0 -P 0 -Y 0 -model chechSG3" />
+
+    <node name="chechSG_spawner_gz4" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSG_description -urdf -x 0.55 -y 0.25 -z 1.6 -R 0 -P 0 -Y 0 -model chechSG4" />
+
+    <arg name="chechSB" default="$(find prj4)/urdf/ChechSmallB.urdf"/>
+    <param name="chechSB_description" textfile="$(arg chechSB)"/>
+    <node name="chechSB_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSB_description -urdf -x 0.5 -y -0.2 -z 1.3 -R 0 -P 0 -Y 0 -model chechSB1" />
+
+    <node name="chechSB_spawner_gz2" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSB_description -urdf -x 0.55 -y -0.21 -z 1.3 -R 0 -P 0 -Y 0 -model chechSB2" />
+
+    <node name="chechSB_spawner_gz3" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSB_description -urdf -x 0.55 -y -0.23 -z 1.5 -R 0 -P 0 -Y 0 -model chechSB3" />
+
+    <node name="chechSB_spawner_gz4" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSB_description -urdf -x 0.55 -y -0.25 -z 1.6 -R 0 -P 0 -Y 0 -model chechSB4" />
+
+</launch>

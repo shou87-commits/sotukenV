@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+
+<robot name="pole">
+<!--
+    <link name="base_link"></link>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_link"/>                                                                      
+        <child link="platex"/>
+        <origin xyz= "0 0 0" rpy="0 0 0" />
+    </joint>
+-->	
+    <link name="world"> </link>
+    <joint name="base_joint" type="fixed">
+        <parent link="world"/> 
+	<child link="platex"/>
+        <origin xyz= "0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <link name="platex">
+        <visual>
+  	    <origin xyz="0 0 0" rpy="1.5708 0 1.5708" />
+	    <geometry> <cylinder length="1" radius="0.01"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0" rpy="1.5708 0 1.5708" />
+	    <geometry> <cylinder length="1" radius="0.01"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="1.5708 0 1.5708" />
+	    <mass value="0.5" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="platex"> <material>Gazebo/Red</material> </gazebo>
+
+</robot>

@@ -1,0 +1,177 @@
+<!-- depthcamera SL -->
+<!-- camerabody -->
+    <joint name="camera_jointNN3SL" type="fixed">
+        <parent link="bodyleft"/>
+<!--    <parent link="body"/> -->
+	<child  link="camera_linkNN3SL"/>
+	<origin xyz="-0.065 0.12 -0.105" rpy="0 0.5236 1.5708"/> 
+<!--	<origin xyz="-0.065 0.15 -0.05" rpy="0 0 1.5708"/> -->
+    </joint>
+    <link name="camera_linkNN3SL">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <box size="0.025 0.10 0.03"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.025 0.10 0.03"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.1"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+    <gazebo reference="camera_linkNN3SL"> <material>Gazebo/LightGray</material> </gazebo>
+
+    <joint name="camera_jointNN3SLL" type="fixed">
+        <parent link="camera_linkNN3SL"/>
+	<child  link="camera_linkNN3SLL"/>
+	<origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <link name="camera_linkNN3SLL">
+        <visual>
+            <origin xyz="0 0.05 0" rpy="0 1.5708 0"/>
+            <geometry> <cylinder length="0.025" radius="0.015"/> </geometry>
+	</visual>
+	<collision>
+            <origin xyz="0 0.05 0" rpy="0 1.5708 0"/>
+            <geometry> <cylinder length="0.025" radius="0.015"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.01"/>
+	    <inertia ixx="1e-3" ixy="0" ixz="0" iyy="1e-3" iyz="0" izz="1e-3"/>
+	</inertial>
+    </link>
+    <gazebo reference="camera_linkNN3SLL"> <material>Gazebo/LightGrey</material> </gazebo>
+
+    <joint name="camera_jointNN3SLR" type="fixed">
+        <parent link="camera_linkNN3SL"/>
+	<child  link="camera_linkNN3SLR"/>
+	<origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <link name="camera_linkNN3SLR">
+        <visual>
+            <origin xyz="0 -0.05 0" rpy="0 1.5708 0"/>
+            <geometry> <cylinder length="0.025" radius="0.015"/> </geometry>
+	</visual>
+	<collision>
+            <origin xyz="0 -0.05 0" rpy="0 1.5708 0"/>
+            <geometry> <cylinder length="0.025" radius="0.015"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.01"/>
+	    <inertia ixx="1e-3" ixy="0" ixz="0" iyy="1e-3" iyz="0" izz="1e-3"/>
+	</inertial>
+    </link>
+    <gazebo reference="camera_linkNN3SLR"> <material>Gazebo/LightGrey</material> </gazebo>
+
+<!-- front black part -->
+
+    <joint name="camera_jointNN3SLB" type="fixed">
+        <parent link="camera_linkNN3SL"/>
+	<child  link="camera_linkNN3SLB"/>
+	<origin xyz="0.0125 0 0" rpy="0 0 0"/>
+    </joint>
+    <link name="camera_linkNN3SLB">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <box size="0.001 0.10 0.025"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="camera_linkNN3SLB"> <material>Gazebo/Black</material> </gazebo>
+
+    <joint name="camera_jointNN3SLLB" type="fixed">
+        <parent link="camera_linkNN3SLB"/>
+	<child  link="camera_linkNN3SLLB"/>
+	<origin xyz="0 0.05 0" rpy="0 0 0"/>
+    </joint>
+    <link name="camera_linkNN3SLLB">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 1.5708 0"/>
+            <geometry> <cylinder length="0.001" radius="0.0125"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="camera_linkNN3SLLB"> <material>Gazebo/Black</material> </gazebo>
+
+    <joint name="camera_jointNN3SLRB" type="fixed">
+        <parent link="camera_linkNN3SLB"/>
+	<child  link="camera_linkNN3SLRB"/>
+	<origin xyz="0 -0.05 0" rpy="0 0 0"/>
+    </joint>
+    <link name="camera_linkNN3SLRB">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 1.5708 0"/>
+            <geometry> <cylinder length="0.001" radius="0.0125"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="camera_linkNN3SLRB"> <material>Gazebo/Black</material> </gazebo>
+
+<!-- lens -->
+
+    <joint name="camera_jointNN3SL2" type="fixed"> 
+        <parent link="camera_linkNN3SL"/>
+	<child  link="camera_linkNN3SL2"/>
+	<origin xyz="0.0125 0 0" rpy="0 1.5708 0"/>
+    </joint>
+    <link name="camera_linkNN3SL2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <cylinder length="0.0125" radius="0.0125"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="camera_linkNN3SL2"> <material>Gazebo/GreyTransparent</material> </gazebo>
+
+<!-- lens center -->
+    
+    <joint name="camera_jointNN3SLpinhole" type="fixed">
+        <parent link="camera_linkNN3SL"/>
+	<child  link="camera_linkNN3SLpinhole"/>
+	<origin xyz="0.0135 0 0" rpy="0 0 0"/>
+    </joint>
+    <link name="camera_linkNN3SLpinhole">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <box size="0.001 0.0064 0.0048"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="camera_linkNN3SLpinhole"> <material>Gazebo/White</material> </gazebo>
+
+    <gazebo reference="camera_linkNN3SLpinhole"> <!-- CCD image sensor -->
+    <sensor type="depth" name="depthcameraSL">
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <camera>
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image> <width>640</width> <height>480</height> <format>R8G8B8</format> </image>
+        <clip> <near>0.1</near> <far>100</far> </clip>
+        <depth_camera> </depth_camera>
+      </camera>
+
+      <plugin name="camera_plugin" filename="libgazebo_ros_openni_kinect.so">
+        <baseline>0.2</baseline>
+        <alwaysOn>true</alwaysOn>
+        <!-- Keep this zero, update_rate in the parent <sensor> tag will control the frame rate. -->
+        <updateRate>0.0</updateRate>
+        <cameraName>depthcameraSL</cameraName>
+        <imageTopicName>color/image_raw</imageTopicName>
+        <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
+        <depthImageTopicName>depth/image_raw</depthImageTopicName>
+        <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+        <pointCloudTopicName>camera/depth/points</pointCloudTopicName>
+        <frameName>depthcamera_link</frameName>
+        <pointCloudCutoff>0.1</pointCloudCutoff>
+        <pointCloudCutoffMax>10.0</pointCloudCutoffMax>
+        <distortionK1>0</distortionK1>
+        <distortionK2>0</distortionK2>
+        <distortionK3>0</distortionK3>
+        <distortionT1>0</distortionT1>
+        <distortionT2>0</distortionT2>
+        <CxPrime>0</CxPrime>
+        <Cx>0</Cx>
+        <Cy>0</Cy>
+        <focalLength>0</focalLength>
+        <hackBaseline>0</hackBaseline>
+      </plugin>
+
+      </sensor>
+      </gazebo>

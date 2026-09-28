@@ -1,0 +1,75 @@
+<sdf version='1.7'>
+  <model name='chechsr'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.3</mass>
+        <inertia>
+          <ixx>0.003</ixx> <ixy>0</ixy> <ixz>0</ixz>
+          <iyy>0.003</iyy> <iyz>0</iyz> <izz>0.003</izz>
+        </inertia>
+      </inertial>
+      
+      <collision name='base_link_fixed_joint_lump__platex_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box> <size>0.1 0.05 0.05</size> </box>
+        </geometry>
+      </collision>
+
+      <collision name='base_link_fixed_joint_lump__platey_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box> <size>0.05 0.1 0.05</size> </box>
+        </geometry>
+      </collision>
+      
+      <collision name='base_link_fixed_joint_lump__platez_collision_2'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box> <size>0.05 0.05 0.1</size> </box>
+        </geometry>
+      </collision>
+      
+      <visual name='base_link_fixed_joint_lump__platex_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box> <size>0.1 0.05 0.05</size> </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      
+      <visual name='base_link_fixed_joint_lump__platey_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box> <size>0.05 0.1 0.05</size> </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      
+      <visual name='base_link_fixed_joint_lump__platez_visual_2'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box> <size>0.05 0.05 0.1</size> </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>

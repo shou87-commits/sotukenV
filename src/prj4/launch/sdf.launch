@@ -1,0 +1,18 @@
+<launch>
+<!-- comment -->
+<!-- 
+    <include file="$(find prj4)/launch/empty_sky.launch">
+    <include file="$(find prj4)/launch/empty_world.launch">
+    <include file="$(find prj4)/launch/myworld_full.launch">
+-->
+    <include file="$(find prj4)/launch/myworld_simple.launch">
+        <arg name="paused" value="true"/>
+    </include>
+
+<!-- -->
+    <arg name="print3d" default="$(find prj4)/sdf/3dprint.sdf"/>
+    <param name="print3d_description" textfile="$(arg print3d)"/>
+    <node name="print3d_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param print3d_description -sdf -x 0 -y -2 -z 1 -model print3d" />
+
+</launch>

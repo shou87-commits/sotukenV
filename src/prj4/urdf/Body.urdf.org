@@ -1,0 +1,66 @@
+<!-- ################################################################### -->
+
+<!-- activate either one -->
+
+    <link name="base_link"> </link>
+<!--
+    <link name="world"> </link>
+-->
+
+<!-- if joint type is set to "fixed", robot floats on the ground -->
+<!-- but later, such situation was corrected, and current adequate value is "fixed" -->
+
+<!-- When parent is base_link, robot can move around in the world freely -->
+<!-- When parent is world, robot is fixed and can not move around in the world -->
+
+    <joint name="body_joint" type="fixed">
+
+        <parent link="base_link"/>
+<!--
+        <parent link="world"/>
+-->
+	<child link="body"/>
+	<origin xyz= "0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <link name="body">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.3 0.3 0.15"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.3 0.3 0.15"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="2"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="body"> <material>Gazebo/Grey25</material> </gazebo>
+
+    <joint name="tail_joint" type="fixed">
+        <parent link="body"/>
+	<child link="tail"/>
+	<origin xyz= "-0.15 0 0.075" rpy="0 0 0" />
+    </joint>
+
+    <link name="tail">
+        <visual>
+	    <origin xyz="-0.1 0 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.2 0.05 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="-0.1 0 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.2 0.05 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="-0.1 0 0" rpy="0 0 0"/> <mass value="0.5"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="tail"> <material>Gazebo/Grey25</material> </gazebo>
+
+<!-- ################################################################### -->

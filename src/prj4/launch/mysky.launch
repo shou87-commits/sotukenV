@@ -1,0 +1,6 @@
+<launch>
+<!-- comment -->
+    <include file="$(find prj4)/launch/myworld.launch">
+        <arg name="paused" value="true"/>
+    </include>
+</launch>

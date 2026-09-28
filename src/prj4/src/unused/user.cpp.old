@@ -1,0 +1,259 @@
+// user.cpp
+// 一連の動きのシークエンスを定義する関数 UserMotion()
+
+#include <iostream>
+#include <math.h>
+#include <vector>
+#include "ros/ros.h"
+#include "std_msgs/Float64.h"
+#include <sensor_msgs/LaserScan.h>
+
+#include "const.h"
+#include "motorclass.h"
+#include "lidarclass.h"
+
+#include "user.h" // user*.cpp に含まれる関数のプロトタイプ宣言
+
+// 定数の設定は const.h に移動した
+
+// LIDAR 測距センサのデータにアクセスするためのポインタ
+extern LIDAR *gLIDAR;
+
+void    UserMotion(C1 m[]) // intelligence() から呼び出される。
+{
+// いろいろな動きを作ったときはここで切り替えられる。
+
+    MyMotion(m); // 現在実際に使っているのはこれ
+
+// 個人が作った動きを呼び出す例
+    
+//  SuzukiMotion(m);
+    
+// 他の関数を無効にして、次の関数を一つ有効にすると逆運動学を試すことができる
+//  UserMotion1(m); // シンプルな動き
+//  UserWalkMotion(m); // 歩行の例
+//  Dance(m);
+//  ExampleMotion1(m); // 関節を動かす簡単な例１
+//  ExampleMotion2(m); // 逆運動学で関節を動かす簡単な例２
+//  ExampleMotion3(m); // 歩行と旋回の例３
+}
+
+void ExampleMotion1(C1 m[]) // m[] はモータコントローラの配列、モータを直接動かすために必要
+{
+    static int act_num  = ACT_INITPOSE;        // 次の行動を決める値、重要
+    static int act_last = ACT_INITPOSE;        // 直前の行動を覚えておく
+    static int state = ACT_START;              // 動作の状態を表す、継続中か、終了か
+    static float act_param[AP_PARAMS] = {0.0}; // パラメータの受け渡し用配列
+
+//////////////////////////////////////////////////////////
+// 
+// 各種の行動を実行する順番や繋がりを定義する
+// フローチャートのように記述できる
+// 
+//////////////////////////////////////////////////////////
+    
+//  act_param[AP_STATE] = ACT_START;           // ここで実行すると毎回初期化になってまずいので不可
+
+// act_num の決め方は（必要なら動作結果を act_param[] で戻して）、次の if 文内で決める
+    if (ACT_START == state) {                  // プログラム起動直後、最初はここから
+	act_param[AP_STATE] = ACT_START;       // 次の行動を最初から始めるための指示、必須
+	act_last = act_num;                    // 直前の行動を覚えておく、後で必要になるかも
+	act_num = ACT_INITPOSE;                // 最初は初期姿勢、立ち上がる
+    }
+//  if (ACT_MOVING == state) ; // 動作が継続中の時は特別な理由がなければ指示を変更しない
+    if (ACT_END == state) {                    // 直前の行動が終了したら
+	act_param[AP_STATE] = ACT_START;       // 次の行動を最初から始めるための指示、必須
+	act_last = act_num;                    // 直前の行動を覚えておく、後で必要になるかも
+
+	if (ACT_INITPOSE == act_last) act_num = ACT_EX1;
+	if (ACT_EX1 == act_last) act_num = ACT_EX2;
+	if (ACT_EX2 == act_last) act_num = ACT_EX1;
+	if (ACT_ERROR == act_last) act_num = ACT_INITPOSE; // エラー時の次の行動を決める
+    }
+    if (ACT_ERR == state) act_num = ACT_ERROR; // 状態がエラーの時はエラー処理へ
+
+//////////////////////////////////////////////////////////
+// 
+// この後は個々の行動の具体的な内容を定義する
+// 必要なパラメータをセットして動きを実現する関数を呼び出す
+// 
+//////////////////////////////////////////////////////////
+    
+// ここから先は個々の行動に必要なパラメータをセットして関数を呼び出す
+    switch (act_num) {
+        case ACT_INITPOSE : // 初期姿勢、立ち上がる
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    state = ActInitialPose(m, act_param);
+	    break;
+        case ACT_EX1 : // 動きの例、実用的なものではない
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    state = ActEX1(m, act_param);
+	    break;
+	case ACT_EX2 : // 動きの例、実用的なものではない
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    state = ActEX2(m, act_param);
+	    break;
+        case ACT_STAY : // 現状維持
+	    act_param[AP_TIMETOTAL] = 10.0; // 合計動作時間 (sec)
+	    state = ActStay(m, act_param);
+	    break;
+        case ACT_ERROR : // エラーが発生したとき
+        default : // どの case にもマッチしないとき、本来ここにはマッチしないはず
+	    fprintf(stderr, "Error: Bad act_num specified, or other error occured.\n");
+	    state = ACT_END;
+            break;
+    }
+}
+    
+void ExampleMotion2(C1 m[]) // m[] はモータコントローラの配列、モータを直接動かすために必要
+{
+    static int act_num  = ACT_INITPOSE;        // 次の行動を決める値、重要
+    static int act_last = ACT_INITPOSE;        // 直前の行動を覚えておく
+    static int state = ACT_START;              // 動作の状態を表す、継続中か、終了か
+    static float act_param[AP_PARAMS] = {0.0}; // パラメータの受け渡し用配列
+
+//////////////////////////////////////////////////////////
+// 
+// 各種の行動を実行する順番や繋がりを定義する
+// フローチャートのように記述できる
+// 
+//////////////////////////////////////////////////////////
+    
+//  act_param[AP_STATE] = ACT_START;           // ここで実行すると毎回初期化になってまずいので不可
+
+// act_num の決め方は（必要なら動作結果を act_param[] で戻して）、次の if 文内で決める
+    if (ACT_START == state) {                  // プログラム起動直後、最初はここから
+	act_param[AP_STATE] = ACT_START;       // 次の行動を最初から始めるための指示、必須
+	act_last = act_num;                    // 直前の行動を覚えておく、後で必要になるかも
+	act_num = ACT_INITPOSE;                // 最初は初期姿勢、立ち上がる
+    }
+//  if (ACT_MOVING == state) ; // 動作が継続中の時は特別な理由がなければ指示を変更しない
+    if (ACT_END == state) {                    // 直前の行動が終了したら
+	act_param[AP_STATE] = ACT_START;       // 次の行動を最初から始めるための指示、必須
+	act_last = act_num;                    // 直前の行動を覚えておく、後で必要になるかも
+
+	if (ACT_INITPOSE == act_last) act_num = ACT_1;
+	if (ACT_1 == act_last) act_num = ACT_2;
+	if (ACT_2 == act_last) act_num = ACT_1;
+	if (ACT_ERROR == act_last) act_num = ACT_INITPOSE; // エラー時の次の行動を決める
+    }
+    if (ACT_ERR == state) act_num = ACT_ERROR; // 状態がエラーの時はエラー処理へ
+
+//////////////////////////////////////////////////////////
+// 
+// 個々の行動の具体的な内容を定義する
+// 必要なパラメータをセットして動きを実現する関数を呼び出す
+// 
+//////////////////////////////////////////////////////////
+    
+// ここから先は個々の行動に必要なパラメータをセットして関数を呼び出す
+    switch (act_num) {
+        case ACT_INITPOSE : // 初期姿勢、立ち上がる
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    state = ActInitialPose(m, act_param);
+	    break;
+        case ACT_1 : // 動きの例、実用的なものではない
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    state = Act1(m, act_param);
+	    break;
+	case ACT_2 : // 動きの例、実用的なものではない
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    state = Act2(m, act_param);
+	    break;
+        case ACT_STAY : // 現状維持
+	    act_param[AP_TIMETOTAL] = 10.0; // 合計動作時間 (sec)
+	    state = ActStay(m, act_param);
+	    break;
+        case ACT_ERROR : // エラーが発生したとき
+        default : // どの case にもマッチしないとき、本来ここにはマッチしないはず
+	    fprintf(stderr, "Error: Bad act_num specified, or other error occured.\n");
+	    state = ACT_END;
+            break;
+    }
+}
+    
+void ExampleMotion3(C1 m[]) // m[] はモータコントローラの配列、モータを直接動かすために必要
+{
+    static int act_num  = ACT_INITPOSE;        // 次の行動を決める値、重要
+    static int act_last = ACT_INITPOSE;        // 直前の行動を覚えておく
+    static int state = ACT_START;              // 動作の状態を表す、継続中か、終了か
+    static float act_param[AP_PARAMS] = {0.0}; // パラメータの受け渡し用配列
+
+//////////////////////////////////////////////////////////
+// 
+// 各種の行動を実行する順番や繋がりを定義する
+// フローチャートのように記述できる
+// 
+//////////////////////////////////////////////////////////
+    
+//  act_param[AP_STATE] = ACT_START;           // ここで実行すると毎回初期化になってまずいので不可
+
+// act_num の決め方は（必要なら動作結果を act_param[] で戻して）、次の if 文内で決める
+    if (ACT_START == state) {                  // プログラム起動直後、最初はここから
+	act_param[AP_STATE] = ACT_START;       // 次の行動を最初から始めるための指示、必須
+	act_last = act_num;                    // 直前の行動を覚えておく、後で必要になるかも
+	act_num = ACT_INITPOSE;                // 最初は初期姿勢、立ち上がる
+    }
+//  if (ACT_MOVING == state) ; // 動作が継続中の時は特別な理由がなければ指示を変更しない
+    if (ACT_END == state) {                    // 直前の行動が終了したら
+	act_param[AP_STATE] = ACT_START;       // 次の行動を最初から始めるための指示、必須
+	act_last = act_num;                    // 直前の行動を覚えておく、後で必要になるかも
+
+	if (ACT_INITPOSE == act_last) {
+	    act_num = ACT_WALK; // 歩行
+	    act_param[AP_ITER] = 3;
+	    act_param[AP_WALK_DIR] = FORWARD; // 前進、or BACKWARD で後退する
+	}
+	if (ACT_WALK == act_last) {
+	    act_num = ACT_TURN; // 旋回
+	    act_param[AP_ITER] = 2;
+	    act_param[AP_TURN_DIR] = TURNCW; // 時計周り、or TURNCCW は反時計周り
+	}
+	if (ACT_TURN == act_last) act_num = ACT_WALK;
+	if (ACT_ERROR == act_last) act_num = ACT_INITPOSE; // エラー時の次の行動を決める
+    }
+    if (ACT_ERR == state) act_num = ACT_ERROR; // 状態がエラーの時はエラー処理へ
+
+//////////////////////////////////////////////////////////
+// 
+// 個々の行動の具体的な内容を定義する
+// 必要なパラメータをセットして動きを実現する関数を呼び出す
+// 
+//////////////////////////////////////////////////////////
+    
+// ここから先は個々の行動に必要なパラメータをセットして関数を呼び出す
+    switch (act_num) {
+        case ACT_INITPOSE : // 初期姿勢、立ち上がる
+	    act_param[AP_TIMETOTAL] = 5.0; // 動作時間 (sec)
+	    state = ActInitialPose(m, act_param);
+	    break;
+	case ACT_WALK : // 普通の歩行
+	    act_param[AP_TIME1] = 0.5;         // 動き１の動作時間 (sec)
+	    act_param[AP_PHASE] = 4;           // １組の行動に含まれる動きの種類
+// 頻繁に変更される値は別の場所で値を設定してもよい
+//	    act_param[AP_ITER]  = 1;           // １組の行動の繰り返し回数、１回で約１ｍ進む
+	    act_param[AP_CTRL]  = MODEPROFILE; // 制御のアルゴリズム
+	    act_param[AP_TIMETOTAL] = act_param[AP_TIME1] * act_param[AP_PHASE] *
+		                      act_param[AP_ITER] - 0.01; // 合計動作時間 (sec)
+	    state = ActWalk(m, act_param);
+	    break;
+        case ACT_TURN : // その場で転回、旋回する
+	    act_param[AP_TIME1] = 0.5;         // 動き１の動作時間 (sec)
+	    act_param[AP_PHASE] = 4;           // １組の行動に含まれる動きの種類
+//	    act_param[AP_ITER]  = 1;           // １組の行動の繰り返し回数、１回で約３０度回転
+	    act_param[AP_CTRL]  = MODEPROFILE; // 制御のアルゴリズム
+	    act_param[AP_TIMETOTAL] = act_param[AP_TIME1] * act_param[AP_PHASE] *
+		                      act_param[AP_ITER] - 0.01; // 合計動作時間 (sec)
+	    state = ActTurn(m, act_param);
+	    break;
+        case ACT_STAY : // 現状維持
+	    act_param[AP_TIMETOTAL] = 10.0; // 合計動作時間 (sec)
+	    state = ActStay(m, act_param);
+	    break;
+        case ACT_ERROR : // エラーが発生したとき
+        default : // どの case にもマッチしないとき、本来ここにはマッチしないはず
+	    fprintf(stderr, "Error: Bad act_num specified, or other error occured.\n");
+	    state = ACT_END;
+            break;
+    }
+}

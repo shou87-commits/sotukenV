@@ -1,0 +1,259 @@
+ftsensorのREADME
+
+１．変更、追加ファイルーーーーーーーーーーーーーーーーーーーーーーーーー
+
+■prj4/CMakeLists.txt
+最後の方の
+add_executable(prg4 src/prg4.cpp src/motion.cpp src/motorclass.cpp src/ikmotion.cpp 
+               src/user.cpp src/action.cpp src/action2.cpp src/suzuki.cpp 
+               src/shell.cpp src/tanaka.cpp src/fttest.cpp)
+に src/fttest.cpp を追加する。
+
+■prj4/urdf/ftsensor
+FTSensorRF1.urdf
+FTSensorRF2.urdf
+FTSensorLF1.urdf
+FTSensorLF2.urdf
+fturdf.sh
+■prj4/urdf
+fturdf.urdf(fturdf.shを実行するとできる)
+Ftpole.urdf(prg4_ft.launchで掴むポール赤)
+FtpoleB.urdf(ポール青)
+
+■prj4/config
+/config/prg4.yaml
+■prj4/launch
+/launch/prg4_ft.launch (赤いポール)
+■prj4/src
+/src/prg4.cpp
+/src/const.h
+/src/ftclass.h
+/src/fttest.cpp
+/src/user.cpp
+
+【自分で作ったプログラムに入れる際は以下のことを必ずやる】ーーーーーーー
+・prg4.cpp
+・user.cpp
+・自分で作った.cpp(今回はfttest.cpp)
+の中に必ず以下の2行を入れること
+#include <geometry_msgs/WrenchStamped.h>
+#include "ftclass.h"
+
+上はftsensorの値を読むためのノード。詳しくは下の方にある■ftclass.h
+下はヘッダーファイルの宣言。
+
+２．詳しい変更箇所ーーーーーーーーーーーーーーーーーーーーーーーー
+■手先のmodel + sh
+もともとあるlinkNN17, linkNN18, linkNN47, linkNN48 を親リンクとして
+　ftsensorのためのリンクを子リンクで作成
+jointはjointNNFTとして、同封してある画像(ftjoint.jpg)のように設定している
+topicなどはそれぞれのurdfの１番下に記述してある <!--ZMP sensor--> に書いてある
+このftsensorを使う際は、reboluteでないといけないため注意が必要
+また、そのjointにモータを付けないとおかしな挙動をするため注意(重力が効いて
+　ゆらゆら揺れたりする)
+
+shについては追加したurdfファイルをNeckの後ろ、cameraの前に置いている
+これはモータを最後のa7j2の後に追加したかったため
+
+■/config/prg4.yaml
+322~346行目
+以下を追加
+新たにftsensorを作った際はコピペなどして追加しておく
+fta1j1_pos_con, fta1j2_pos_con, fta4j1_pos_con, fta4j2_pos_con
+
+■launch
+関数やcppの動きを確認するためのもの
+赤いポールが出せる →fttest.cppの色を読み取る部分をREDにすると、動きを確かめる
+　ことができる
+※赤いボールを掴むプログラム(suzuki.cpp)でftsensorを利用しようとすると、
+　地面に手が当たって掴んだ判定になる可能性がある
+
+■prg4.cpp
+27行目
+#include "ftclass.h"
+36行目
+FTSENSOR *gFT;
+76~82行目
+FTSENSOR ftsensor[NUMFTSENSORS] = {
+        FTSENSOR(FTA1J1, "ftsensor_lf1/raw"),
+        FTSENSOR(FTA1J2, "ftsensor_lf2/raw"),
+        FTSENSOR(FTA1J1, "ftsensor_rf1/raw"),
+        FTSENSOR(FTA1J2, "ftsensor_rf2/raw"),
+};
+159行目
+gFT = ftsensor;
+
+36行目と159行目でgFT[id]〜で関数や値を呼び出すことができるようになる。
+76~82行目でノードを渡している
+
+C1のなかにFTA1J1等がないのはモーターを動かさないため
+
+■const.h
+
+const float FTON = 1;
+const float FTOFF = 0;
+
+const int NUMFTSENSORS = 4; // ftsensorの個数
+
+追加したjoint関係
+const int FTA1J1 = 0; // ft lf1
+const int FTA1J2 = 1; // ft lf2
+const int FTA4J1 = 2; // ft rf1
+const int FTA4J2 = 3; // ft rf2
+
+act_paramの中身
+const int AP_FTID       = 29; //FTセンサの番号
+const int AP_FTHOLD     = 30; //掴んだか否か
+
+■/src/fttest.cpp
+ほぼsuzuki.cppの内容
+grabの内容を変更することで掴んだかどうか判断して把持する動作を確認することができる
+
+■/src/user.cpp
+SuzukiMotion(), TanakaMotion() の代わりに
+FttestMotion(m, c, d); を呼び出すように書き換える。
+
+３．使い方ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+■urdf
+fturdfフォルダをurdfの下に置き、fturdf.urdfをurdfの下に置く。
+/prg4/urdf/fturdf
+そのままだとモデルは変わらないので、以下2行を /prg4/urdf で実行する
+
+$ rm prg4.urdf
+$ ln -s fturdf.urdf prg4.urdf
+
+rmはそのファイル消す
+lnはリンクを貼る
+
+もとに戻したい場合は、
+$ rm prg4.urdf
+$ ln -s buildurdf.urdf prg4.urdf
+ただし、もとに戻した時モーター(yamlファイルの中身)も消さなければいけないので注意
+
+モデルの値を変更したい場合は、 /prg4/urdf/fturdf のFTが先頭につくものを変更する。
+変更しただけではfturdf.urdfは変わらないので、 /prg4/urdf/fturdf 内で
+$ sh fturdf.sh
+を実行する。
+shファイルはfturdfフォルダ内に入っているurdfをまとめて、一個上の階層である
+　/prg4/urdf 内にfturdf.urdfを作る。
+
+■ftclass.h
+ここで出た情報はpublic関数であれば、gFT[id].出したい値　で呼び出すことができる。
+idについては
+FTA1J1 = 0; // ft lf1
+FTA1J2 = 1; // ft lf2
+FTA4J1 = 2; // ft rf1
+FTA4J2 = 3; // ft rf2
+なので、これを配列に入れれば呼び出せる。
+
+#define BYOU 2 
+これは何秒の値から求めるかを宣言している
+ここを変えれば計測する秒数を変更することができる。
+この秒数間で、一番大きい値によって判定する方法と平均で判定する方法がある。
+平均の場合は、ここを変えた際に自分で動きを作ったcppの中でここの秒数以下で動かさない
+　ことに注意。
+3秒だったら3秒以上ftsensorに物を当てないと望んだ結果にならない場合がある。
+
+関数は以下の6つ
+・FtCallback()
+・Ftyomu()
+・Ftkoredake()
+・Ftmax()
+・Ftave()
+・Ftdecision()
+
+・Ftcallback()
+prg4.cppにてtopicを渡された後、callback関数で配列に格納する
+格納の仕方はリングバッファを採用
+→開始地点が毎回変わるため、最初をhead最後をtailとしている
+→5秒未満の場合はheadは0だが、5.00秒からheadの位置が変わる(35行目のif)
+f[3][BYOU*100] 3はx,y,z、BYOU*100はBYOU秒間のデータ(1秒に100回読み込む)を
+　入れているため
+51行目のコメント化を外すと１秒に１回表示されるようにしている。
+それぞれ表示される値はコメントの通り
+
+・Ftyomu()
+この関数はちゃんと作っていない。boxとしてfの配列が入れられているので、
+　fttest.cppの方でも読める。
+必要な時はちゃんと中身を書く。
+
+・Ftkoredake()
+ROS_INFOがうまく機能するか確認するための関数。
+prg4.cppの中でこの関数を呼び出すのと、ほぼ同時にgFT[id].idなどを表示して
+　アドレスが同じ物を読んでいるか調べるために使った。
+エラーは出ないが、値がおかしい時この関数をデバッカーのように使うとうまくいく
+　かもしれない。
+
+・Ftmax()
+BYOU間で最大値を出す関数。
+センサがjoint等の関係？でーだったり＋だったりする。また、xyzで＋ーがまた
+　変わるため2乗して絶対値として判定している。
+絶対値による判断が良くない場合は、単純に最大値を出す関数に変えること。
+現在はFtdecisionで判定する時に呼び出しているがfttest.cpp等で呼び出すことも
+　可能だと思う。
+
+・Ftave()
+BYOU間で平均を出す関数。
+見ての通り平均をだすだけ。
+こっちを以前判定に使っていたが最大値のほうがわかりやすいため現在は使ってない。
+こっちを使う場合はdecision内のコメントを外すと使うことができる。
+これもfttest.cpp等で呼び出すことが可能だと思う。
+
+・Ftdecision()
+手に触れているかどうか判定する関数。
+現在は最大値によって求めている。
+decix[0] は　最大値
+decix[1] は　掴んだか掴んでないかをFTON FTOFFで表す
+FTON FTOFFについてはconst.hで宣言を行っている。
+ここの値は現在y軸で判断をしている。
+±3以上出たら手が当たっている判定になっているが、値が小さかったり大きかったり
+　する場合はif文の条件を変えること。
+最大値が配列として返るので、decision内で判断しなくてもいい。
+
+・関数を追加したり、他の情報を読みたい場合
+topicや型などは以下の通り。
+ここから他に使えそうなものなどあれば参考に。
+------------------------------------------------
+topic node　の確認
+$ rostopic type 	/ftsensor_l1/raw
+			geometry_msgs/WrenchStamped
+
+$ rosmsg show geometry_msgs/WrenchStamped
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Wrench wrench
+  geometry_msgs/Vector3 force
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Vector3 torque
+    float64 x
+    float64 y
+    float64 z
+------------------------------------------
+
+■fttest.cpp
+prg4.cppやFTsensorを使うコード内では以下の宣言を行うこと。
+extern FTSENSOR *gFT;
+
+使い方は
+a = gFT[id].Ftdecision(decix, deciy, deciz)
+
+a：ONかOFFかがreturnされているので、それが代入できるところを作っていおく
+id：jointの数字を入れる場所。FTA1J1とかでも大丈夫。今の所0~3が数字として
+　入っている。詳しくはconst.h
+decix, deciy, decizに2個数値が入った配列入っている。最大値をdecix[0],
+　deciy[0],deciz[0]に入れて、FTONかFTOFF(float型)かをdecix[1],
+　deciy[1],deciz[1]に入れている。fprintfのように書けば値を見ることができる。
+　配列は関数の最初で宣言しておくといい。
+プログラム内では物体が見えた位置の右左を判定してどのidにするか選んでいる。
+　どのidの情報がほしいかでココらへんを変えるといい。
+
+このプログラムでは以下のような動きにしている。参考になれば。
+１．カメラで物体の認識(ActFttestVision)
+２．掴みに行く動作＋手のひらにあたっているか確認(ActFttest)
+３．当たっていれば掴む(ActFttestGrab)、当たっていなければもう一度物体の
+　認識(ActFttestVision)
+４．掴んだら離して1へ

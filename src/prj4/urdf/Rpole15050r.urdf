@@ -1,0 +1,332 @@
+<?xml version="1.0" ?>
+
+<robot name="Rpole15050">
+    <link name="base">
+        <visual>
+  	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.05 0.05 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <geometry> <box size="0.05 0.05 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="0.5" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="base"> <material>Gazebo/Red</material> </gazebo>
+
+    <joint name="jointRedpoleBase" type="fixed">
+        <parent link="base"/>
+	<child  link="pole"/>
+	<origin xyz="0 0 0.01" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="pole">
+        <visual>
+	    <origin xyz="0 0 0.735" rpy="0 0 0" />
+	    <geometry> <box size="0.005 0.005 1.47"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+            <origin xyz="0 0 0.735" rpy="0 0 0" />
+	    <geometry> <box size="0.005 0.005 1.47"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.735" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="pole"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+    
+    <joint name="jointRedpole15" type="fixed">
+        <parent link="pole"/>
+	<child  link="top15"/>
+	<origin xyz="0 0 1.47" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top15">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="top15"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+    
+    <joint name="jointRedpole14" type="fixed">
+        <parent link="pole"/>
+	<child  link="top14"/>
+	<origin xyz="0 0 1.37" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top14">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="top14"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+    
+    <joint name="jointRedpole13" type="fixed">
+        <parent link="pole"/>
+	<child  link="top13"/>
+	<origin xyz="0 0 1.27" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top13">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="top13"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+    
+    <joint name="jointRedpole12" type="fixed">
+        <parent link="pole"/>
+	<child  link="top12"/>
+	<origin xyz="0 0 1.17" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top12">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="top12"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+    
+    <joint name="jointRedpole11" type="fixed">
+        <parent link="pole"/>
+	<child  link="top11"/>
+	<origin xyz="0 0 1.07" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top11">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="top11"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointRedpole10" type="fixed">
+        <parent link="pole"/>
+	<child  link="top10"/>
+	<origin xyz="0 0 0.97" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top10">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+    <gazebo reference="top10"> <material>Gazebo/Blue</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointRedpole09" type="fixed">
+        <parent link="pole"/>
+	<child  link="top09"/>
+	<origin xyz="0 0 0.87" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top09">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+   <gazebo reference="top09"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointRedpole08" type="fixed">
+        <parent link="pole"/>
+	<child  link="top08"/>
+	<origin xyz="0 0 0.77" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top08">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+   <gazebo reference="top08"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointRedpole07" type="fixed">
+        <parent link="pole"/>
+	<child  link="top07"/>
+	<origin xyz="0 0 0.67" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top07">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+   <gazebo reference="top07"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointRedpole06" type="fixed">
+        <parent link="pole"/>
+	<child  link="top06"/>
+	<origin xyz="0 0 0.57" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top06">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+   <gazebo reference="top06"> <material>Gazebo/Red</material> </gazebo>
+
+<!-- ################################################################### -->
+
+    <joint name="jointRedpole05" type="fixed">
+        <parent link="pole"/>
+	<child  link="top05"/>
+	<origin xyz="0 0 0.47" rpy="0 0 0"/>
+    </joint>
+  
+    <link name="top05">
+        <visual>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	    <material name=""> <color rgba="1.0 1.0 1.0 1.0" /> </material>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <geometry> <box size="0.02 0.02 0.02"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.01" rpy="0 0 0" />
+	    <mass value="0.1" />
+	    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+	</inertial>
+    </link>
+   <gazebo reference="top05"> <material>Gazebo/Red</material> </gazebo>
+
+</robot>

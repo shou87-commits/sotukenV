@@ -1,0 +1,226 @@
+<launch>
+<!-- comment -->
+<!-- 
+    <include file="$(find prj4)/launch/empty_sky.launch">
+    <include file="$(find prj4)/launch/empty_world.launch">
+    <include file="$(find prj4)/launch/myworld_full.launch">
+    <include file="$(find prj4)/launch/myworld_simple.launch">
+    <include file="$(find prj4)/launch/myworld.launch">
+-->
+    <include file="$(find prj4)/launch/myworld_light.launch">
+        <arg name="paused" value="true"/>
+    </include>
+
+    <arg name="model" default="$(find prj4)/urdf/prg4.urdf" />
+    <param name="robot_description" textfile="$(arg model)" />
+    <node name="spawn_urdf_gz" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model prj4 -x 0 -y 0 -z 0.3 -R 0 -P 0 -Y 0" />
+
+<!-- position in front of slope -->
+<!--    
+        args="-param robot_description -urdf -model prj4 -x -0.5 -y -7 -z 1.0 -R 0 -P 0 -Y 3.1416" />
+-->
+
+    <node name="robot_state_publisher_gz" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <rosparam file="$(find prj4)/config/prg4.yaml" command="load" />
+
+    <node name="ctrl_spawner_gz" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+    	  ns="/prj4" args="j_state_con 
+	  a1j1_pos_con  a1j2_pos_con  a1j3_pos_con  a1j4_pos_con  a1j5_pos_con  a1j6_pos_con  
+	  a1j7_pos_con  a1j8_pos_con  a2j1_pos_con  a2j2_pos_con  a2j3_pos_con  a2j4_pos_con  
+	  a2j5_pos_con  a2j6_pos_con  a2j7_pos_con  a2j8_pos_con  a3j1_pos_con  a3j2_pos_con  
+	  a3j3_pos_con  a3j4_pos_con  a3j5_pos_con  a3j6_pos_con  a3j7_pos_con  a3j8_pos_con 
+	  a4j1_pos_con  a4j2_pos_con  a4j3_pos_con  a4j4_pos_con  a4j5_pos_con  a4j6_pos_con  
+	  a4j7_pos_con  a4j8_pos_con  a5j1_pos_con  a5j2_pos_con  a5j3_pos_con  a5j4_pos_con  
+	  a5j5_pos_con  a5j6_pos_con  a5j7_pos_con  a5j8_pos_con  a6j1_pos_con  a6j2_pos_con  
+	  a6j3_pos_con  a6j4_pos_con  a6j5_pos_con  a6j6_pos_con  a6j7_pos_con  a6j8_pos_con 
+	  a7j1_pos_con  a7j2_pos_con  a8j1_pos_con  a8j2_pos_con" />
+<!--	  fta1j1_pos_con fta1j2_pos_con fta4j1_pos_con fta4j2_pos_con " /> -->
+	  
+<!-- 物体認識のテスト用、赤色の箱が付いたポール -->
+<!-- 
+    <arg name="Rpole15050" default="$(find prj4)/urdf/Rpole15050.urdf"/>
+    <param name="Rpole15050_description" textfile="$(arg Rpole15050)"/>
+    <node name="Rpole15050_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole15050_description -urdf -x 1.0 -y 0.0 -z 0.1 -model Rpole15050" />
+    <node name="Rpole15050_spawner_gz2" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole15050_description -urdf -x 1.0 -y -0.5 -z 0.1 -model Rpole150502" />
+    <node name="Rpole15050_spawner_gz3" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole15050_description -urdf -x 1.0 -y 0.5 -z 0.1 -model Rpole150503" />
+    <node name="Rpole15050_spawner_gz4" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole15050_description -urdf -x 1.0 -y -0.75 -z 0.1 -model Rpole150504" />
+    <node name="Rpole15050_spawner_gz5" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole15050_description -urdf -x 1.0 -y 0.75 -z 0.1 -model Rpole150505" />
+-->
+
+<!--
+    <arg name="pt" default="$(find prj4)/urdf/point.urdf"/>
+    <param name="pt_description" textfile="$(arg pt)"/>
+    <node name="pt_spawner_gz1" pkg="gazebo_ros" type="spawn_model"
+          args="-param pt_description -urdf -x 0 -y 0 -z 0.3 -model pt1" />
+
+    <arg name="Rpole60" default="$(find prj4)/urdf/Rpole15050r.urdf"/>
+    <param name="Rpole60_description" textfile="$(arg Rpole60)"/>
+    <node name="Rpole60_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole60_description -urdf -x 2.0 -y -2.0 -z 0.1 -model Rpole60" />
+    <node name="Rpole60_spawner_gz0" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole60_description -urdf -x -0.5 -y 0.75 -z 0.1 -model Rpole600" />
+    <node name="Rpole60_spawner_gz1" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole60_description -urdf -x -2.75 -y -1.0 -z 0.1 -model Rpole601" />
+-->
+
+    <arg name="chechSR" default="$(find prj4)/urdf/ChechSmallR.urdf"/>
+    <param name="chechSR_description" textfile="$(arg chechSR)"/>
+    <node name="chechSR_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSR_description -urdf -x 0.5 -y 0.0 -z 0.1 -model chechSR1" />
+
+<!--          
+    <node name="chechSR_spawner_gz0" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSR_description -urdf -x -0.5 -y 1.5 -z 0.1 -model chechSR10" />
+    <node name="chechSR_spawner_gz1" pkg="gazebo_ros" type="spawn_model"
+          args="-param chechSR_description -urdf -x -2.5 -y -1.75 -z 0.1 -model chechSR11" />
+-->
+
+<!--
+    <node name="Rpole60_spawner_gz2" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole60_description -urdf -x -0.5 -y 2.0 -z 0.1 -model Rpole602" />
+    <node name="Rpole60_spawner_gz3" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param Rpole60_description -urdf -x -2.0 -y -2.0 -z 0.1 -model Rpole603" />
+-->
+<!-- 
+    <arg name="print3d" default="$(find prj4)/sdf/3dprintpole.sdf"/>
+    <param name="print3d_description" textfile="$(arg print3d)"/>
+    <node name="print3d_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param print3d_description -sdf -x 0 -y -2 -z 1 -model print3d" />
+-->
+
+<!-- myworld.launch で既に ladder を配置したので、別の名前 ladder2 にすれば配置できる -->
+<!-- 
+    <arg name="ladder" default="$(find prj4)/sdf/ladder.sdf"/>
+    <param name="ladder_description" textfile="$(arg ladder)"/>
+    <node name="ladder_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param ladder_description -sdf -x -2.5 -y 3.0 -z 0.0 -model ladder2" />
+
+    <arg name="untei" default="$(find prj4)/sdf/untei.sdf"/>
+    <param name="untei_description" textfile="$(arg untei)"/>
+    <node name="untei_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param untei_description -sdf -x -5 -y -5 -z 0.0 -model untei" />
+
+    <arg name="jgym" default="$(find prj4)/sdf/jgym.sdf"/>
+    <param name="jgym_description" textfile="$(arg jgym)"/>
+    <node name="jgym_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param jgym_description -sdf -x 0 -y -10.0 -z 0.0 -model jgym2" />
+
+    <arg name="bldwall" default="$(find prj4)/sdf/bldwall.sdf"/>
+    <param name="bldwall_description" textfile="$(arg bldwall)"/>
+    <node name="bldwall_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param bldwall_description -sdf -x 0 -y 10.0 -z 0.0 -Y 3.1416 -model bldwall2" />
+-->
+
+<!-- Chech Hedgehog -->
+<!-- 
+    <arg name="chech" default="$(find prj4)/urdf/Chech.urdf"/>
+    <param name="chech_description" textfile="$(arg chech)"/>
+    <node name="chech_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param chech_description -urdf -x 2.7 -y 0 -z 2.0 -R 0 -P 0 -Y 0 -model chech" />
+
+    <node name="chech_spawner_gz2" pkg="gazebo_ros" type="spawn_model"
+          args="-param chech_description -urdf -x 3 -y -1 -z 2.0 -R 0 -P 0 -Y 0 -model chech2" />
+
+    <node name="chech_spawner_gz3" pkg="gazebo_ros" type="spawn_model"
+          args="-param chech_description -urdf -x 2.2 -y 1 -z 4.0 -R 0 -P 0 -Y 0 -model chech3" />
+
+    <node name="chech_spawner_gz4" pkg="gazebo_ros" type="spawn_model"
+          args="-param chech_description -urdf -x 1.8 -y 0.5 -z 3.0 -R 0 -P 0 -Y 0 -model chech4" />
+
+    <node name="chech_spawner_gz5" pkg="gazebo_ros" type="spawn_model"
+          args="-param chech_description -urdf -x 1.3 -y -0.5 -z 3.0 -R 0 -P 0 -Y 0 -model chech5" />
+
+    <node name="chech_spawner_gz6" pkg="gazebo_ros" type="spawn_model"
+          args="-param chech_description -urdf -x 3.5 -y 0.0 -z 3.0 -R 0 -P 0 -Y 0 -model chech6" />
+-->
+
+<!--
+    <arg name="boxs" default="$(find prj4)/urdf/boxs.urdf"/>
+    <param name="boxs_description" textfile="$(arg boxs)"/>
+    <node name="boxs_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param boxs_description -urdf -x -0.05 -y 0.05 -z 0.6 -R 0 -P 0 -Y 0 -model boxs1" />
+
+    <arg name="RboxS" default="$(find prj4)/urdf/redboxs.urdf"/>
+    <param name="RboxS_description" textfile="$(arg RboxS)"/>
+
+    <node name="RboxS_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.0 -y -0.3 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS1" />
+    <node name="RboxS_spawner_gz2" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.0 -y -0.4 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS2" />
+    <node name="RboxS_spawner_gz3" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.0 -y -0.2 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS3" />
+    <node name="RboxS_spawner_gz4" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.0 -y -0.5 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS4" />
+
+    <node name="RboxS_spawner_gz10" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.2 -y -0.3 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS11" />
+    <node name="RboxS_spawner_gz12" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.2 -y -0.4 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS12" />
+    <node name="RboxS_spawner_gz13" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.2 -y -0.2 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS13" />
+    <node name="RboxS_spawner_gz14" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 0.2 -y -0.5 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS14" />
+
+    <node name="RboxS_spawner_gz60" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.2 -y -0.3 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS61" />
+    <node name="RboxS_spawner_gz62" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.2 -y -0.4 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS62" />
+    <node name="RboxS_spawner_gz63" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.2 -y -0.2 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS63" />
+    <node name="RboxS_spawner_gz64" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.2 -y -0.5 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS64" />
+
+    <node name="RboxS_spawner_gz20" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.4 -y -0.3 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS21" />
+    <node name="RboxS_spawner_gz22" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.4 -y -0.4 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS22" />
+    <node name="RboxS_spawner_gz23" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.4 -y -0.2 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS23" />
+    <node name="RboxS_spawner_gz24" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.4 -y -0.5 -z 0 -R 0 -P 0 -Y 0.785 -model RboxS24" />
+
+
+    <node name="RboxS_spawner_gz31" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 1.0 -y -1.0 -z 0 -R 0 -P 0 -Y 0 -model RboxS31" />
+    <node name="RboxS_spawner_gz32" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -1.0 -y -1.0 -z 0 -R 0 -P 0 -Y 0 -model RboxS32" />
+    <node name="RboxS_spawner_gz33" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x 1.0 -y -0.8 -z 0 -R 0 -P 0 -Y 0 -model RboxS33" />
+    <node name="RboxS_spawner_gz34" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -1.0 -y -0.8 -z 0 -R 0 -P 0 -Y 0 -model RboxS34" />
+
+    <node name="RboxS_spawner_gz41" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.6 -y 1.0 -z 0 -R 0 -P 0 -Y 0 -model RboxS41" />
+    <node name="RboxS_spawner_gz42" pkg="gazebo_ros" type="spawn_model"
+          args="-param RboxS_description -urdf -x -0.6 -y 1.4 -z 0 -R 0 -P 0 -Y 0 -model RboxS42" />
+-->
+
+<!--
+    <arg name="chechSRsdf" default="$(find prj4)/sdf/ChechSmallR.sdf"/>
+    <param name="chechSRsdf_description" textfile="$(arg chechSRsdf)"/>
+    <node name="chechSRsdf_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param chechSRsdf_description -sdf -x 0.4 -y 0.0 -z 0.1 -model chechSRsdf1" />
+-->
+
+<!-- box, cylinder, sphere 
+    <arg name="bcs" default="$(find prj4)/urdf/bcs.urdf"/>
+    <param name="bcs_description" textfile="$(arg bcs)"/>
+    <node name="bcs_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param bcs_description -urdf -x 0.5 -y 0.0 -z 1.0 -model bcs" />
+-->
+
+<!-- ena campus terrain
+    <arg name="ena" default="$(find prj4)/sdf/models/ena/model.sdf"/>
+    <param name="ena_description" textfile="$(arg ena)"/>
+    <node name="ena_spawner_gz" pkg="gazebo_ros" type="spawn_model"
+    	  args="-param ena_description -sdf -x 36.5 -y -29 -z -0.4 -R 0 -P 0 -Y 1.5708 -model ena" />
+-->
+
+</launch>

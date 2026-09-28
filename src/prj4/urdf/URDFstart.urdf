@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- Note that you cannot place Japanese comment before melodic -->
+
+<robot name="prj4">
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+	    <robotNamespace>prj4</robotNamespace>
+<!-- 	    <legacyModeNS>true</legacyModeNS> for kinetic, but may be unnecessary -->
+        </plugin>
+    </gazebo>
+

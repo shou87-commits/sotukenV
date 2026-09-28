@@ -1,0 +1,307 @@
+    <joint name="jointNN5" type="revolute">
+        <parent link="body"/>
+	<child link="linkNN5"/>
+	<origin xyz= "0 -0.15 0.0" rpy="0 0 0" />
+	<axis xyz="0 0 1"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN5">
+        <visual>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.05 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.05 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/> <mass value="0.1"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN5"> <material>Gazebo/Grey</material> </gazebo>
+
+    <transmission name="transNN5">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN5">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN5">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN52" type="revolute">
+        <parent link="linkNN5"/>
+	<child link="linkNN52"/>
+	<origin xyz= "0 -0.05 0" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN52">
+        <visual>
+	    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.3 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.3 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 -0.15 0" rpy="0 0 0"/> <mass value="0.3"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN52"> <material>Gazebo/BlackTransparent</material> </gazebo>
+    
+    <transmission name="transNN52">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN52">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN52">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN53" type="revolute">
+        <parent link="linkNN52"/>
+	<child link="linkNN53"/>
+	<origin xyz= "0 -0.3 0" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN53">
+        <visual>
+	    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.3 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.3 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 -0.15 0" rpy="0 0 0"/> <mass value="0.3"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+<!--	<material name="green"/> -->
+    </link>
+
+    <gazebo reference="linkNN53"> <material>Gazebo/Indigo</material> </gazebo>
+
+    <transmission name="transNN53">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN53">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN53">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN54" type="revolute">
+        <parent link="linkNN53"/>
+	<child link="linkNN54"/>
+	<origin xyz= "0 -0.3 0" rpy="0 0 0" />
+	<axis xyz="1 0 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN54">
+        <visual>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.05 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.05 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/> <mass value="0.1"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN54"> <material>Gazebo/GreyTransparent</material> </gazebo>
+
+    <transmission name="transNN54">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN54">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN54">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN55" type="revolute">
+        <parent link="linkNN54"/>
+	<child link="linkNN55"/>
+	<origin xyz= "0 -0.05 0" rpy="0 0 0" />
+	<axis xyz="0 0 1"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN55">
+        <visual>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.05 0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.05 0.05 0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/> <mass value="0.1"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN55"> <material>Gazebo/BlackTransparent</material> </gazebo>
+
+    <transmission name="transNN55">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN55">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN55">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+<!-- ################################################################### -->
+
+    <joint name="jointNN56" type="revolute">
+        <parent link="linkNN55"/>
+	<child link="linkNN56"/>
+	<origin xyz= "0 -0.05 0" rpy="0 0 0" />
+	<axis xyz="0 1 0"/>
+	<limit effort="30" lower="-2.617" upper="2.617" velocity="1.571"/>
+    </joint>
+
+    <link name="linkNN56">
+        <visual>
+	    <origin xyz="0 -0.025 0" rpy="0 1.5708 0"/>
+	    <geometry> <cylinder length="0.05" radius="0.025"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 -0.025 0" rpy="0 1.5708 0"/>
+	    <geometry> <cylinder length="0.05" radius="0.025"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 -0.025 0" rpy="0 0 0"/> <mass value="0.1"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+
+    <gazebo reference="linkNN56"> <material>Gazebo/Grey</material> </gazebo>
+
+    <transmission name="transNN56">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="jointNN56">
+	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="motorNN56">
+	<hardwareInterface>EffortJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <joint name="jointNN5cy" type="fixed">
+        <parent link="body"/>
+	<child link="linkNN5cy"/>
+	<origin xyz= "0.0 -0.15 0.0" rpy="0 0 0" />
+    </joint>
+    <link name="linkNN5cy">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.06" radius="0.025"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="linkNN5cy"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="jointNN52cy" type="fixed">
+        <parent link="linkNN5"/>
+	<child link="linkNN52cy"/>
+	<origin xyz= "0.0 -0.05 0.0" rpy="0 1.5708 0" />
+    </joint>
+    <link name="linkNN52cy">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.06" radius="0.025"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="linkNN52cy"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="jointNN53cy" type="fixed">
+        <parent link="linkNN52"/>
+	<child link="linkNN53cy"/>
+	<origin xyz= "0.0 -0.3 0.0" rpy="0 1.5708 0" />
+    </joint>
+    <link name="linkNN53cy">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.06" radius="0.025"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="linkNN53cy"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="jointNN54cy" type="fixed">
+        <parent link="linkNN53"/>
+	<child link="linkNN54cy"/>
+	<origin xyz= "0.0 -0.3 0.0" rpy="0 1.5708 0" />
+    </joint>
+    <link name="linkNN54cy">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.06" radius="0.025"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="linkNN54cy"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="jointNN55cy" type="fixed">
+        <parent link="linkNN54"/>
+	<child link="linkNN55cy"/>
+	<origin xyz= "0.0 -0.05 0.0" rpy="0 0 0" />
+    </joint>
+    <link name="linkNN55cy">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.06" radius="0.025"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="linkNN55cy"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="jointNN56cy" type="fixed">
+        <parent link="linkNN55"/>
+	<child link="linkNN56cy"/>
+	<origin xyz= "0.0 -0.05 0.0" rpy="1.5708 0 0" />
+    </joint>
+    <link name="linkNN56cy">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.01" radius="0.035"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="linkNN56cy"> <material>Gazebo/Grey</material> </gazebo>
+
+<!-- ################################################################### -->
+

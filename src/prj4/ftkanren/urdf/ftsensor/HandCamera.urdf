@@ -1,0 +1,63 @@
+<!-- camera 2 -->
+
+<!-- ! In this camera No lens center settings, see HeadCamera.urdf and correct before use -->
+
+<!-- You can comment out an unused finction
+
+    <joint name="camera_jointNN2" type="fixed">
+        <parent link="linkNN16"/>
+	<child  link="camera_linkNN2"/>
+	<origin xyz="0 0.025 0.05" rpy="0 0 -1.5708"/>
+    </joint>
+    <link name="camera_linkNN2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <box size="0.025 0.05 0.05"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="camera_linkNN2"> <material>Gazebo/Black</material> </gazebo>
+    
+    <joint name="camera_jointNN22" type="fixed">
+        <parent link="camera_linkNN2"/>
+	<child  link="camera_linkNN22"/>
+	<origin xyz="0.02 0 0" rpy="0 1.5708 0"/>
+    </joint>
+    <link name="camera_linkNN22">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry> <cylinder length="0.015" radius="0.02"/> </geometry>
+	</visual>
+    </link>
+    <gazebo reference="camera_linkNN22"> <material>Gazebo/Gray</material> </gazebo>
+
+    <gazebo reference="camera_linkNN2">
+        <sensor type="camera" name="camera2">
+	    <update_rate>30.0</update_rate>
+	    <camera name="hand">
+                <horizontal_fov>1.3962634</horizontal_fov>
+		<image> <width>640</width> <height>480</height> <format>R8G8B8</format>	</image>
+		<clip> <near>0.05</near> <far>100</far>	</clip>
+		<noise> <type>gaussian</type> <mean>0.0</mean> <stddev>0.01</stddev> </noise>
+	    </camera>
+	    <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+		<updateRate>0.0</updateRate>
+		<cameraName>prj4/camera2</cameraName>
+		<imageTopicName>image_raw</imageTopicName>
+		<cameraInfoTopicName>camera_info</cameraInfoTopicName>
+		<frameName>camera_link_optical</frameName>
+		<hackBaseline>0.0</hackBaseline>
+		<distortionK1>0.0</distortionK1>
+		<distortionK2>0.0</distortionK2>
+		<distortionK3>0.0</distortionK3>
+		<distortionT1>0.0</distortionT1>
+		<distortionT2>0.0</distortionT2>
+		<CxPrime>0</CxPrime>
+		<Cx>0.0</Cx>
+		<Cy>0.0</Cy>
+		<focalLength>0.0</focalLength>
+	    </plugin>
+	</sensor>
+    </gazebo>
+-->
+<!-- ################################################################### -->

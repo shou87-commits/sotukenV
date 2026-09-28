@@ -1,0 +1,2222 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="bldwall">
+    <static>true</static>
+    <link name="link">
+
+<collision name="bldwallV1collision">
+<pose>2.500000 0.000000 2.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.200000 5.000000</size> </box> </geometry>
+</collision>
+<visual name="bldwallV1visual">
+<pose>2.500000 0.000000 2.500000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>5.000000 0.200000 5.000000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Granite</name> </script> </material>
+</visual>
+
+<collision name="bldwall00collision">
+<pose>0.238300 0.225000 0.288600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall00visual">
+<pose>0.238300 0.225000 0.288600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb00collision">
+<pose>0.238300 0.387500 0.288600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb00visual">
+<pose>0.238300 0.387500 0.288600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall01collision">
+<pose>0.791500 0.225000 0.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall01visual">
+<pose>0.791500 0.225000 0.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb01collision">
+<pose>0.791500 0.387500 0.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb01visual">
+<pose>0.791500 0.387500 0.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall02collision">
+<pose>1.238600 0.225000 0.249200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall02visual">
+<pose>1.238600 0.225000 0.249200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb02collision">
+<pose>1.238600 0.387500 0.249200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb02visual">
+<pose>1.238600 0.387500 0.249200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall03collision">
+<pose>1.742100 0.225000 0.236200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall03visual">
+<pose>1.742100 0.225000 0.236200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb03collision">
+<pose>1.742100 0.387500 0.236200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb03visual">
+<pose>1.742100 0.387500 0.236200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall04collision">
+<pose>2.269000 0.225000 0.205900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall04visual">
+<pose>2.269000 0.225000 0.205900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb04collision">
+<pose>2.269000 0.387500 0.205900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb04visual">
+<pose>2.269000 0.387500 0.205900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall05collision">
+<pose>2.792600 0.225000 0.254000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall05visual">
+<pose>2.792600 0.225000 0.254000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb05collision">
+<pose>2.792600 0.387500 0.254000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb05visual">
+<pose>2.792600 0.387500 0.254000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall06collision">
+<pose>3.217200 0.225000 0.273600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall06visual">
+<pose>3.217200 0.225000 0.273600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb06collision">
+<pose>3.217200 0.387500 0.273600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb06visual">
+<pose>3.217200 0.387500 0.273600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall07collision">
+<pose>3.736800 0.225000 0.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall07visual">
+<pose>3.736800 0.225000 0.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb07collision">
+<pose>3.736800 0.387500 0.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb07visual">
+<pose>3.736800 0.387500 0.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall08collision">
+<pose>4.278200 0.225000 0.253000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall08visual">
+<pose>4.278200 0.225000 0.253000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb08collision">
+<pose>4.278200 0.387500 0.253000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb08visual">
+<pose>4.278200 0.387500 0.253000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall09collision">
+<pose>4.712300 0.225000 0.206700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall09visual">
+<pose>4.712300 0.225000 0.206700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb09collision">
+<pose>4.712300 0.387500 0.206700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb09visual">
+<pose>4.712300 0.387500 0.206700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall10collision">
+<pose>0.292900 0.225000 0.780200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall10visual">
+<pose>0.292900 0.225000 0.780200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb10collision">
+<pose>0.292900 0.387500 0.780200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb10visual">
+<pose>0.292900 0.387500 0.780200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall11collision">
+<pose>0.705800 0.225000 0.706900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall11visual">
+<pose>0.705800 0.225000 0.706900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb11collision">
+<pose>0.705800 0.387500 0.706900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb11visual">
+<pose>0.705800 0.387500 0.706900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall12collision">
+<pose>1.239300 0.225000 0.745600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall12visual">
+<pose>1.239300 0.225000 0.745600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb12collision">
+<pose>1.239300 0.387500 0.745600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb12visual">
+<pose>1.239300 0.387500 0.745600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall13collision">
+<pose>1.704200 0.225000 0.722900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall13visual">
+<pose>1.704200 0.225000 0.722900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb13collision">
+<pose>1.704200 0.387500 0.722900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb13visual">
+<pose>1.704200 0.387500 0.722900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall14collision">
+<pose>2.242100 0.225000 0.791900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall14visual">
+<pose>2.242100 0.225000 0.791900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb14collision">
+<pose>2.242100 0.387500 0.791900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb14visual">
+<pose>2.242100 0.387500 0.791900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall15collision">
+<pose>2.753700 0.225000 0.719800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall15visual">
+<pose>2.753700 0.225000 0.719800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb15collision">
+<pose>2.753700 0.387500 0.719800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb15visual">
+<pose>2.753700 0.387500 0.719800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall16collision">
+<pose>3.231500 0.225000 0.737000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall16visual">
+<pose>3.231500 0.225000 0.737000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb16collision">
+<pose>3.231500 0.387500 0.737000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb16visual">
+<pose>3.231500 0.387500 0.737000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall17collision">
+<pose>3.752600 0.225000 0.709100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall17visual">
+<pose>3.752600 0.225000 0.709100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb17collision">
+<pose>3.752600 0.387500 0.709100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb17visual">
+<pose>3.752600 0.387500 0.709100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall18collision">
+<pose>4.295600 0.225000 0.787300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall18visual">
+<pose>4.295600 0.225000 0.787300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb18collision">
+<pose>4.295600 0.387500 0.787300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb18visual">
+<pose>4.295600 0.387500 0.787300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall19collision">
+<pose>4.717000 0.225000 0.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall19visual">
+<pose>4.717000 0.225000 0.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb19collision">
+<pose>4.717000 0.387500 0.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb19visual">
+<pose>4.717000 0.387500 0.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall20collision">
+<pose>0.230500 0.225000 1.292500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall20visual">
+<pose>0.230500 0.225000 1.292500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb20collision">
+<pose>0.230500 0.387500 1.292500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb20visual">
+<pose>0.230500 0.387500 1.292500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall21collision">
+<pose>0.732700 0.225000 1.233600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall21visual">
+<pose>0.732700 0.225000 1.233600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb21collision">
+<pose>0.732700 0.387500 1.233600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb21visual">
+<pose>0.732700 0.387500 1.233600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall22collision">
+<pose>1.284600 0.225000 1.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall22visual">
+<pose>1.284600 0.225000 1.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb22collision">
+<pose>1.284600 0.387500 1.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb22visual">
+<pose>1.284600 0.387500 1.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall23collision">
+<pose>1.785700 0.225000 1.212400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall23visual">
+<pose>1.785700 0.225000 1.212400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb23collision">
+<pose>1.785700 0.387500 1.212400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb23visual">
+<pose>1.785700 0.387500 1.212400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall24collision">
+<pose>2.258200 0.225000 1.254500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall24visual">
+<pose>2.258200 0.225000 1.254500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb24collision">
+<pose>2.258200 0.387500 1.254500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb24visual">
+<pose>2.258200 0.387500 1.254500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall25collision">
+<pose>2.736700 0.225000 1.243400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall25visual">
+<pose>2.736700 0.225000 1.243400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb25collision">
+<pose>2.736700 0.387500 1.243400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb25visual">
+<pose>2.736700 0.387500 1.243400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall26collision">
+<pose>3.204300 0.225000 1.275000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall26visual">
+<pose>3.204300 0.225000 1.275000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb26collision">
+<pose>3.204300 0.387500 1.275000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb26visual">
+<pose>3.204300 0.387500 1.275000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall27collision">
+<pose>3.780800 0.225000 1.227600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall27visual">
+<pose>3.780800 0.225000 1.227600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb27collision">
+<pose>3.780800 0.387500 1.227600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb27visual">
+<pose>3.780800 0.387500 1.227600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall28collision">
+<pose>4.278800 0.225000 1.258400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall28visual">
+<pose>4.278800 0.225000 1.258400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb28collision">
+<pose>4.278800 0.387500 1.258400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb28visual">
+<pose>4.278800 0.387500 1.258400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall29collision">
+<pose>4.765100 0.225000 1.275400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall29visual">
+<pose>4.765100 0.225000 1.275400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb29collision">
+<pose>4.765100 0.387500 1.275400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb29visual">
+<pose>4.765100 0.387500 1.275400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall30collision">
+<pose>0.293200 0.225000 1.706000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall30visual">
+<pose>0.293200 0.225000 1.706000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb30collision">
+<pose>0.293200 0.387500 1.706000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb30visual">
+<pose>0.293200 0.387500 1.706000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall31collision">
+<pose>0.736800 0.225000 1.773900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall31visual">
+<pose>0.736800 0.225000 1.773900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb31collision">
+<pose>0.736800 0.387500 1.773900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb31visual">
+<pose>0.736800 0.387500 1.773900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall32collision">
+<pose>1.222600 0.225000 1.758600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall32visual">
+<pose>1.222600 0.225000 1.758600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb32collision">
+<pose>1.222600 0.387500 1.758600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb32visual">
+<pose>1.222600 0.387500 1.758600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall33collision">
+<pose>1.753900 0.225000 1.779500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall33visual">
+<pose>1.753900 0.225000 1.779500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb33collision">
+<pose>1.753900 0.387500 1.779500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb33visual">
+<pose>1.753900 0.387500 1.779500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall34collision">
+<pose>2.243400 0.225000 1.737800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall34visual">
+<pose>2.243400 0.225000 1.737800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb34collision">
+<pose>2.243400 0.387500 1.737800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb34visual">
+<pose>2.243400 0.387500 1.737800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall35collision">
+<pose>2.760100 0.225000 1.709700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall35visual">
+<pose>2.760100 0.225000 1.709700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb35collision">
+<pose>2.760100 0.387500 1.709700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb35visual">
+<pose>2.760100 0.387500 1.709700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall36collision">
+<pose>3.231700 0.225000 1.749200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall36visual">
+<pose>3.231700 0.225000 1.749200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb36collision">
+<pose>3.231700 0.387500 1.749200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb36visual">
+<pose>3.231700 0.387500 1.749200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall37collision">
+<pose>3.775600 0.225000 1.730100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall37visual">
+<pose>3.775600 0.225000 1.730100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb37collision">
+<pose>3.775600 0.387500 1.730100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb37visual">
+<pose>3.775600 0.387500 1.730100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall38collision">
+<pose>4.228600 0.225000 1.744100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall38visual">
+<pose>4.228600 0.225000 1.744100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb38collision">
+<pose>4.228600 0.387500 1.744100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb38visual">
+<pose>4.228600 0.387500 1.744100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall39collision">
+<pose>4.768900 0.225000 1.744400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall39visual">
+<pose>4.768900 0.225000 1.744400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb39collision">
+<pose>4.768900 0.387500 1.744400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb39visual">
+<pose>4.768900 0.387500 1.744400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall40collision">
+<pose>0.244000 0.225000 2.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall40visual">
+<pose>0.244000 0.225000 2.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb40collision">
+<pose>0.244000 0.387500 2.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb40visual">
+<pose>0.244000 0.387500 2.272900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall41collision">
+<pose>0.711700 0.225000 2.209700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall41visual">
+<pose>0.711700 0.225000 2.209700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb41collision">
+<pose>0.711700 0.387500 2.209700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb41visual">
+<pose>0.711700 0.387500 2.209700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall42collision">
+<pose>1.248100 0.225000 2.267500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall42visual">
+<pose>1.248100 0.225000 2.267500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb42collision">
+<pose>1.248100 0.387500 2.267500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb42visual">
+<pose>1.248100 0.387500 2.267500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall43collision">
+<pose>1.792700 0.225000 2.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall43visual">
+<pose>1.792700 0.225000 2.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb43collision">
+<pose>1.792700 0.387500 2.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb43visual">
+<pose>1.792700 0.387500 2.256700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall44collision">
+<pose>2.249700 0.225000 2.235300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall44visual">
+<pose>2.249700 0.225000 2.235300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb44collision">
+<pose>2.249700 0.387500 2.235300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb44visual">
+<pose>2.249700 0.387500 2.235300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall45collision">
+<pose>2.796500 0.225000 2.230600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall45visual">
+<pose>2.796500 0.225000 2.230600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb45collision">
+<pose>2.796500 0.387500 2.230600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb45visual">
+<pose>2.796500 0.387500 2.230600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall46collision">
+<pose>3.221900 0.225000 2.262400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall46visual">
+<pose>3.221900 0.225000 2.262400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb46collision">
+<pose>3.221900 0.387500 2.262400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb46visual">
+<pose>3.221900 0.387500 2.262400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall47collision">
+<pose>3.787100 0.225000 2.273200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall47visual">
+<pose>3.787100 0.225000 2.273200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb47collision">
+<pose>3.787100 0.387500 2.273200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb47visual">
+<pose>3.787100 0.387500 2.273200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall48collision">
+<pose>4.250300 0.225000 2.201900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall48visual">
+<pose>4.250300 0.225000 2.201900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb48collision">
+<pose>4.250300 0.387500 2.201900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb48visual">
+<pose>4.250300 0.387500 2.201900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall49collision">
+<pose>4.736800 0.225000 2.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall49visual">
+<pose>4.736800 0.225000 2.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb49collision">
+<pose>4.736800 0.387500 2.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb49visual">
+<pose>4.736800 0.387500 2.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall50collision">
+<pose>0.234000 0.225000 2.714900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall50visual">
+<pose>0.234000 0.225000 2.714900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb50collision">
+<pose>0.234000 0.387500 2.714900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb50visual">
+<pose>0.234000 0.387500 2.714900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall51collision">
+<pose>0.772300 0.225000 2.761800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall51visual">
+<pose>0.772300 0.225000 2.761800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb51collision">
+<pose>0.772300 0.387500 2.761800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb51visual">
+<pose>0.772300 0.387500 2.761800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall52collision">
+<pose>1.284600 0.225000 2.745100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall52visual">
+<pose>1.284600 0.225000 2.745100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb52collision">
+<pose>1.284600 0.387500 2.745100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb52visual">
+<pose>1.284600 0.387500 2.745100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall53collision">
+<pose>1.755500 0.225000 2.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall53visual">
+<pose>1.755500 0.225000 2.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb53collision">
+<pose>1.755500 0.387500 2.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb53visual">
+<pose>1.755500 0.387500 2.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall54collision">
+<pose>2.276400 0.225000 2.722800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall54visual">
+<pose>2.276400 0.225000 2.722800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb54collision">
+<pose>2.276400 0.387500 2.722800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb54visual">
+<pose>2.276400 0.387500 2.722800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall55collision">
+<pose>2.735000 0.225000 2.719300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall55visual">
+<pose>2.735000 0.225000 2.719300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb55collision">
+<pose>2.735000 0.387500 2.719300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb55visual">
+<pose>2.735000 0.387500 2.719300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall56collision">
+<pose>3.203400 0.225000 2.776400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall56visual">
+<pose>3.203400 0.225000 2.776400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb56collision">
+<pose>3.203400 0.387500 2.776400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb56visual">
+<pose>3.203400 0.387500 2.776400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall57collision">
+<pose>3.791400 0.225000 2.798700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall57visual">
+<pose>3.791400 0.225000 2.798700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb57collision">
+<pose>3.791400 0.387500 2.798700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb57visual">
+<pose>3.791400 0.387500 2.798700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall58collision">
+<pose>4.274300 0.225000 2.749100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall58visual">
+<pose>4.274300 0.225000 2.749100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb58collision">
+<pose>4.274300 0.387500 2.749100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb58visual">
+<pose>4.274300 0.387500 2.749100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall59collision">
+<pose>4.736500 0.225000 2.785900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall59visual">
+<pose>4.736500 0.225000 2.785900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb59collision">
+<pose>4.736500 0.387500 2.785900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb59visual">
+<pose>4.736500 0.387500 2.785900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall60collision">
+<pose>0.243200 0.225000 3.255100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall60visual">
+<pose>0.243200 0.225000 3.255100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb60collision">
+<pose>0.243200 0.387500 3.255100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb60visual">
+<pose>0.243200 0.387500 3.255100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall61collision">
+<pose>0.722800 0.225000 3.227500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall61visual">
+<pose>0.722800 0.225000 3.227500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb61collision">
+<pose>0.722800 0.387500 3.227500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb61visual">
+<pose>0.722800 0.387500 3.227500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall62collision">
+<pose>1.247400 0.225000 3.212100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall62visual">
+<pose>1.247400 0.225000 3.212100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb62collision">
+<pose>1.247400 0.387500 3.212100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb62visual">
+<pose>1.247400 0.387500 3.212100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall63collision">
+<pose>1.739500 0.225000 3.202900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall63visual">
+<pose>1.739500 0.225000 3.202900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb63collision">
+<pose>1.739500 0.387500 3.202900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb63visual">
+<pose>1.739500 0.387500 3.202900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall64collision">
+<pose>2.223500 0.225000 3.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall64visual">
+<pose>2.223500 0.225000 3.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb64collision">
+<pose>2.223500 0.387500 3.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb64visual">
+<pose>2.223500 0.387500 3.279300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall65collision">
+<pose>2.742800 0.225000 3.214300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall65visual">
+<pose>2.742800 0.225000 3.214300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb65collision">
+<pose>2.742800 0.387500 3.214300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb65visual">
+<pose>2.742800 0.387500 3.214300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall66collision">
+<pose>3.292800 0.225000 3.252900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall66visual">
+<pose>3.292800 0.225000 3.252900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb66collision">
+<pose>3.292800 0.387500 3.252900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb66visual">
+<pose>3.292800 0.387500 3.252900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall67collision">
+<pose>3.740400 0.225000 3.244300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall67visual">
+<pose>3.740400 0.225000 3.244300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb67collision">
+<pose>3.740400 0.387500 3.244300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb67visual">
+<pose>3.740400 0.387500 3.244300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall68collision">
+<pose>4.261300 0.225000 3.253800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall68visual">
+<pose>4.261300 0.225000 3.253800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb68collision">
+<pose>4.261300 0.387500 3.253800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb68visual">
+<pose>4.261300 0.387500 3.253800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall69collision">
+<pose>4.784000 0.225000 3.290400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall69visual">
+<pose>4.784000 0.225000 3.290400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb69collision">
+<pose>4.784000 0.387500 3.290400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb69visual">
+<pose>4.784000 0.387500 3.290400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall70collision">
+<pose>0.212800 0.225000 3.768800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall70visual">
+<pose>0.212800 0.225000 3.768800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb70collision">
+<pose>0.212800 0.387500 3.768800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb70visual">
+<pose>0.212800 0.387500 3.768800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall71collision">
+<pose>0.791700 0.225000 3.791700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall71visual">
+<pose>0.791700 0.225000 3.791700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb71collision">
+<pose>0.791700 0.387500 3.791700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb71visual">
+<pose>0.791700 0.387500 3.791700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall72collision">
+<pose>1.232400 0.225000 3.774300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall72visual">
+<pose>1.232400 0.225000 3.774300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb72collision">
+<pose>1.232400 0.387500 3.774300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb72visual">
+<pose>1.232400 0.387500 3.774300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall73collision">
+<pose>1.718300 0.225000 3.749000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall73visual">
+<pose>1.718300 0.225000 3.749000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb73collision">
+<pose>1.718300 0.387500 3.749000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb73visual">
+<pose>1.718300 0.387500 3.749000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall74collision">
+<pose>2.277200 0.225000 3.772500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall74visual">
+<pose>2.277200 0.225000 3.772500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb74collision">
+<pose>2.277200 0.387500 3.772500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb74visual">
+<pose>2.277200 0.387500 3.772500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall75collision">
+<pose>2.759000 0.225000 3.750500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall75visual">
+<pose>2.759000 0.225000 3.750500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb75collision">
+<pose>2.759000 0.387500 3.750500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb75visual">
+<pose>2.759000 0.387500 3.750500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall76collision">
+<pose>3.295400 0.225000 3.778600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall76visual">
+<pose>3.295400 0.225000 3.778600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb76collision">
+<pose>3.295400 0.387500 3.778600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb76visual">
+<pose>3.295400 0.387500 3.778600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall77collision">
+<pose>3.708200 0.225000 3.754200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall77visual">
+<pose>3.708200 0.225000 3.754200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb77collision">
+<pose>3.708200 0.387500 3.754200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb77visual">
+<pose>3.708200 0.387500 3.754200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall78collision">
+<pose>4.219700 0.225000 3.750700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall78visual">
+<pose>4.219700 0.225000 3.750700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb78collision">
+<pose>4.219700 0.387500 3.750700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb78visual">
+<pose>4.219700 0.387500 3.750700 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall79collision">
+<pose>4.780400 0.225000 3.734800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall79visual">
+<pose>4.780400 0.225000 3.734800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb79collision">
+<pose>4.780400 0.387500 3.734800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb79visual">
+<pose>4.780400 0.387500 3.734800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall80collision">
+<pose>0.262200 0.225000 4.282800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall80visual">
+<pose>0.262200 0.225000 4.282800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb80collision">
+<pose>0.262200 0.387500 4.282800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb80visual">
+<pose>0.262200 0.387500 4.282800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall81collision">
+<pose>0.734300 0.225000 4.274600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall81visual">
+<pose>0.734300 0.225000 4.274600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb81collision">
+<pose>0.734300 0.387500 4.274600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb81visual">
+<pose>0.734300 0.387500 4.274600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall82collision">
+<pose>1.234000 0.225000 4.242200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall82visual">
+<pose>1.234000 0.225000 4.242200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb82collision">
+<pose>1.234000 0.387500 4.242200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb82visual">
+<pose>1.234000 0.387500 4.242200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall83collision">
+<pose>1.781000 0.225000 4.260500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall83visual">
+<pose>1.781000 0.225000 4.260500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb83collision">
+<pose>1.781000 0.387500 4.260500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb83visual">
+<pose>1.781000 0.387500 4.260500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall84collision">
+<pose>2.266100 0.225000 4.273000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall84visual">
+<pose>2.266100 0.225000 4.273000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb84collision">
+<pose>2.266100 0.387500 4.273000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb84visual">
+<pose>2.266100 0.387500 4.273000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall85collision">
+<pose>2.730500 0.225000 4.232000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall85visual">
+<pose>2.730500 0.225000 4.232000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb85collision">
+<pose>2.730500 0.387500 4.232000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb85visual">
+<pose>2.730500 0.387500 4.232000 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall86collision">
+<pose>3.244400 0.225000 4.262600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall86visual">
+<pose>3.244400 0.225000 4.262600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb86collision">
+<pose>3.244400 0.387500 4.262600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb86visual">
+<pose>3.244400 0.387500 4.262600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall87collision">
+<pose>3.746500 0.225000 4.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall87visual">
+<pose>3.746500 0.225000 4.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb87collision">
+<pose>3.746500 0.387500 4.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb87visual">
+<pose>3.746500 0.387500 4.270800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall88collision">
+<pose>4.228200 0.225000 4.225800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall88visual">
+<pose>4.228200 0.225000 4.225800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb88collision">
+<pose>4.228200 0.387500 4.225800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb88visual">
+<pose>4.228200 0.387500 4.225800 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall89collision">
+<pose>4.763700 0.225000 4.206200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall89visual">
+<pose>4.763700 0.225000 4.206200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb89collision">
+<pose>4.763700 0.387500 4.206200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb89visual">
+<pose>4.763700 0.387500 4.206200 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall90collision">
+<pose>0.260000 0.225000 4.703600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall90visual">
+<pose>0.260000 0.225000 4.703600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb90collision">
+<pose>0.260000 0.387500 4.703600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb90visual">
+<pose>0.260000 0.387500 4.703600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall91collision">
+<pose>0.789900 0.225000 4.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall91visual">
+<pose>0.789900 0.225000 4.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb91collision">
+<pose>0.789900 0.387500 4.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb91visual">
+<pose>0.789900 0.387500 4.737900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall92collision">
+<pose>1.246800 0.225000 4.707100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall92visual">
+<pose>1.246800 0.225000 4.707100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb92collision">
+<pose>1.246800 0.387500 4.707100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb92visual">
+<pose>1.246800 0.387500 4.707100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall93collision">
+<pose>1.713100 0.225000 4.788100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall93visual">
+<pose>1.713100 0.225000 4.788100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb93collision">
+<pose>1.713100 0.387500 4.788100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb93visual">
+<pose>1.713100 0.387500 4.788100 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall94collision">
+<pose>2.293300 0.225000 4.789400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall94visual">
+<pose>2.293300 0.225000 4.789400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb94collision">
+<pose>2.293300 0.387500 4.789400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb94visual">
+<pose>2.293300 0.387500 4.789400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Green</name> </script> </material>
+</visual>
+
+<collision name="bldwall95collision">
+<pose>2.716300 0.225000 4.719900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall95visual">
+<pose>2.716300 0.225000 4.719900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb95collision">
+<pose>2.716300 0.387500 4.719900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb95visual">
+<pose>2.716300 0.387500 4.719900 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall96collision">
+<pose>3.289900 0.225000 4.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall96visual">
+<pose>3.289900 0.225000 4.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb96collision">
+<pose>3.289900 0.387500 4.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb96visual">
+<pose>3.289900 0.387500 4.799600 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall97collision">
+<pose>3.777300 0.225000 4.781300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall97visual">
+<pose>3.777300 0.225000 4.781300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb97collision">
+<pose>3.777300 0.387500 4.781300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb97visual">
+<pose>3.777300 0.387500 4.781300 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+<collision name="bldwall98collision">
+<pose>4.219000 0.225000 4.709500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall98visual">
+<pose>4.219000 0.225000 4.709500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb98collision">
+<pose>4.219000 0.387500 4.709500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb98visual">
+<pose>4.219000 0.387500 4.709500 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Blue</name> </script> </material>
+</visual>
+
+<collision name="bldwall99collision">
+<pose>4.746600 0.225000 4.708400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+</collision>
+<visual name="bldwall99visual">
+<pose>4.746600 0.225000 4.708400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.025000 0.250000 0.025000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Grey</name> </script> </material>
+</visual>
+
+<collision name="bldwallb99collision">
+<pose>4.746600 0.387500 4.708400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+</collision>
+<visual name="bldwallb99visual">
+<pose>4.746600 0.387500 4.708400 0.000000 0.000000 0.000000</pose>
+<geometry> <box> <size>0.075000 0.075000 0.075000</size> </box> </geometry>
+<material> <script> <uri>file://media/materials/scripts/gazebo.material</uri>
+<name>Gazebo/Red</name> </script> </material>
+</visual>
+
+
+      
+    </link>
+  </model>
+</sdf>

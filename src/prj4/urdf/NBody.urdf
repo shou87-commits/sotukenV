@@ -1,0 +1,122 @@
+<!-- ################################################################### -->
+
+<!-- activate either one -->
+<!--
+    <link name="base_link"> </link>
+-->
+    <link name="world"> </link>
+
+<!-- if joint type is set to "fixed", robot floats on the ground -->
+<!-- but later, such situation was corrected, and current adequate value is "fixed" -->
+
+<!-- When parent is base_link, robot can move around in the world freely -->
+<!-- When parent is world, robot is fixed and can not move around in the world -->
+
+    <joint name="pedestal_joint" type="fixed">
+<!--    <parent link="base_link"/> -->
+        <parent link="world"/>
+	<child link="pedestal"/>
+	<origin xyz= "0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <link name="pedestal">
+        <visual>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.58 0.58 0.76"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <geometry> <box size="0.58 0.58 0.76"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="25"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+    <gazebo reference="pedestal"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="waist_joint" type="fixed">
+        <parent link="pedestal"/>
+	<child link="waist"/>
+	<origin xyz= "0.24 0 0.38" rpy="0 0 0" />
+    </joint>
+    <link name="waist">
+        <visual>
+	    <origin xyz="0 0 0.15" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.3" radius="0.05"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0 0 0.15" rpy="0 0 0"/>
+	    <geometry> <cylinder length="0.3" radius="0.05"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0 0 0.15" rpy="0 0 0"/> <mass value="1"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+    <gazebo reference="waist"> <material>Gazebo/Black</material> </gazebo>
+
+    <joint name="chest_joint" type="fixed">
+        <parent link="waist"/>
+	<child link="chest"/>
+	<origin xyz= "-0.05 0 0.3" rpy="0 0 0" />
+    </joint>
+    <link name="chest">
+        <visual>
+	    <origin xyz="0.0 0 0.1" rpy="0 0 0"/>
+	    <geometry> <box size="0.2 0.2 0.2"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0.0 0 0.1" rpy="0 0 0"/>
+	    <geometry> <box size="0.2 0.2 0.2"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0.0 0 0.1" rpy="0 0 0"/> <mass value="1"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+    <gazebo reference="chest"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="body2_joint" type="fixed">
+        <parent link="chest"/>
+	<child link="body2"/>
+	<origin xyz= "-0.05 0 0.2" rpy="0 0 0" />
+    </joint>
+    <link name="body2">
+        <visual>
+	    <origin xyz="0.0 0 0.05" rpy="0 0 0"/>
+	    <geometry> <box size="0.3 0.3 0.1"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0.0 0 0.05" rpy="0 0 0"/>
+	    <geometry> <box size="0.3 0.3 0.1"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0.0 0 0.05" rpy="0 0 0"/> <mass value="2"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+    <gazebo reference="body2"> <material>Gazebo/Grey</material> </gazebo>
+
+    <joint name="body_joint" type="fixed">
+        <parent link="body2"/>
+	<child link="body"/>
+	<origin xyz= "0.0 0 0.1" rpy="0 0 0" />
+    </joint>
+    <link name="body">
+        <visual>
+	    <origin xyz="0.0 0 0.0375" rpy="0 0 0"/>
+	    <geometry> <box size="0.3 0.3 0.075"/> </geometry>
+	</visual>
+	<collision>
+	    <origin xyz="0.0 0 0.0375" rpy="0 0 0"/>
+	    <geometry> <box size="0.3 0.3 0.075"/> </geometry>
+	</collision>
+	<inertial>
+	    <origin xyz="0.0 0 0.0375" rpy="0 0 0"/> <mass value="2"/>
+	    <inertia ixx="1e-2" ixy="0" ixz="0" iyy="1e-2" iyz="0" izz="1e-2"/>
+	</inertial>
+    </link>
+    <gazebo reference="body"> <material>Gazebo/Grey</material> </gazebo>
+
+<!-- ################################################################### -->
